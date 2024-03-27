@@ -1,39 +1,79 @@
-"use client"
-import { useState } from 'react';
-import styles from '../styles/Carousel.css'; // Import CSS file for styling
+"use client";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const Carousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-  };
+// import required modules
+import { Navigation } from "swiper/modules";
+import HeroBanner from "./HeroBanner";
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-
+const Carousel = () => {
   return (
-    <div className={styles.carousel}>
-      <button onClick={prevSlide} className={styles.prevButton}>
-        Prev
-      </button>
-      <div className={styles.slideContainer}>
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={index === currentIndex ? `${styles.slide} ${styles.active}` : styles.slide}
+    <>
+      <Swiper 
+        loop={true}
+        modules={[Navigation]}
+        spaceBetween={30}
+        slidesPerView="auto"
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        className="mySwiper"
           >
-            {index === currentIndex && (
-              <img src={image} alt={`Slide ${index}`} className={styles.image} />
-            )}
+        <SwiperSlide>
+          <div
+            className="background-div bg-cover"
+            style={{
+              backgroundImage: "url('/hero/1.jpg')",
+              width: "full",
+              height: "500px",
+            }}
+          >
+            {/* content */}
           </div>
-        ))}
-      </div>
-      <button onClick={nextSlide} className={styles.nextButton}>
-        Next
-      </button>
-    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+            className="background-div bg-cover bg-no-repeat"
+            style={{
+              backgroundImage: "url('/hero/2.jpg')",
+              width: "full",
+              height: "500px",
+            }}
+          >
+            {/* content */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+            className="background-div bg-cover"
+            style={{
+              backgroundImage: "url('/hero/3.jpg')",
+              width: "full",
+              height: "500px",
+            }}
+          >
+            {/* content */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+            className="background-div bg-cover"
+            style={{
+              backgroundImage: "url('/hero/4.jpg')",
+              width: "full",
+              height: "500px",
+            }}
+          >
+            {/* content */}
+          </div>
+        </SwiperSlide>
+        {/* <SwiperNavButtons/> */}
+        <HeroBanner/>
+      </Swiper>
+    </>
   );
 };
 

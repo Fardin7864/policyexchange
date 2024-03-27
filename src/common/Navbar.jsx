@@ -35,7 +35,7 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-[#00263a] h-[80px] sticky -top-5">
+    <div className="bg-[#00263a] h-[80px] sticky -top-5 z-50">
     <AppBar
       position="static"
       sx={{ backgroundColor: "#00263a" }}
