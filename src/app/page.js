@@ -1,4 +1,8 @@
 import Carousel from "@/components/CustomSlides";
+import Featured from "@/components/Featured";
+import Services from "@/components/Services";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
+import WhyUs from "@/components/WhyUs";
 import Head from "next/head";
 
 export default function Home() {
@@ -8,8 +12,12 @@ export default function Home() {
       <Head>
       <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="max-w-[1440px] mx-auto h-[2000px]">
+      <div className="max-w-[1440px] mx-auto">
       <Carousel/>
+      <Services/>
+      <Featured/>
+      <WhyUs/>
+      <TestimonialCarousel/>
       </div>
     </main>
   );
