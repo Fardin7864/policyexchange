@@ -6,20 +6,20 @@ export const RoundedCard = ({ image, title, details }) => {
     <div className=" flex flex-col gap-5 items-center">
       <Image
         src={image}
-        width={210}
-        height={210}
+        width={200}
+        height={200}
         alt="card"
-        className=" rounded-full w-[210px] h-[210px]"
+        className=" rounded-full w-[200px] h-[200px]"
       />
       <h3 className=" text-[#00263a] text-2xl font-bold">{title}</h3>
-      <p className=" text-justify">{details}</p>
+      <p className=" text-center lg:w-[70%]">{details}</p>
     </div>
   );
 };
 
 const WhyUs = () => {
   return (
-    <div className="bg-[#9de7d7] px-24 pb-20 pt-14 rounded-2xl">
+    <div className="bg-[#9de7d7] px-24 pb-20 pt-14 rounded-2xl relative -top-20">
       <h1 className=" text-center text-5xl font-bold mb-20">Our Services</h1>
       <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
         <RoundedCard

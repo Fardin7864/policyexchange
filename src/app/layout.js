@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/common/Navbar";
 import AnimatedCursor from "react-animated-cursor";
+import Footer from "@/common/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         ]}
       />
         {children}
+        <Footer/>
       </body>
     </html>
   );
