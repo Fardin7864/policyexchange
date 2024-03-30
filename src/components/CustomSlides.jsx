@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 import HeroBanner from "./HeroBanner";
+import BrandMarquee from "./BrandMarquee";
 
 const Carousel = () => {
   return (
@@ -72,6 +73,7 @@ const Carousel = () => {
         </SwiperSlide>
         {/* <SwiperNavButtons/> */}
         <HeroBanner/>
+        <BrandMarquee/>
       </Swiper>
     </>
   );

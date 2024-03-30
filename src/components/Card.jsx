@@ -14,10 +14,10 @@ export default function ActionAreaCard({image, title, details,bottomBorder}) {
           height="200"
           image={image}
           alt="green iguana"
-          className={`md:h-80 border-b-8 border-b-[${bottomBorder}]`}
+          className={`md:h-80`}
           
         />
-        <div className={`h-3 w-full bg-[${bottomBorder}]`}></div>
+        <div className={`h-2 w-full`} style={{backgroundColor: `${bottomBorder}`}}></div>
         <CardContent className=' my-5'>
           <Typography gutterBottom variant="h5" component="div">
             {title}

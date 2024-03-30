@@ -22,18 +22,51 @@
   font-family: "axiforma-extrabold";
   src: url("/public/font/Kastelov\ \ Axiforma\ ExtraBold.otf");
 }
- .text-axi-400{
+.text-axi-400 {
   font-family: axiforma-regular;
- }
- .text-axi-500{
+}
+.text-axi-500 {
   font-family: axiforma-medium;
- }
- .text-axi-600{
+}
+.text-axi-600 {
   font-family: axiforma-semibold;
- }
- .text-axi-700{
+}
+.text-axi-700 {
   font-family: axiforma-bold;
- }
- .text-axi-900{
+}
+.text-axi-900 {
   font-family: axiforma-extrabold;
- }
+}
+.brand-section {
+  background-image: url("https://assets.website-files.com/5837424ae11409586f837994/611b2d3c1a84f270060c9ec1_Texture.png"),
+    linear-gradient(#00263a, #00263a);
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #00263a;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: #307fe2;
+  border-radius: 1rem;
+  background-clip: content-box; */
+  background: rgba(30, 178, 221, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.custom-card{
+  background: rgba(30, 178, 221, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

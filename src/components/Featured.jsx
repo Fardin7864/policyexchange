@@ -6,7 +6,7 @@ import ActionAreaCard from "./Card";
 const Featured = () => {
   return ( 
     <>
-    <h1 className=" text-center text-5xl font-bold mt-20 mb-3">Featured properties</h1>
+    <h1 className=" text-center text-5xl font-bold mt-20 mb-3">Latest News</h1>
     <Container className="px-0 py-10 grid grid-cols-1 lg:grid-cols-4 gap-5">
       <div className=" flex col-span-2 shadow-xl rounded-xl">
         <Image
