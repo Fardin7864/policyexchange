@@ -46,10 +46,10 @@ const Footer = () => {
         <div className=" text-white flex flex-col gap-3 font-medium">
           <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">Follow Us</h3>
           <div className=" flex gap-2 text-4xl">
-            <FaFacebookSquare />
-            <FaLinkedin />
-            <FaInstagram />
-            <FaXTwitter />
+            <FaFacebookSquare className=" hover:text-[#a790d5]" />
+            <FaLinkedin className=" hover:text-[#a790d5]" />
+            <FaInstagram className=" hover:text-[#a790d5]"/>
+            <FaXTwitter className=" hover:text-[#a790d5]"/>
           </div>
           <p className=" hover:text-[#a790d5]">#GreaterTogether</p>
           <p> </p>
@@ -66,7 +66,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center text-gray-400 mt-8">
         &copy; {currentYear} All Rights Reserved to Policy Exchange || 
-        Developed by <Link href={"https://www.contentguy.co"} className=" text-blue-400">ContentGuy</Link>
+        Developed by <Link href={"https://www.contentguy.co"} target="_blank" className=" text-blue-400">ContentGuy</Link>
       </div>
     </div>
     </div>

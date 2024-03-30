@@ -5,8 +5,8 @@ const BrandMarquee = () => {
   return (
     <div className=" brand-section rounded-lg mb-14 flex">
       <h1 className=" text-white py-8 text-4xl font-bold px-5">
-        BRANDS <br />
-        WHO ARE WITH <br /> US
+        WHO 
+        WE <br /> WORK WITH 
       </h1>
       <Marquee autoFill="true">
         <img

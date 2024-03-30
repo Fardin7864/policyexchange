@@ -1,6 +1,7 @@
 import Carousel from "@/components/CustomSlides";
 import Featured from "@/components/Featured";
 import MeetTeam from "@/components/MeetTeam";
+import Publications from "@/components/Publications";
 import Services from "@/components/Services";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import WhyUs from "@/components/WhyUs";
@@ -17,6 +18,7 @@ export default function Home() {
       <Services/>
       <Featured/>
       <WhyUs/>
+      <Publications/>
       <TestimonialCarousel/>
       <MeetTeam/>
       </div>

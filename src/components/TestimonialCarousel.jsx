@@ -1,25 +1,15 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useSwiper } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
-import { FaAngleLeft, FaAngleRight, FaChevronRight } from "react-icons/fa6";
+import {  FaChevronRight } from "react-icons/fa6";
 import TestimonialBanner from "./TestimonialBanner";
 
 const TestimonialCarousel = () => {
-  const swiperBtn = useSwiper();
-
-  const handlePrevClick = () => {
-    swiperBtn.slidePrev(); // Move to the previous slide
-  };
-
-  const handleNextClick = () => {
-    swiperBtn.slideNext(); // Move to the next slide
-  };
 
   return (
     <>
