@@ -44,9 +44,9 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/hero/1.jpg')",
+              backgroundImage: "url('/testimonial/1.webp')",
               width: "full",
-              height: "500px",
+              height: "600px",
             }}
           >
             {/* content */}
@@ -77,9 +77,9 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover bg-no-repeat rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/hero/2.jpg')",
+              backgroundImage: "url('/testimonial/2.webp')",
               width: "full",
-              height: "500px",
+              height: "600px",
             }}
           >
             {/* content */}
@@ -109,9 +109,9 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/hero/3.jpg')",
+              backgroundImage: "url('/testimonial/3.webp')",
               width: "full",
-              height: "500px",
+              height: "600px",
             }}
           >
             {/* content */}
