@@ -10,7 +10,7 @@ const Services = () => {
       <Typography className=" text-[#00263a] text-2xl font-bold lg:w-[70%] mx-auto text-center mb-8 md:w-[90%] w-full ">
         We unlock potential, creating sustainable space for London to thrive. We
         believe in the power of innovation and partnership to deliver a greater
-        choice of adaptable, climate resilient places fit for London's future,
+        choice of adaptable, climate resilient places fit for Londons future,
         creating space for every London story.
       </Typography>
       <Container className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

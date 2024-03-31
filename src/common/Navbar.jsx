@@ -35,11 +35,11 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-[#00263a] h-[80px] sticky -top-5 z-50">
+    <div className=" h-[80px] sticky -top-5 z-50  max-w-[1440px] rounded-md mx-auto ">
     <AppBar
       position="static"
       sx={{ backgroundColor: "#00263a" }}
-      className=" max-w-[1440px] mx-auto"
+      className=" max-w-[1440px] mx-auto rounded-xl "
     >
       <Container maxWidth="xl" className=" my-auto">
         <Toolbar disableGutters>

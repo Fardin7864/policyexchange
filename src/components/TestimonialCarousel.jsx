@@ -116,7 +116,7 @@ const TestimonialCarousel = () => {
             <div>
               <p>Oli Foster</p>
               <p>Chief Executive</p>
-              <p>Pagefield, customer at 16 Dufour's Place.</p>
+              <p>Pagefield, customer at 16 Dufours Place.</p>
             </div>
             <div>
               <button className=" hover:bg-gray-100 hover:text-gray-900 flex gap-3 items-center justify-center border-2 py-3 px-5 rounded-full">
