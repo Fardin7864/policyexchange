@@ -35,17 +35,17 @@ function Navbar() {
   };
 
   return (
-    <div className=" h-[80px] sticky -top-5 z-50  max-w-[1440px] rounded-md mx-auto ">
+    <div className=" h-[80px] absolute left-[10%] right-[10%] top-4 z-50  max-w-[1440px] w-[1280px] rounded-md mx-auto ">
     <AppBar
       position="static"
       sx={{ backgroundColor: "#00263a" }}
-      className=" max-w-[1440px] mx-auto rounded-xl "
+      className=" rounded-xl "
     >
       <Container maxWidth="xl" className=" my-auto">
         <Toolbar disableGutters>
           <Image
-            src={"/logo.png"}
-            width={200}
+            src={"/logotrans.png"}
+            width={150}
             height={0}
             alt="logo"
             className=" hidden lg:block"

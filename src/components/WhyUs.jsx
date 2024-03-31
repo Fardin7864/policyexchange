@@ -12,7 +12,7 @@ export const RoundedCard = ({ image, title, details }) => {
         className=" rounded-full w-[200px] h-[200px]"
       />
       <h3 className=" text-[#00263a] text-2xl font-bold">{title}</h3>
-      <p className=" text-center lg:w-[70%]">{details}</p>
+      <p className="lg:w-[70%] text-center" dangerouslySetInnerHTML={{ __html: details }} />
     </div>
   );
 };
@@ -21,29 +21,23 @@ const WhyUs = () => {
   return (
     <div className="bg-[#9de7d7] px-24 pb-20 pt-14 rounded-2xl relative -top-20">
       <h1 className=" text-center text-5xl font-bold mb-20">Our Services</h1>
-      <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
+      <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
         <RoundedCard
-          image="/hero/card7.webp"
-          title="Greater Choice"
-          details="We unlock the potential for thriving, sustainable communities to experience great choice in London's most exceptional places."
+          image="/services/2.jpg"
+          title="Research & Analytics"
+          details={`We specialize in providing comprehensive services ranging from policy, regulatory, market, and sectoral analysis to developing knowledge products, conducting evaluation, monitoring, and learning activities, as well as administering surveys.`}
         />
 
         <RoundedCard
-          image="/hero/card6.webp"
-          title="Trusted Partner"
-          details="We believe in the power of people and partnerships to create exceptional, climate-conscious places that deliver for our customers."
+          image="/services/3.jpg"
+          title="Advocacy & Dialogue"
+          details="We execute systematic and targeted efforts, focusing on theme-specific agendas and ensuring regular engagement with policy-makers. Additionally, we strategically engage through media channels for effective evidence dissemination."
         />
 
         <RoundedCard
-          image="/hero/card4.webp"
-          title="Driving Innovation"
-          details="We consistently prove our ability to think and act differently in everything we do, embracing change and championing technology."
-        />
-
-        <RoundedCard
-          image="/hero/card1.webp"
-          title="Future London"
-          details="We are building a sustainable legacy for this great city, with a positive social impact at the heart of it and a thriving economy for London's future."
+          image="/services/1.jpg"
+          title="Investment & Market Advisory"
+          details="We provide expert advice on policy, regulation, and institutions, along with insights into economic trends. We facilitate industry connections, resolve regulatory disputes, and provide due diligence supervision."
         />
       </div>
     </div>

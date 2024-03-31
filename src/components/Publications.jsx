@@ -35,9 +35,9 @@ const Publications = () => {
            
           >
             {/* content */}
-            <ActionAreaCard image="/hero/card1.webp"  title="Catalyzing Greater FDI for Vision 2041: Priorities for Building a Conducive Tax System in Bangladesh"   />
-            <ActionAreaCard image="/hero/card2.webp"  title="Threads Of Progress: A Comprehensive Landscape Study Of The Apparel Industry And The Future For Women Workers"   />
-            <ActionAreaCard image="/hero/card3.webp"  title="Bangladesh Business Climate Index-2022-23"   />
+            <ActionAreaCard image="/publications/1.png"  title="Catalyzing Greater FDI for Vision 2041: Priorities for Building a Conducive Tax System in Bangladesh"   />
+            <ActionAreaCard image="/publications/2.png"  title="Threads Of Progress: A Comprehensive Landscape Study Of The Apparel Industry And The Future For Women Workers"   />
+            <ActionAreaCard image="/publications/3.png"  title="Bangladesh Business Climate Index-2022-23"   />
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -46,9 +46,9 @@ const Publications = () => {
            
           >
             {/* content */}
-            <ActionAreaCard image="/hero/card4.webp"  title="COVID Stimulus and Links to Employment, Consumption, and Investment"   />
-            <ActionAreaCard image="/hero/card5.webp"  title="Bangladesh Business Climate Index Report"   />
-            <ActionAreaCard image="/hero/card6.webp"  title="USA-Bangladesh Trade & Investment – Next Generation Priorities"   />
+            <ActionAreaCard image="/publications/4.png"  title="COVID Stimulus and Links to Employment, Consumption, and Investment"   />
+            <ActionAreaCard image="/publications/5.png"  title="Bangladesh Business Climate Index Report"   />
+            <ActionAreaCard image="/publications/6.png"  title="USA-Bangladesh Trade & Investment – Next Generation Priorities"   />
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -56,9 +56,9 @@ const Publications = () => {
             className="background-div bg-cover rounded-3xl w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
           >
             {/* content */}
-            <ActionAreaCard image="/hero/card7.webp"  title="Growth Driver for Bangladesh – Accelerating Investment Opportunities on Agribusiness, Digital Economy and Green Finance"   />
-            <ActionAreaCard image="/hero/card1.webp"  title="Catalyzing Greater FDI for Vision 2041: Priorities for Building a Conducive Tax System in Bangladesh"   />
-            <ActionAreaCard image="/hero/card2.webp"  title="Threads Of Progress: A Comprehensive Landscape Study Of The Apparel Industry And The Future For Women Workers"   />
+            <ActionAreaCard image="/publications/7.png"  title="Growth Driver for Bangladesh – Accelerating Investment Opportunities on Agribusiness, Digital Economy and Green Finance"   />
+            <ActionAreaCard image="/publications/1.png"  title="Catalyzing Greater FDI for Vision 2041: Priorities for Building a Conducive Tax System in Bangladesh"   />
+            <ActionAreaCard image="/publications/2.png"  title="Threads Of Progress: A Comprehensive Landscape Study Of The Apparel Industry And The Future For Women Workers"   />
           </div>
         </SwiperSlide>
       </Swiper>

@@ -1,8 +1,5 @@
 import { Container, Typography } from "@mui/material";
-import React from "react";
 import { FaBalanceScale, FaSearch } from "react-icons/fa";
-import ActionAreaCard from "./Card";
-import { FaPlus } from "react-icons/fa";
 
 const Services = () => {
   return (
@@ -15,7 +12,7 @@ const Services = () => {
       </Typography>
       <Container className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <div className=" hover:bg-[#a790d5] hover:text-white flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
+        <div className=" hover:bg-[#a790d5] bg-white hover:text-white flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
           <div className=" bg-[#9de7d7] p-7 rounded-full">
           <FaSearch className=" text-4xl text-[#00263a]"/>
           </div>
@@ -23,14 +20,14 @@ const Services = () => {
         </div>
 
 
-        <div className=" hover:bg-[#a790d5] hover:text-white flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
+        <div className=" hover:bg-[#a790d5] bg-white hover:text-white flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
           <div className=" bg-[#9de7d7] p-7 rounded-full">
           <FaBalanceScale className=" text-4xl text-[#00263a]"/>
           </div>
           <h4 className=" text-xl font-bold text-center">Advocacy & Dialogue</h4>
         </div>
         
-        <div className=" hover:bg-[#a790d5] hover:text-white flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
+        <div className=" hover:bg-[#a790d5]  bg-white hover:text-white flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
           <div className=" bg-[#9de7d7] p-7 rounded-full">
           <FaSearch className=" text-4xl text-[#00263a]"/>
           </div>

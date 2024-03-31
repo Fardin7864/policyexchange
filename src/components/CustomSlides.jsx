@@ -14,7 +14,7 @@ import BrandMarquee from "./BrandMarquee";
 
 const Carousel = () => {
   return (
-    <>
+    <div>
       <Swiper 
         loop={true}
         modules={[Navigation]}
@@ -25,49 +25,53 @@ const Carousel = () => {
           >
         <SwiperSlide>
           <div
-            className="background-div bg-cover"
+            className="background-div bg-cover with-overlay "
             style={{
-              backgroundImage: "url('/hero/1.jpg')",
+              backgroundImage: "url('/carousel/Catalyzin growth.jpg')",
               width: "full",
-              height: "500px",
+              height: "650px",
             }}
           >
+            <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
         <div
-            className="background-div bg-cover bg-no-repeat"
+            className="background-div bg-cover with-overlay bg-no-repeat"
             style={{
-              backgroundImage: "url('/hero/2.jpg')",
+              backgroundImage: "url('/carousel/Driving innovation.jpg')",
               width: "full",
-              height: "500px",
+              height: "650px",
             }}
           >
+            <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
         <div
-            className="background-div bg-cover"
+            className="background-div bg-cover with-overlay"
             style={{
-              backgroundImage: "url('/hero/3.jpg')",
+              backgroundImage: "url('/carousel/Think tank.jpg')",
               width: "full",
-              height: "500px",
+              height: "650px",
             }}
           >
+            <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
         <div
-            className="background-div bg-cover"
+            className="background-div bg-cover with-overlay"
             style={{
-              backgroundImage: "url('/hero/4.jpg')",
+              backgroundImage: "url('/carousel/Trusted partner.jpg')",
               width: "full",
-              height: "500px",
+              height: "650px",
             }}
           >
+            <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
           </div>
         </SwiperSlide>
@@ -75,7 +79,7 @@ const Carousel = () => {
         <HeroBanner/>
         <BrandMarquee/>
       </Swiper>
-    </>
+    </div>
   );
 };
 
