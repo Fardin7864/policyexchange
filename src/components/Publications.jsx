@@ -36,8 +36,8 @@ const Publications = () => {
           >
             {/* content */}
             <ActionAreaCard image="/publications/1.png"  title="Catalyzing Greater FDI for Vision 2041: Priorities for Building a Conducive Tax System in Bangladesh"   />
-            <ActionAreaCard image="/publications/2.png"  title="Threads Of Progress: A Comprehensive Landscape Study Of The Apparel Industry And The Future For Women Workers"   />
-            <ActionAreaCard image="/publications/3.png"  title="Bangladesh Business Climate Index-2022-23"   />
+            <ActionAreaCard classes="hidden lg:block" image="/publications/2.png"  title="Threads Of Progress: A Comprehensive Landscape Study Of The Apparel Industry And The Future For Women Workers"   />
+            <ActionAreaCard classes="hidden lg:block" image="/publications/3.png"  title="Bangladesh Business Climate Index-2022-23"   />
           </div>
         </SwiperSlide>
         <SwiperSlide>

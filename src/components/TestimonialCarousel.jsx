@@ -14,7 +14,7 @@ const TestimonialCarousel = () => {
   return (
     <>
       <h2 className=" text-center text-5xl font-bold py-20">
-        What our customers say about us
+        What our clients say about us
       </h2>
 
       {/* Testimonial slider */}
@@ -34,7 +34,7 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/testimonial/1.webp')",
+              backgroundImage: "url('/publications/1.webp')",
               width: "full",
               height: "600px",
             }}
@@ -44,12 +44,7 @@ const TestimonialCarousel = () => {
           {/* sub banner / text doc */}
           <div className=" text-md font-medium text-gray-100 bg-[#a790d5] w-[80%] mx-auto py-10 px-14 flex flex-col gap-5 rounded-3xl relative -top-36">
             <p>
-              We got a 20 year lease here at Hanover Square, we loved the
-              building when we saw the capability of what it could offer us in
-              space. The ready to fit concept was definitely the area we wanted
-              to focus on for our fit out, it gave us the blank canvas to make a
-              much more bespoke design. Work very closely in collaboration with
-              everyone on how we design the space down to the finite detail.
+            We have been in the market for quite some time now. For Lightcastle, it's essential to maintain our quality of work. We have a longstanding partnership with Policy Ex, and they provide us with all the guarantees we need
             </p>
             <div>
               <p>Simon Booth</p>
@@ -67,7 +62,7 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover bg-no-repeat rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/testimonial/2.webp')",
+              backgroundImage: "url('/publications/2.webp')",
               width: "full",
               height: "600px",
             }}
@@ -99,7 +94,7 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/testimonial/3.webp')",
+              backgroundImage: "url('/publications/3.webp')",
               width: "full",
               height: "600px",
             }}
