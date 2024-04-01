@@ -11,45 +11,138 @@ const BrandMarquee = () => {
       <Marquee autoFill="true">
         <img
           className=" mr-10"
-          style={{ height: "80px", width: "100px" }}
-          src="/images/logo1.png"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/amcham.png"
           alt="image1"
         />
 
-        <img
-          style={{ height: "35px" }}
+       <img
+          style={{ height: "100px", borderRadius: '4px' }}
           className=" mr-10"
-          src="/images/logo2.png"
+          src="/logos/bangladesh.png"
           alt="image2"
         />
-
+ 
         <img
-          style={{ height: "100px", width: "90px" }}
+          style={{ height: "100px", borderRadius: '4px' }}
           className=" mr-10"
-          src="/images/logo3.png"
+          src="/logos/bida.png"
           alt="image3"
         />
 
         <img
-          style={{ height: "90px", width: "100px" }}
+          style={{ height: "100px", borderRadius: '4px' }}
           className=" mr-10"
-          src="/images/logo4.png"
+          src="/logos/cowater.png"
           alt="image4"
         />
 
         <img
-          style={{ height: "30px" }}
+          style={{ height: "100px", borderRadius: '4px' }}
           className=" mr-10"
-          src="/images/logo5.png"
+          src="/logos/dcci.png"
           alt="image5"
         />
 
         <img
           className=" mr-10"
-          style={{ height: "100px", width: "90px" }}
-          src="/images/logo6.png"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/ficci.png"
           alt="image6"
         />
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/forcommunication.png"
+          alt="image6"
+        />
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/itojyty1.png"
+          alt="image6"
+        />
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/jetro.png"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/lightcas.png"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/metlife.png"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/ministryofcommerce.png"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/ministryoffinance.jpg"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/nestla.png"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/pwc.png"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/un.png"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/usda.png"
+          alt="image6"
+        />
+
+
+        <img
+          className=" mr-10"
+          style={{ height: "100px", borderRadius: '4px' }}
+          src="/logos/vanture.png"
+          alt="image6"
+        /> 
       </Marquee>
     </div>
   );

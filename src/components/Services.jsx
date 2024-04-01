@@ -1,14 +1,13 @@
-"use client"
+"use client";
 import { Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
 import AnimatedNumber from "animated-number-react";
 import { useState } from "react";
 
-
 const Services = () => {
   const value = 30;
- const formatValue = (value) => value.toFixed(0);
+  const formatValue = (value) => value.toFixed(0);
   return (
     <Container className=" flex justify-center flex-col gap-12 p-5 md:p-0">
       <Typography className=" text-[#00263a] text-xl font-bold lg:w-[70%] mx-auto text-center mb-8 md:w-[90%] w-full ">
@@ -23,11 +22,12 @@ const Services = () => {
       <Container className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className=" hover:border-2 hover:border-[#a790d5] bg-white hover:text-[#a790d5] flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
           <div className=" p-7 rounded-full">
-            <Image src={"/gif/search.gif"} 
-            width={100}
-            height={0}
-            alt="search"
-            className="  "
+            <Image
+              src={"/gif/search.gif"}
+              width={100}
+              height={0}
+              alt="search"
+              className="  "
             />
           </div>
           <h4 className=" text-xl font-bold text-center">
@@ -37,11 +37,7 @@ const Services = () => {
 
         <div className="hover:border-2 hover:border-[#a790d5] bg-white hover:text-[#a790d5]  flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
           <div className="  p-7 rounded-full">
-            <Image src={"/gif/advo.gif"} 
-            width={150}
-            height={0}
-            alt="search"
-            />
+            <Image src={"/gif/advo.gif"} width={150} height={0} alt="search" />
           </div>
           <h4 className=" text-xl font-bold text-center">
             Advocacy & Dialogue
@@ -50,10 +46,11 @@ const Services = () => {
 
         <div className="hover:border-2 hover:border-[#a790d5] bg-white hover:text-[#a790d5]  flex flex-col justify-center items-center gap-5 p-16 rounded-2xl shadow-xl transition-colors duration-500">
           <div className="rounded-full">
-            <Image src={"/gif/invest.gif"} 
-            width={100}
-            height={0}
-            alt="search"
+            <Image
+              src={"/gif/invest.gif"}
+              width={100}
+              height={0}
+              alt="search"
             />
           </div>
           <h4 className=" text-xl font-bold text-center">
@@ -62,36 +59,59 @@ const Services = () => {
         </div>
       </Container>
       {/* Find banner */}
-      <Container className=" bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
-        <FaChevronRight className=" text-[#a790d5] text-[56rem] font-extrabold hidden md:block relative -left-[260px]"/>
-        <div className=" relative flex gap-16 lg:-left-36 w-full">
+      <div>
+      <img src="/star.png" className="w-[300px] h-[320px] absolute z-50 top-[1690px]" />
+      <div>
+        <Container className=" bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
+          <div className=" w-1/5 top-4">
+            <FaChevronRight className=" text-[#a790d5] text-[56rem] font-extrabold hidden md:block relative -left-[475px]"/>
+          </div>
+          <div className=" relative flex justify-between w-[4000px] px-8">
             <div>
-              <p className=" text-white text-3xl font-bold my-4 text-center" >
-              <AnimatedNumber
-              value={30}
-              duration={2500}
-              formatValue={formatValue}
-              /> + </p>
-              <h6 className=" text-white text-xl font-semibold">COLLABORATION</h6>
+              <p className=" text-white text-6xl font-bold my-4 text-center">
+                <AnimatedNumber
+                  value={30}
+                  duration={2500}
+                  formatValue={formatValue}
+                />{" "}
+                +{" "}
+              </p>
+              <h6 className=" text-white text-center text-xl font-semibold">
+                COLLABORATION
+              </h6>
             </div>
             <div>
-              <p className=" text-white text-3xl font-bold my-4 text-center" ><AnimatedNumber
-              value={50}
-              duration={3500}
-              formatValue={formatValue}
-              /> + </p>
-              <h6 className=" text-white text-xl font-semibold">CLIENTS</h6>
+              <p className=" text-white text-6xl font-bold my-4 text-center">
+                <AnimatedNumber
+                  value={50}
+                  duration={3500}
+                  formatValue={formatValue}
+                />{" "}
+                +{" "}
+              </p>
+              <h6 className=" text-white  text-center text-xl font-semibold">
+                CLIENTS
+              </h6>
             </div>
             <div>
-              <p className=" text-white text-3xl font-bold my-4 text-center" >US $ <AnimatedNumber
-              value={100}
-              duration={4000}
-              formatValue={formatValue}
-              />  Bn </p>
-              <h6 className=" text-white text-xl font-semibold">INDUSTRY SIZE</h6>
+              <p className=" text-white text-6xl font-bold my-4 text-center">
+                US ${" "}
+                <AnimatedNumber
+                  value={100}
+                  duration={4000}
+                  formatValue={formatValue}
+                />{" "}
+                Bn{" "}
+              </p>
+              <h6 className=" text-white text-xl  text-center font-semibold">
+                INDUSTRY SIZE
+              </h6>
             </div>
-        </div>
-      </Container>
+          </div>
+        </Container>
+
+      </div>
+      </div>
     </Container>
   );
 };

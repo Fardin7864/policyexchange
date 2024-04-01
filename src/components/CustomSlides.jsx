@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,18 +12,36 @@ import { Navigation } from "swiper/modules";
 import HeroBanner from "./HeroBanner";
 import BrandMarquee from "./BrandMarquee";
 
+// const handleSlideClick = (e) => {
+//   e.preventDefault();
+// };
+
 const Carousel = () => {
+
+  // useEffect(() => {
+  //   const swiperContainer = document.querySelector(".mySwiper");
+  //   swiperContainer.addEventListener("click", handleSlideClick);
+
+  //   return () => {
+  //     swiperContainer.removeEventListener("click", handleSlideClick);
+  //   };
+  // }, []);
+
+  const handleSlideClick = (e) => {
+    e.preventDefault();
+    console.log('1')
+  };
+  
   return (
     <div>
       <Swiper 
         loop={true}
         modules={[Navigation]}
         spaceBetween={30}
-        slidesPerView="auto"
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        // slidesPerView="auto"
         className="mySwiper"
           >
-        <SwiperSlide>
+        <SwiperSlide >
           <div
             className="background-div bg-cover with-overlay "
             style={{
@@ -31,12 +49,13 @@ const Carousel = () => {
               width: "full",
               height: "650px",
             }}
+            onClick={handleSlideClick}
           >
             <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide >
         <div
             className="background-div bg-cover with-overlay bg-no-repeat"
             style={{
@@ -44,12 +63,13 @@ const Carousel = () => {
               width: "full",
               height: "650px",
             }}
+            onClick={handleSlideClick}
           >
             <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide >
         <div
             className="background-div bg-cover with-overlay"
             style={{
@@ -57,12 +77,13 @@ const Carousel = () => {
               width: "full",
               height: "650px",
             }}
+            onClick={handleSlideClick}
           >
             <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide >
         <div
             className="background-div bg-cover with-overlay"
             style={{
@@ -70,6 +91,7 @@ const Carousel = () => {
               width: "full",
               height: "650px",
             }}
+            onClick={handleSlideClick}
           >
             <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}

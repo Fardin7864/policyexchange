@@ -9,7 +9,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className=" background-img py-5">
+    <div className="py-5">
     <div
       className=" bg-[#00263a] pt-16 pb-24 px-20 max-w-[1440px] mx-auto rounded-3xl
         "

@@ -44,7 +44,7 @@ const TestimonialCarousel = () => {
           {/* sub banner / text doc */}
           <div className=" text-md font-medium text-gray-100 bg-[#a790d5] w-[80%] mx-auto py-10 px-14 flex flex-col gap-5 rounded-3xl relative -top-36">
             <p>
-            We have been in the market for quite some time now. For Lightcastle, it's essential to maintain our quality of work. We have a longstanding partnership with Policy Ex, and they provide us with all the guarantees we need
+            We have been in the market for quite some time now. For Lightcastle, it is essential to maintain our quality of work. We have a longstanding partnership with Policy Ex, and they provide us with all the guarantees we need
             </p>
             <div>
               <p>Light Castle</p>
@@ -61,7 +61,7 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover bg-no-repeat rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/publications/2.webp')",
+              backgroundImage: "url('/client/2.jpg')",
               width: "full",
               height: "600px",
             }}
@@ -93,7 +93,7 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/publications/3.webp')",
+              backgroundImage: "url('/client/3.jpg')",
               width: "full",
               height: "600px",
             }}
