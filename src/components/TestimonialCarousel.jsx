@@ -34,7 +34,7 @@ const TestimonialCarousel = () => {
           <div
             className="background-div bg-cover rounded-3xl w-[95%] mx-auto"
             style={{
-              backgroundImage: "url('/publications/1.webp')",
+              backgroundImage: "url('/client/client.jpg')",
               width: "full",
               height: "600px",
             }}
@@ -47,9 +47,8 @@ const TestimonialCarousel = () => {
             We have been in the market for quite some time now. For Lightcastle, it's essential to maintain our quality of work. We have a longstanding partnership with Policy Ex, and they provide us with all the guarantees we need
             </p>
             <div>
-              <p>Simon Booth</p>
-              <p>Head of Office Operations for EMEA</p>
-              <p>KKR, Customer at Hanover</p>
+              <p>Light Castle</p>
+              <p>Director, Finance, Strategy and Consulting Services</p>
             </div>
             <div>
               <button className=" hover:bg-gray-100 hover:text-gray-900 flex gap-3 items-center justify-center border-2 py-3 px-5 rounded-full">
