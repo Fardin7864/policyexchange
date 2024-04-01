@@ -2,6 +2,8 @@
 import { Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
+import { MdChevronRight } from "react-icons/md";
+
 import AnimatedNumber from "animated-number-react";
 import { useState } from "react";
 
@@ -63,8 +65,8 @@ const Services = () => {
       <img src="/star.png" className="w-[300px] h-[320px] absolute z-50 top-[1690px]" />
       <div>
         <Container className=" bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
-          <div className=" w-1/5 top-4">
-            <FaChevronRight className=" text-[#a790d5] text-[56rem] font-extrabold hidden md:block relative -left-[475px]"/>
+          <div className=" w-1/5 relative  -top-2">
+            <MdChevronRight className=" text-[#a790d5] text-[90rem] font-extrabold hidden md:block relative -left-[745px]"/>
           </div>
           <div className=" relative flex justify-between w-[4000px] px-8">
             <div>
