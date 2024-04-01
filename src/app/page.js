@@ -27,8 +27,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="max-w-[1440px] mx-auto">
         <Carousel />
+      <div className="max-w-[1440px] mx-auto">
         <Services />
         <Featured />
         <WhyUs />

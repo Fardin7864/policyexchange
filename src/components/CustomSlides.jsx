@@ -76,8 +76,10 @@ const Carousel = () => {
           </div>
         </SwiperSlide>
         {/* <SwiperNavButtons/> */}
+        <div className=" max-w-[1440px] mx-auto">
         <HeroBanner/>
         <BrandMarquee/>
+        </div>
       </Swiper>
     </div>
   );

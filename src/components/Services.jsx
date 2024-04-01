@@ -1,8 +1,14 @@
+"use client"
 import { Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
+import AnimatedNumber from "animated-number-react";
+import { useState } from "react";
+
 
 const Services = () => {
+  const value = 30;
+ const formatValue = (value) => value.toFixed(0);
   return (
     <Container className=" flex justify-center flex-col gap-12 p-5 md:p-0">
       <Typography className=" text-[#00263a] text-xl font-bold lg:w-[70%] mx-auto text-center mb-8 md:w-[90%] w-full ">
@@ -56,16 +62,33 @@ const Services = () => {
         </div>
       </Container>
       {/* Find banner */}
-      <Container className=" bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex items-center">
-        <FaChevronRight className=" text-[#a790d5] text-[56rem] font-extrabold relative -left-[470px]"/>
-        <div className=" ">
+      <Container className=" bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
+        <FaChevronRight className=" text-[#a790d5] text-[56rem] font-extrabold hidden md:block relative -left-[260px]"/>
+        <div className=" relative flex gap-16 lg:-left-36 w-full">
             <div>
-              <p className=" text-white text-3xl font-bold my-4 text-center" >30 + </p>
+              <p className=" text-white text-3xl font-bold my-4 text-center" >
+              <AnimatedNumber
+              value={30}
+              duration={2500}
+              formatValue={formatValue}
+              /> + </p>
               <h6 className=" text-white text-xl font-semibold">COLLABORATION</h6>
             </div>
             <div>
-              <p className=" text-white text-3xl font-bold my-4 text-center" >50 + </p>
+              <p className=" text-white text-3xl font-bold my-4 text-center" ><AnimatedNumber
+              value={50}
+              duration={3500}
+              formatValue={formatValue}
+              /> + </p>
               <h6 className=" text-white text-xl font-semibold">CLIENTS</h6>
+            </div>
+            <div>
+              <p className=" text-white text-3xl font-bold my-4 text-center" >US $ <AnimatedNumber
+              value={100}
+              duration={4000}
+              formatValue={formatValue}
+              />  Bn </p>
+              <h6 className=" text-white text-xl font-semibold">INDUSTRY SIZE</h6>
             </div>
         </div>
       </Container>
