@@ -70,7 +70,7 @@ const Services = () => {
           </div>
           <div className=" relative flex justify-between w-[4000px] px-8">
             <div>
-              <p className=" text-white text-6xl font-bold my-4 text-center">
+              <p className=" text-[#a790d5] text-6xl font-bold my-4 text-center">
                 <AnimatedNumber
                   value={30}
                   duration={2500}
@@ -83,7 +83,7 @@ const Services = () => {
               </h6>
             </div>
             <div>
-              <p className=" text-white text-6xl font-bold my-4 text-center">
+              <p className=" text-[#a790d5] text-6xl font-bold my-4 text-center">
                 <AnimatedNumber
                   value={50}
                   duration={3500}
@@ -96,7 +96,7 @@ const Services = () => {
               </h6>
             </div>
             <div>
-              <p className=" text-white text-6xl font-bold my-4 text-center">
+              <p className=" text-[#a790d5] text-6xl font-bold my-4 text-center">
                 US ${" "}
                 <AnimatedNumber
                   value={100}

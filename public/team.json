@@ -1,0 +1,191 @@
+{
+  "team_members": [
+      {
+          "id": 1,
+          "name": "Dr. M. Masrur Reaz",
+          "designation": "Chairman & CEO",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "masrur@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/masrurreaz",
+              "twitter": "https://twitter.com/masrurreaz"
+          },
+          "details": {
+              "bio": "Dr. M. Masrur Reaz is the Chairman & CEO of our organization, providing visionary leadership and strategic direction.",
+              "experience": "Dr. Reaz has extensive experience in policy research and development, with a focus on socioeconomic issues.",
+              "education": "Dr. Reaz holds a Ph.D. in Economics from a prestigious university.",
+              "interests": ["Policy Research", "Economic Development", "Socioeconomic Issues"]
+          }
+      },
+      {
+          "id": 2,
+          "name": "Hasnat Alam",
+          "designation": "Senior Manager & Economist",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "hasnat@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/hasnatalam",
+              "twitter": "https://twitter.com/hasnatalam"
+          },
+          "details": {
+              "bio": "Hasnat Alam serves as the Senior Manager & Economist at Policy Exchange Bangladesh, overseeing economic analysis and policy formulation.",
+              "experience": "Hasnat has a wealth of experience in economic research and analysis, contributing valuable insights to inform policy decisions.",
+              "education": "Hasnat holds a Master's degree in Economics from a renowned university.",
+              "interests": ["Economic Analysis", "Policy Formulation", "Socioeconomic Development"]
+          }
+      },
+      {
+          "id": 3,
+          "name": "Ziaur Rahman",
+          "designation": "Senior Policy Analyst & Project Coordinator",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "ziaur@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/ziaurrahman",
+              "twitter": "https://twitter.com/ziaurrahman"
+          },
+          "details": {
+              "bio": "Ziaur Rahman is the Senior Policy Analyst & Project Coordinator at Policy Exchange Bangladesh, leading research initiatives and project management.",
+              "experience": "Ziaur has a strong background in policy analysis and project coordination, with a focus on social and governance issues.",
+              "education": "Ziaur holds a Master's degree in Public Policy from a leading institution.",
+              "interests": ["Policy Analysis", "Project Management", "Governance Issues"]
+          }
+      },
+      {
+          "id": 4,
+          "name": "Naziba Nawrin",
+          "designation": "Research Associate",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "naziba@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/nazibanawrin",
+              "twitter": "https://twitter.com/nazibanawrin"
+          },
+          "details": {
+              "bio": "Naziba Nawrin is a Research Associate at Policy Exchange Bangladesh, conducting research on various policy issues.",
+              "experience": "Naziba has a background in social science research, with a focus on qualitative research methodologies.",
+              "education": "Naziba holds a Bachelor's degree in Sociology from a reputed university.",
+              "interests": ["Policy Research", "Qualitative Analysis", "Social Issues"]
+          }
+      },
+      {
+          "id": 5,
+          "name": "Rafid Tanmoy",
+          "designation": "Research Assistant",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "rafid@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/rafidtanmoy",
+              "twitter": "https://twitter.com/rafidtanmoy"
+          },
+          "details": {
+              "bio": "Rafid Tanmoy serves as a Research Assistant at Policy Exchange Bangladesh, providing support in data collection and analysis.",
+              "experience": "Rafid has a keen interest in policy research and data management, contributing to various research projects.",
+              "education": "Rafid is pursuing a Bachelor's degree in Economics.",
+              "interests": ["Data Analysis", "Policy Research", "Economic Development"]
+          }
+      },
+      {
+          "id": 6,
+          "name": "Lamia Shams",
+          "designation": "Associate Manager (Stakeholder Outreach)",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "lamia@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/lamiashams",
+              "twitter": "https://twitter.com/lamiashams"
+          },
+          "details": {
+              "bio": "Lamia Shams is the Associate Manager for Stakeholder Outreach at Policy Exchange Bangladesh, facilitating engagement with key stakeholders.",
+              "experience": "Lamia has experience in stakeholder management and communications, fostering relationships with diverse stakeholders.",
+              "education": "Lamia holds a Bachelor's degree in Communications from a reputable university.",
+              "interests": ["Stakeholder Engagement", "Communications", "Community Outreach"]
+          }
+      },
+      {
+          "id": 7,
+          "name": "Rahmina Tithi",
+          "designation": "Research Assistant",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "rahmina@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/rahminatithi",
+              "twitter": "https://twitter.com/rahminatithi"
+          },
+          "details": {
+              "bio": "Rahmina Tithi is a Research Assistant at Policy Exchange Bangladesh, assisting in research activities and data analysis.",
+              "experience": "Rahmina has a background in social science research, with a focus on quantitative analysis.",
+              "education": "Rahmina holds a Bachelor's degree in Economics from a reputed university.",
+              "interests": ["Quantitative Analysis", "Policy Research", "Social Issues"]
+          }
+      },
+      {
+          "id": 8,
+          "name": "Zahrah Rahman",
+          "designation": "Research Assistant",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "zahrah@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/zahrahrahman",
+              "twitter": "https://twitter.com/zahrahrahman"
+          },
+          "details": {
+              "bio": "Zahrah Rahman is a Research Assistant at Policy Exchange Bangladesh, contributing to research projects and data analysis.",
+              "experience": "Zahrah has a passion for policy research and data-driven insights, supporting various initiatives.",
+              "education": "Zahrah holds a Bachelor's degree in Political Science.",
+              "interests": ["Policy Research", "Data Analysis", "Political Science"]
+          }
+      },
+      {
+          "id": 9,
+          "name": "Rodoshee Tahsin",
+          "designation": "Research Analyst (Part-Time)",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "rodoshee@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/rodosheetahsin",
+              "twitter": "https://twitter.com/rodosheetahsin"
+          },
+          "details": {
+              "bio": "Rodoshee Tahsin serves as a part-time Research Analyst at Policy Exchange Bangladesh, contributing expertise in research and analysis.",
+              "experience": "Rodoshee has experience in market research and data analysis, supporting research initiatives.",
+              "education": "Rodoshee is currently pursuing a Bachelor's degree in Economics.",
+              "interests": ["Market Research", "Data Analysis", "Policy Analysis"]
+          }
+      },
+      {
+          "id": 10,
+          "name": "Pinaky Shankar (Rahul) Bhowmik",
+          "designation": "Business Analyst",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "pinaky@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/pinakybhowmik",
+              "twitter": "https://twitter.com/pinakybhowmik"
+          },
+          "details": {
+              "bio": "Pinaky Shankar Bhowmik, known as Rahul, is our Business Analyst at Policy Exchange, providing insights and analysis to support business decisions.",
+              "experience": "Rahul has experience in business analysis and strategy, with a focus on market research and competitive analysis.",
+              "education": "Rahul holds a Bachelor's degree in Business Administration.",
+              "interests": ["Business Analysis", "Market Research", "Strategy Development"]
+          }
+      },
+      {
+          "id": 11,
+          "name": "Ashraful Alam",
+          "designation": "Administrative Assistant",
+          "img": "https://i.ibb.co/jwxytZ7/836.jpg",
+          "email": "ashraful@example.com",
+          "social_links": {
+              "linkedin": "https://www.linkedin.com/in/ashrafulalam",
+              "twitter": "https://twitter.com/ashrafulalam"
+          },
+          "details": {
+              "bio": "Ashraful Alam serves as the Administrative Assistant at Policy Exchange, providing administrative support and assisting with office operations.",
+              "experience": "Ashraful has experience in office administration and management, ensuring smooth functioning of day-to-day activities.",
+              "education": "Ashraful holds a Bachelor's degree in Business Administration.",
+              "interests": ["Office Administration", "Operations Management", "Customer Service"]
+          }
+      }
+  ]
+}

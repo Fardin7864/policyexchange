@@ -1,5 +1,6 @@
 import React from "react";
 import HorizontalScrollCarousel from "./HorizontalCarousel";
+import TeamList from "./TeamList";
 
 const page = () => {
   return (
@@ -26,7 +27,7 @@ const page = () => {
 
       <HorizontalScrollCarousel/>
 
-
+        <TeamList/>
       </div>
 
     </div>

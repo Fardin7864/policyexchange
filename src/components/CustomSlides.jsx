@@ -40,7 +40,7 @@ const Carousel = () => {
             }}
             onClick={handleSlideClick}
           >
-            <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
+            {/* <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div> */}
             {/* content */}
           </div>
         </SwiperSlide>
