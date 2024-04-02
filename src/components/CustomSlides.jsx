@@ -12,20 +12,9 @@ import { Navigation } from "swiper/modules";
 import HeroBanner from "./HeroBanner";
 import BrandMarquee from "./BrandMarquee";
 
-// const handleSlideClick = (e) => {
-//   e.preventDefault();
-// };
-
+ 
 const Carousel = () => {
-
-  // useEffect(() => {
-  //   const swiperContainer = document.querySelector(".mySwiper");
-  //   swiperContainer.addEventListener("click", handleSlideClick);
-
-  //   return () => {
-  //     swiperContainer.removeEventListener("click", handleSlideClick);
-  //   };
-  // }, []);
+ 
 
   const handleSlideClick = (e) => {
     e.preventDefault();
@@ -45,7 +34,7 @@ const Carousel = () => {
           <div
             className="background-div bg-cover with-overlay "
             style={{
-              backgroundImage: "url('/carousel/Catalyzin growth.jpg')",
+              backgroundImage: "url('/carousel/first.png')",
               width: "full",
               height: "650px",
             }}
