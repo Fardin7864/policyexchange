@@ -1,13 +1,22 @@
 "use client";
 import { Container, Typography } from "@mui/material";
 import Image from "next/image";
-import { FaChevronRight } from "react-icons/fa";
+
 import { MdChevronRight } from "react-icons/md";
 
 import AnimatedNumber from "animated-number-react";
 import { useState } from "react";
+import VisibilitySensor from 'react-visibility-sensor';
 
 const Services = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleVisibilityChange = (isVisible) => {
+    if (isVisible) {
+      setIsVisible(true);
+    }
+  };
+
   const value = 30;
   const formatValue = (value) => value.toFixed(0);
   return (
@@ -64,53 +73,46 @@ const Services = () => {
       <div>
       <img src="/star.png" className="w-[300px] h-[320px] absolute z-50 top-[1690px]" />
       <div>
-        <Container className=" bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
-          <div className=" w-1/5 relative  -top-2">
-            <MdChevronRight className=" text-[#a790d5] text-[90rem] font-extrabold hidden md:block relative -left-[745px]"/>
+      <Container className=" bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
+        <div className=" w-1/5 relative -top-2">
+          <MdChevronRight className=" text-[#a790d5] text-[90rem] font-extrabold hidden md:block relative -left-[745px]" />
+        </div>
+        <div className=" relative flex justify-between w-[4000px] px-8">
+          <div>
+            <VisibilitySensor onChange={handleVisibilityChange}>
+              <p className=" text-[#a790d5] text-[90px] font-bold my-4 text-center leading-9">
+                {isVisible && (
+                  <AnimatedNumber value={30} duration={2500} formatValue={formatValue} />
+                )}
+                +
+              </p>
+            </VisibilitySensor>
+            <h6 className=" text-white text-center text-xl font-semibold pt-4">COLLABORATION</h6>
           </div>
-          <div className=" relative flex justify-between w-[4000px] px-8">
-            <div>
-              <p className=" text-[#a790d5] text-6xl font-bold my-4 text-center">
-                <AnimatedNumber
-                  value={30}
-                  duration={2500}
-                  formatValue={formatValue}
-                />{" "}
-                +{" "}
+          <div>
+            <VisibilitySensor onChange={handleVisibilityChange}>
+              <p className=" text-[#a790d5] text-[90px] font-bold my-4 leading-9">
+                {isVisible && (
+                  <AnimatedNumber value={50} duration={3500} formatValue={formatValue} />
+                )}
+                +
               </p>
-              <h6 className=" text-white text-center text-xl font-semibold">
-                COLLABORATION
-              </h6>
-            </div>
-            <div>
-              <p className=" text-[#a790d5] text-6xl font-bold my-4 text-center">
-                <AnimatedNumber
-                  value={50}
-                  duration={3500}
-                  formatValue={formatValue}
-                />{" "}
-                +{" "}
-              </p>
-              <h6 className=" text-white  text-center text-xl font-semibold">
-                CLIENTS
-              </h6>
-            </div>
-            <div>
-              <p className=" text-[#a790d5] text-6xl font-bold my-4 text-center">
-                US ${" "}
-                <AnimatedNumber
-                  value={100}
-                  duration={4000}
-                  formatValue={formatValue}
-                />{" "}
-                Bn{" "}
-              </p>
-              <h6 className=" text-white text-xl  text-center font-semibold">
-                INDUSTRY SIZE
-              </h6>
-            </div>
+            </VisibilitySensor>
+            <h6 className=" text-white text-2xl font-semibold pt-4 pl-5">CLIENTS</h6>
           </div>
-        </Container>
+          <div>
+            <VisibilitySensor onChange={handleVisibilityChange}>
+              <p className=" text-[#a790d5] text-[90px] font-bold my-4 text-center leading-9">
+                {isVisible && (
+                  <AnimatedNumber value={100} duration={4000} formatValue={formatValue} />
+                )}{' '}
+                B
+              </p>
+            </VisibilitySensor>
+            <h6 className=" text-white text-2xl text-center font-semibold pt-4">INDUSTRY SIZE</h6>
+          </div>
+        </div>
+      </Container>
 
       </div>
       </div>

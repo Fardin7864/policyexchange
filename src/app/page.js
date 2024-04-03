@@ -1,5 +1,6 @@
 // "use client";
 import Carousel from "@/components/CustomSlides";
+import Events from "@/components/Events";
 import Featured from "@/components/Featured";
 import MeetTeam from "@/components/MeetTeam";
 import Publications from "@/components/Publications";
@@ -25,6 +26,7 @@ export default function Home() {
         <WhyUs />
         <Publications />
         <TestimonialCarousel />
+        <Events/>
         <MeetTeam />
       </div>
     </main>
