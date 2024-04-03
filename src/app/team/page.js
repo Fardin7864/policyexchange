@@ -4,17 +4,17 @@ import TeamList from "./TeamList";
 
 const page = () => {
   return (
-    <div className="">
+    <div className="bg-custom">
 
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{
           backgroundImage: "url('/banners/about.webp')",
           width: "full",
-          height: "700px",
+          height: "400px",
         }}
       >
-        <div className="w-[100%] absolute h-[700px] bg-gray-500 opacity-30"></div>
+        <div className="w-[100%] absolute h-[400px] bg-gray-600 opacity-20"></div>
         <div className=" flex justify-center h-full">
           <h3 className=" text-white text-center text-5xl absolute font-bold pt-64 opacity-100 z-50">
             Meet Out Team

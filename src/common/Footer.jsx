@@ -54,7 +54,7 @@ const Footer = () => {
           <p className=" hover:text-[#a790d5]">#GreaterTogether</p>
           <p> </p>
           <Image
-            src={"/logo.png"}
+            src={"/logotrans.png"}
             width={250}
             height={0}
             alt="logo"

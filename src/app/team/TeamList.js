@@ -9,13 +9,17 @@ const TeamList = () => {
     const [team, setTeam] = useState();
 
     useState(() => { 
-        fetch("/team.json").then(res => res.json())
-        .then(data=> setTeam(data.team_members))
+        try {
+            fetch("/team.json").then(res => res.json())
+            .then(data=> setTeam(data?.team_members))
+        } catch (error) {
+            console.log(error)
+        }
      },[])
     //  console.log(team)
     return (
-        <div>
-            <h3 className=' text-center pt-16 text-4xl font-bold text-white'>Our Family Members</h3>
+        <div className='bg-custom rounded-lg px-5'>
+            <h3 className=' text-center pt-16 text-4xl font-bold text-black'>Our Family Members</h3>
             <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-16 gap-8'>
                 {
                     team?.map(member=> 

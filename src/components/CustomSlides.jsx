@@ -24,7 +24,7 @@ const Carousel = () => {
   return (
     <div>
       <Swiper 
-        loop={true}
+        // loop={true}
         modules={[Navigation]}
         spaceBetween={30}
         // slidesPerView="auto"
