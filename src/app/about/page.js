@@ -3,6 +3,7 @@ import { Container } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import WhatWedo from "./WhatWedo";
+import OurWorks from "./OurWorks";
 
 const about = () => {
   return (
@@ -125,6 +126,9 @@ const about = () => {
         </div>
         <WhatWedo />
       </Container>
+      <div>
+        <OurWorks/>
+      </div>
     </div>
   );
 };
