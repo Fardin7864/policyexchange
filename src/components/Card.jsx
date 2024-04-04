@@ -17,7 +17,7 @@ export default function ActionAreaCard({image, title, details,bottomBorder,class
           className={`md:h-80`}
         />
         <div className={`h-2 w-full`} style={{backgroundColor: `${bottomBorder}`}}></div>
-        <CardContent className=' my-5 bg-white'>
+        <CardContent className={` my-5 bg-white`}>
           <Typography gutterBottom variant="h5" component="div" className=' text-lg'>
             {title}
           </Typography>

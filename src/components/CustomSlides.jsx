@@ -14,6 +14,23 @@ import BrandMarquee from "./BrandMarquee";
 
  
 const Carousel = () => {
+
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    const swiper = swiperRef.current.swiper;
+    swiper.on('slideChange', () => {
+      // Determine the direction of the slide change
+      const previousIndex = swiper.previousIndex;
+      const currentIndex = swiper.realIndex;
+
+      if (previousIndex < currentIndex) {
+        console.log('Slide changed to the right');
+      } else if (previousIndex > currentIndex) {
+        console.log('Slide changed to the left');
+      }
+    });
+  }, []);
  
 
   const handleSlideClick = (e) => {
@@ -24,13 +41,16 @@ const Carousel = () => {
   return (
     <div>
       <Swiper 
-        // loop={true}
+        ref={swiperRef}
+        loop={true}
         modules={[Navigation]}
         spaceBetween={30}
         // slidesPerView="auto"
+        noSwiping={true}
+        
         className="mySwiper"
           >
-        <SwiperSlide >
+        <SwiperSlide  >
           <div
             className="background-div bg-cover with-overlay "
             style={{
@@ -38,9 +58,9 @@ const Carousel = () => {
               width: "full",
               height: "650px",
             }}
-            onClick={handleSlideClick}
+            // 
           >
-            {/* <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div> */}
+            <div  className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
           </div>
         </SwiperSlide>
@@ -52,7 +72,7 @@ const Carousel = () => {
               width: "full",
               height: "650px",
             }}
-            onClick={handleSlideClick}
+            
           >
             <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
@@ -66,7 +86,7 @@ const Carousel = () => {
               width: "full",
               height: "650px",
             }}
-            onClick={handleSlideClick}
+            
           >
             <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
@@ -80,7 +100,7 @@ const Carousel = () => {
               width: "full",
               height: "650px",
             }}
-            onClick={handleSlideClick}
+            
           >
             <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
             {/* content */}
