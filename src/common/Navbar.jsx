@@ -81,7 +81,7 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link  href={`/${page}`} textAlign="center">{page}</Link>
+                  <Link  href={`/${page.toLocaleLowerCase()}`} textAlign="center">{page}</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -100,7 +100,7 @@ function Navbar() {
             {pages.map((page) => (
               <Link
                 key={page}
-                href={`/${page}`}
+                href={`/${page.toLocaleLowerCase()}`}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
                 className=" h-full text-axi-400 text-lg hover:text-[#a790d5] hover:border-b-4 hover:border-b-[#a790d5] flex justify-center items-center px-2"
