@@ -5,7 +5,6 @@ import TeamList from "./TeamList";
 const page = () => {
   return (
     <div className="bg-custom">
-
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{
@@ -24,12 +23,10 @@ const page = () => {
       </div>
 
       <div className=" max-w-[1440px] mx-auto ">
+        <HorizontalScrollCarousel />
 
-      <HorizontalScrollCarousel/>
-
-        <TeamList/>
+        <TeamList />
       </div>
-
     </div>
   );
 };
