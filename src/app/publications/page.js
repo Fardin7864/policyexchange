@@ -38,12 +38,8 @@ const PublicationsPage = () => {
                 <div className="flex justify-between my-2">
                   <button className="flex gap-1 text-sm items-center font-semibold">
                     <MdOutlineRemoveRedEye className="text-[#956de6]" />
-                    View Details
+                    View
                   </button>
-                  {/* <button className="flex gap-1 text-sm items-center font-semibold">
-                    <IoDownloadOutline className="text-[#956de6]" />
-                    Download
-                  </button> */}
                 </div>
               </div>
             </div>

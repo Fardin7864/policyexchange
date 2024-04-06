@@ -128,16 +128,7 @@ const ContactPage = () => {
               </div>
 
               {/*  */}
-              <label for="enquiry" className="ml-2 font-light">
-                Enquiry type *
-              </label>
-              <br />
-              <input
-                type="text"
-                id="enquiry"
-                name="enquiry"
-                className="rounded-full border-2 border-gray-300 w-full mb-5 mt-2"
-              />
+
               <br />
 
               {/*  */}
