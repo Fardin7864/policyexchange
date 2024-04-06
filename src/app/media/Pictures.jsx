@@ -1,37 +1,39 @@
 "use client";
-
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Pictures = () => {
   const [pictures, setPictures] = useState();
-  const [currentImg, setCurrentImg] = useState("/publications/2.png")
+  const [currentImg, setCurrentImg] = useState("/publications/2.png");
 
   useEffect(() => {
     fetch("/pictures.json")
       .then((res) => res.json())
       .then((data) => setPictures(data));
   }, []);
-//   console.log(pictures)
-console.log(currentImg)
+  //   console.log(pictures)
+  console.log(currentImg);
   return (
-    <div className=" grid grid-cols-3 grid-rows-2">
-      <div className="  border-black row-span-1">
-        <img src={currentImg} alt=""/>
+    <PhotoProvider>
+      <div className=" grid grid-cols-9 gap-3 mx-auto border-2">
+        {pictures?.map((picture) => (
+          <PhotoView key={picture.id} src={picture.img}>
+            <div
+              onClick={() => setCurrentImg(picture.img)}
+              className="background-div bg-no-repeat bg-cover with-overlay"
+              style={{
+                backgroundImage: `url(${picture.img})`,
+                width: "150px",
+                height: "150px",
+              }}
+            ></div>
+            {/* <img src={picture.img} alt="" /> */}
+          </PhotoView>
+        ))}
       </div>
-      <div className=" col-span-2  border-black">
-        <div className=" grid grid-cols-6 gap-3">
-
-      {
-            pictures?.map((picture) => 
-            <img key={picture.id} onClick={() => setCurrentImg(picture.img)} src={picture.img} className=" w-40 h-40"/>)
-        }
-        </div>
-      </div>
-      {/* <div className=" col-span-3  border-black h-24">
-
-      </div> */}
-    </div>
+    </PhotoProvider>
   );
 };
 
