@@ -105,8 +105,7 @@ const Services = () => {
               <p className=" text-[#a790d5] text-[90px] font-bold my-4 text-center leading-9">
                 {isVisible && (
                   <AnimatedNumber value={100} duration={4000} formatValue={formatValue} />
-                )}{' '}
-                B
+                )}B
               </p>
             </VisibilitySensor>
             <h6 className=" text-white text-2xl text-center font-semibold pt-4">INDUSTRY SIZE</h6>
