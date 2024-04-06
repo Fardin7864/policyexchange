@@ -103,20 +103,19 @@ body {
   transition: 0.7s;
   overflow: hidden;
   border: 1px solid #d5c7fa;
+  border-bottom: none;
 }
 
 .publication:hover .publication-thumbnail {
   transform: scale(1.15);
   opacity: 1;
 }
-.publication:hover .publications-container {
-  background-color: #f3effd;
+.publication:hover {
   box-shadow: rgba(126, 126, 156, 0.25) 0px 50px 100px -20px,
-    rgba(107, 110, 110, 0.3) 0px 30px 60px -30px,
-    rgba(83, 86, 88, 0.35) 0px -2px 2px 0px inset;
+    rgba(107, 110, 110, 0.3) 0px 30px 60px -30px;
+  /* rgba(83, 86, 88, 0.35) 0px -2px 2px 0px inset; */
 }
 
 .transition-transform {
   transition: transform 0.3s ease;
 }
-
