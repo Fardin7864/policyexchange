@@ -126,7 +126,7 @@ const about = () => {
         </div>
         <WhatWedo />
       </Container>
-      <div>
+      <div className="  ">
         <OurWorks/>
       </div>
     </div>
