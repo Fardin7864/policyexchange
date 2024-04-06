@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from 'next/link';
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -62,6 +64,10 @@ const Publications = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+      <div className=" w-full flex justify-center items-center">
+      <Link href={"/publications"}><button className=' bg-[#a790d5] hover:bg-[#307fe2] active:opacity-60 py-3 px-5 rounded-full text-white font-bold'> Vew All Publications </button></Link>
+      </div>
+
     </>
   );
 };
