@@ -8,10 +8,22 @@ const ContactPage = () => {
   return (
     <div className="max-w-[1440px] mx-auto ">
       <div>
-        <div className="h-[400px] bg-blue-300">
-          <h2 className="pt-44 px-40 text-4xl font-bold">Contact us</h2>
+        <div
+          className="background-div bg-no-repeat bg-cover with-overlay"
+          style={{
+            backgroundImage: "url('/banners/about.webp')",
+            width: "full",
+            height: "400px",
+          }}
+        >
+          <div className="w-[100%] absolute h-[400px] bg-blue-800 opacity-20"></div>
+          <div className=" flex justify-center h-full">
+            <h3 className=" text-white  text-5xl absolute font-bold pt-64 opacity-100 z-50">
+              Contact us
+            </h3>
+          </div>
         </div>
-
+        {/* content */}
         <Container className="flex md:flex-row flex-col-reverse justify-between  gap-5 mt-20">
           <div className="w-full md:w-1/2">
             <div>
@@ -27,7 +39,7 @@ const ContactPage = () => {
                 <span className="font-semibold">+88-02-8881834</span>
               </h4>
             </div>
-            <div className="mt-10 rounded-full">
+            <div className="mt-10 rounded-2xl shadow-2xl w-full md:w-fit">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.732897647114!2d90.4161236!3d23.792524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c791057bb9a9%3A0xdba2ac182b0f77c7!2sPolicy%20Exchange%20of%20Bangladesh!5e0!3m2!1sen!2sbd!4v1712212254543!5m2!1sen!2sbd"
                 width="500"
@@ -45,7 +57,7 @@ const ContactPage = () => {
               component="h2"
               className="text-center font-bold"
             >
-              Submit an enquiry
+              Do you have any questions?
             </Typography>
 
             <h6 className="font-bold mt-4 text-[12px]">
@@ -58,11 +70,12 @@ const ContactPage = () => {
             <form>
               <div className="grid grid-cols-2 gap-3 mb-5 w-full">
                 <div>
-                  <label for="name" className="ml-2 font-light">
+                  <label htmlFor="name" className="ml-2 font-light">
                     Name *
                   </label>
                   <br />
                   <input
+                    required
                     type="text"
                     id="name"
                     name="name"
@@ -71,11 +84,12 @@ const ContactPage = () => {
                 </div>
                 {/*  */}
                 <div>
-                  <label for="surname" className="ml-2 font-light">
+                  <label htmlFor="surname" className="ml-2 font-light">
                     Surname *
                   </label>
                   <br />
                   <input
+                    required
                     type="text"
                     id="surname"
                     name="surname"
@@ -85,11 +99,12 @@ const ContactPage = () => {
               </div>
 
               {/*  */}
-              <label for="company" className="ml-2 font-light">
+              <label htmlFor="company" className="ml-2 font-light">
                 Company *
               </label>
               <br />
               <input
+                required
                 type="text"
                 id="company"
                 name="company"
@@ -101,11 +116,12 @@ const ContactPage = () => {
 
               <div className="grid grid-cols-2 gap-3 mb-5 w-full">
                 <div>
-                  <label for="email" className="ml-2 mb-3 font-light">
+                  <label htmlFor="email" className="ml-2 mb-3 font-light">
                     Email *
                   </label>
                   <br />
                   <input
+                    required
                     type="text"
                     id="email"
                     name="email"
@@ -114,11 +130,12 @@ const ContactPage = () => {
                 </div>
                 {/*  */}
                 <div>
-                  <label for="telephone" className="ml-2 mb-3 font-light">
+                  <label htmlFor="telephone" className="ml-2 mb-3 font-light">
                     Telephone *
                   </label>
                   <br />
                   <input
+                    required
                     type="text"
                     id="telephone"
                     name="telephone"
@@ -128,24 +145,12 @@ const ContactPage = () => {
               </div>
 
               {/*  */}
-              <label for="enquiry" className="ml-2 font-light">
-                Enquiry type *
-              </label>
-              <br />
-              <input
-                type="text"
-                id="enquiry"
-                name="enquiry"
-                className="rounded-full border-2 border-gray-300 w-full mb-5 mt-2"
-              />
-              <br />
-
-              {/*  */}
-              <label for="message" className="ml-2 mb-3 font-light">
+              <label htmlFor="message" className="ml-2 mb-3 font-light">
                 Message *
               </label>
               <br />
               <textarea
+                required
                 rows={4}
                 type="text"
                 id="message"
