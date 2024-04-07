@@ -9,20 +9,36 @@ import { useForm } from "@formspree/react";
 import Button from "@mui/material/Button";
 import { useEffect, useState } from "react";
 import { PiBookOpenText } from "react-icons/pi";
+import Pagination from "@mui/material/Pagination";
 
 const PublicationsPage = () => {
   const [open, setOpen] = useState(false);
-  const [publicationData, setPublicationData] = useState([]);
   const [selectedPublication, setSelectedPublication] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
   const [isHoveredId, setIsHoveredId] = useState(null);
 
   //
+  const [publicationData, setPublicationData] = useState([]);
+  const [page, setPage] = useState(1);
+  const publicationsPerPage = 8;
+
   useEffect(() => {
+    // Fetch all publications
     fetch("/publications.json")
       .then((res) => res.json())
       .then((data) => setPublicationData(data));
   }, []);
+
+  const indexOfLastPublication = page * publicationsPerPage;
+  const indexOfFirstPublication = indexOfLastPublication - publicationsPerPage;
+  const currentPublication = publicationData.slice(
+    indexOfFirstPublication,
+    indexOfLastPublication
+  );
+
+  const handlePageChange = (event, value) => {
+    setPage(value);
+  };
 
   //
   const handleClickOpen = (publication) => {
@@ -40,7 +56,7 @@ const PublicationsPage = () => {
     }
   };
 
-  const [state, handleSubmit, reset] = useForm("xjvlbeen");
+  const [state, handleSubmit, reset] = useForm("xvoewezp");
   if (state.succeeded) {
     reset();
     setOpen(false);
@@ -72,7 +88,7 @@ const PublicationsPage = () => {
         </div>
 
         <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-16">
-          {publicationData.map((publication, index) => (
+          {currentPublication.map((publication, index) => (
             <div
               key={index}
               className="shadow-2xl bg-white rounded-xl publication relative mb-5"
@@ -180,6 +196,15 @@ const PublicationsPage = () => {
           </DialogActions>
         </form>
       </Dialog>
+      <div className="flex justify-center">
+        <Pagination
+          count={Math.ceil(publicationData.length / publicationsPerPage)}
+          page={page}
+          // slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
+          color="primary"
+          onChange={handlePageChange}
+        />
+      </div>
     </div>
   );
 };

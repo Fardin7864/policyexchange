@@ -91,8 +91,8 @@ const Events = () => {
           <Pagination
             count={Math.ceil(events.length / eventsPerPage)}
             page={page}
-            variant="outlined"
-            color="secondary"
+            // slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
+            color="primary"
             onChange={handlePageChange}
           />
         </div>
