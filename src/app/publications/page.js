@@ -2,9 +2,6 @@
 
 /* eslint-disable @next/next/no-img-element */
 import { Container } from "@mui/material";
-import { MdOutlineRemoveRedEye } from "react-icons/md";
-import { IoDownloadOutline } from "react-icons/io5";
-import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
