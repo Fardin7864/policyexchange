@@ -109,7 +109,7 @@ const Carousel = () => {
         {/* <SwiperNavButtons/> */}
         <div className=" max-w-[1440px] mx-auto">
         <HeroBanner/>
-        <BrandMarquee/>
+        {/* <BrandMarquee/> */}
         </div>
       </Swiper>
     </div>

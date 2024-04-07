@@ -11,7 +11,7 @@ const BrandMarquee = () => {
       <Marquee autoFill="true">
         <img
           className=" mr-10"
-          style={{ height: "70px", borderRadius: '4px' }}
+          style={{ width: "150px", borderRadius: '4px' }}
           src="/logos/1.png"
           alt="image1"
         />
