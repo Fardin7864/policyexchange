@@ -23,7 +23,7 @@ export default function Home() {
       <div className="max-w-[1440px] mx-auto">
         <Services />
         <Featured />
-        <WhyUs />
+        {/* <WhyUs /> */}
         <Publications />
         <TestimonialCarousel />
         <Events/>
