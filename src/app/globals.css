@@ -119,3 +119,9 @@ body {
 .transition-transform {
   transition: transform 0.3s ease;
 }
+
+.transition-bg {
+  transition: bg 0.3s ease;
+}
+
+

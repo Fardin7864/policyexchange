@@ -43,13 +43,15 @@ function Navbar() {
     >
       <Container maxWidth="xl" className=" my-auto">
         <Toolbar disableGutters>
-          <Image
+          <Link href={"/"}><Image
             src={"/logotrans.png"}
             width={150}
             height={0}
             alt="logo"
             className=" hidden lg:block"
           />
+          </Link>
+          
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
