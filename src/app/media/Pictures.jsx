@@ -1,7 +1,6 @@
 "use client";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Pictures = () => {
@@ -14,7 +13,7 @@ const Pictures = () => {
       .then((data) => setPictures(data));
   }, []);
   //   console.log(pictures)
-  console.log(currentImg);
+  // console.log(currentImg);
   return (
     <PhotoProvider>
       <div className=" grid grid-cols-9 gap-3 mx-auto border-2">

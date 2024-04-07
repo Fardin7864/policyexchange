@@ -9,8 +9,8 @@ const about = () => {
   return (
     <div className=" max-w-[1440px] mx-auto">
       <h1 className=" text-center text-5xl font-bold mt-36">About Policy Exchange Bangladesh</h1>
-      <Container className=" pt-16">
-        <div className=" py-20">
+      <Container className="">
+        <div className=" py-10">
           {/* Our story */}
           <FadeFromSide direction="left" duration={1}>
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#F5CC00] gap-5 rounded-3xl shadow-2xl">
@@ -41,7 +41,7 @@ const about = () => {
 
           {/* Our Background */}
           <FadeFromSide direction="right" duration={1}>
-            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#307FE2] gap-5 rounded-3xl my-16 mt-40 shadow-2xl">
+            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#307FE2] gap-5 rounded-3xl mt-16 shadow-2xl">
               <div className="px-5 w-1/2">
                 <h2 className=" text-4xl font-bold">
                   Our Background and Team:
@@ -69,7 +69,7 @@ const about = () => {
 
           {/* Evaluation  */}
           <FadeFromSide direction="left" duration={1}>
-            <div className=" flex flex-col mt-40 lg:flex-row justify-between items-center bg-[#3DAB52] gap-5 rounded-3xl shadow-2xl">
+            <div className=" flex flex-col mt-16 lg:flex-row justify-between items-center bg-[#3DAB52] gap-5 rounded-3xl shadow-2xl">
               <Image
                 src={"/about/1.webp"}
                 width={600}
@@ -99,7 +99,7 @@ const about = () => {
 
           {/* Our Misson */}
           <FadeFromSide direction="right" duration={1}>
-            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#8D87F9] gap-5 rounded-3xl my-16 mt-40 shadow-2xl">
+            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#8D87F9] gap-5 rounded-3xl my-16 mt-16 shadow-2xl">
               <div className="px-5 w-1/2">
                 <h2 className=" text-4xl font-bold">Our Mission and Vision:</h2>
                 <p className=" font-medium py-7">

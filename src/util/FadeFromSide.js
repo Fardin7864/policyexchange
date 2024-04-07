@@ -14,7 +14,7 @@ const FadeFromSide = ({ children, direction = 'left', duration = 1 }) => {
     },
     hidden: {
       opacity: 0,
-      x: direction === 'left' ? '-100px' : '50px'
+      x: direction === 'left' ? '-190px' : '50px'
     }
   };
 

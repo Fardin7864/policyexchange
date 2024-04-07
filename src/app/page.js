@@ -1,12 +1,10 @@
 // "use client";
+import AchivmentBoard from "@/components/AchivmentBoard";
 import Carousel from "@/components/CustomSlides";
-import Events from "@/components/Events";
 import Featured from "@/components/Featured";
 import MeetTeam from "@/components/MeetTeam";
 import Publications from "@/components/Publications";
 import Services from "@/components/Services";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
-import WhyUs from "@/components/WhyUs";
 import Head from "next/head";
 
 
@@ -23,10 +21,8 @@ export default function Home() {
       <div className="max-w-[1440px] mx-auto">
         <Services />
         <Featured />
-        {/* <WhyUs /> */}
         <Publications />
-        <TestimonialCarousel />
-        <Events/>
+        <AchivmentBoard/>
         <MeetTeam />
       </div>
     </main>
