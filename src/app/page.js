@@ -2,6 +2,7 @@
 import AchivmentBoard from "@/components/AchivmentBoard";
 import Carousel from "@/components/CustomSlides";
 import Featured from "@/components/Featured";
+import HomeEvents from "@/components/HomeEvents";
 import MeetTeam from "@/components/MeetTeam";
 import Publications from "@/components/Publications";
 import Services from "@/components/Services";
@@ -22,6 +23,8 @@ export default function Home() {
         <Services />
         <Featured />
         <Publications />
+        {/* <HomeEvents/> */}
+        
         <AchivmentBoard/>
         <MeetTeam />
       </div>

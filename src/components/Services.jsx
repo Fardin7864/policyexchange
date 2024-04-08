@@ -6,7 +6,7 @@ import BrandMarquee from "./BrandMarquee";
 const Services = () => {
 
   return (
-    <Container className=" flex justify-center flex-col gap-12 p-5 md:p-0">
+    <div className=" flex justify-center flex-col gap-12 p-5 md:p-0">
       <Typography className=" text-[#00263a] text-xl font-bold lg:w-[70%] mx-auto text-center mb-8 md:w-[90%] w-full ">
         Welcome to Policy Exchange of Bangladesh, your trusted partner in
         private sector economics. As a private, independent advisory firm, we
@@ -126,7 +126,7 @@ const Services = () => {
           </div>
         </div>
       </Container>  
-    </Container>
+    </div>
   );
 };
 
