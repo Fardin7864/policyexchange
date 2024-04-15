@@ -195,13 +195,40 @@ body {
 
   transition: .7s;
 
-  transform: translateY(89px);
+  transform: translateY(-10px);
 
   margin-left: 8px;
 
 }
 
+.container .card .slide.slide3 {
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 1;
+
+  transition: .7s;
+
+  transform: translateY(89px);
+
+  margin-left: 15px;
+
+}
+
 .container .card:hover .slide.slide1{
+
+  transform: translateY(5px);
+
+  margin-left: 0;
+
+}
+.container .card:hover .slide.slide3{
 
   transform: translateY(5px);
 
@@ -225,6 +252,30 @@ body {
 
   transition: .8s;
 
+  transform: translateY(0px);
+
+  border: .5px solid black;
+
+  /* box-shadow: 10px 20px 40px rgba(0,0,0,0.4); */
+
+}
+
+.container .card .slide.slide4 {
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  /* padding: 10px 20px 10px; */
+
+  box-sizing: border-box;
+
+  transition: .8s;
+
   transform: translateY(-200px);
 
   border: .5px solid black;
@@ -234,6 +285,11 @@ body {
 }
 
 .container .card:hover .slide.slide2{
+
+  transform: translateY(0);
+
+}
+.container .card:hover .slide.slide4{
 
   transform: translateY(0);
 
@@ -288,6 +344,10 @@ body {
 
 } 
 
+/* .container .card .slide.slide.slide2 {
+  border: 2px solid red;
+} */
+
 .parallax {
   /* The image used */
   background-image: url("/client/client.jpg");
@@ -301,3 +361,4 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
