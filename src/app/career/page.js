@@ -148,7 +148,7 @@ const CareerPage = () => {
               <span className="text-[#6634c9]">Process</span>{" "}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 mb-16 gap-5">
-              <div className="bg-white p-5 rounded-xl shadow-2xl">
+              <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
                 <IoDocumentTextOutline className="text-5xl font-bold text-[#6634c9] mb-3" />
                 <h4 className="font-bold text-xl">CV Submission</h4>
                 <p className="text-gray-700 text-justify mt-2">
@@ -156,7 +156,7 @@ const CareerPage = () => {
                   your CV highlights your qualifications.
                 </p>
               </div>
-              <div className="bg-white p-5 rounded-xl shadow-2xl">
+              <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
                 <FiPhoneCall className="text-5xl font-bold text-[#6634c9] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Phone Screening</h4>
                 <p className="text-gray-700 text-justify mt-2">
@@ -164,7 +164,7 @@ const CareerPage = () => {
                   brief phone screening.
                 </p>
               </div>
-              <div className="bg-white p-5 rounded-xl shadow-2xl">
+              <div className="bg-white py-5 px-8 rounded-xl shadow-2xl">
                 <GrCloudComputer className="text-5xl font-bold text-[#6634c9] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Skill Assessment</h4>
                 <p className="text-gray-700 text-justify mt-2">
@@ -172,7 +172,7 @@ const CareerPage = () => {
                   tailored to the role.
                 </p>
               </div>
-              <div className="bg-white p-5 rounded-xl shadow-2xl">
+              <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
                 <RiTeamLine className="text-5xl font-bold text-[#6634c9] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Final Interview</h4>
                 <p className="text-gray-700 text-justify mt-2">
