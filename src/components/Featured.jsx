@@ -10,52 +10,55 @@ import '../styles/button.css'
 
 const NewsCard = ({ image, title, details, bottomBorder, classes }) => {
   return (
-    <Card
-      className={`shadow-2xl rounded-xl w-full z-10 ${classes}`}
+    <div
+      className={` rounded-none w-full z-10 bg-none ${classes}`}
     >
       <CardActionArea>
         <CardMedia
           component="img"
-          // height="40"
+          // height="60"
           image={image}
           alt="green iguana"
           className={``}
         />
-        <div
+        {/* <div
           className={`h-2 w-full`}
           style={{ backgroundColor: `${bottomBorder}` }}
-        ></div>
-        <Container className=" py-5">
-          <div className="border-l border-blue-500">
-          <h3 className=" p-6  h-full">
+        ></div> */}
+        <Container className=" py-5 bg-none">
+          <div className="border-l border-blue-500 pt-16 relative -top-14">
+          <h3 className=" p-6  h-full text-3xl">
             {title}
           </h3>
           <button className="text-blue-600 pl-6 font-semibold underline-from-left ">READ MORE</button>
           </div>
         </Container>
       </CardActionArea>
-    </Card>
+    </div>
   );
 };
 
 const Featured = () => {
   return (
-    <div className="  mt-16 rounded-3xl py-10 pb-10 ">
-      <Container className=" flex justify-between w-full">
-        <h2 className=" text-6xl font-titillium mb-3 text-gray-800 w-full">
+    <div className="  mt-16 rounded-3xl pt-10">
+      <Container className=" flex justify-between w-full items-start">
+        <h2 className=" text-6xl font-titillium mb-3 text-gray-800 w-full ">
           Let’s create a better web together
         </h2>
-        <p className=" text-2xl">
+        <p className=" text-2xl pt-3">
           We love to learn and share our best practices from over 10 years of
           developing and using WordPress.
         </p>
       </Container>
       <Container>
+      <Link  href={"/publications"}>
       <button class="relative overflow-hidden bg-transparent border border-blue-500 text-blue-500 hover:text-white hover:border-transparent hover:bg-blue-500 transition duration-200 ease-in-out button-blue p-3 px-5 text-xl ">
     All Articles
   </button>
+      </Link>
+
       </Container>
-      <div className="flex flex-col lg:flex-row justify-center gap-5 py-10 w-9/12 mx-auto ">
+      <div className="flex flex-col lg:flex-row justify-center py-10  gap-16 w-10/12 mx-auto px-8">
         <NewsCard
           image="/news/1.jpg"
           title="গ্যাসের অভাবে কতোটা সংকটে শিল্প ও অর্থনীতি? | অর্থনীতির সংলাপ | DBC NEWS"
@@ -66,13 +69,6 @@ const Featured = () => {
           title="“Insights On NPL Challenges And Government Initiatives: A Perspective From M. Masrur Reaz,..”"
           bottomBorder={"#F5CC00"}
         />
-      </div>
-      <div className=" w-full flex justify-center items-center">
-        <Link href={"/publications"}>
-          <button className=" bg-[#a790d5] hover:bg-[#307fe2] active:opacity-60 py-3 px-5 rounded-full text-white font-bold">
-            Vew All News{" "}
-          </button>
-        </Link>
       </div>
     </div>
   );
