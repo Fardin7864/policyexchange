@@ -1,29 +1,27 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
-
 import { Container } from "@mui/material";
 import { useEffect, useState } from "react";
-import { FaRegCalendarAlt } from "react-icons/fa";
 import Pagination from "@mui/material/Pagination";
 
-const Events = () => {
-  const [events, setEvents] = useState([]);
+const News = () => {
+  const [news, setNews] = useState([]);
   const [page, setPage] = useState(1);
-  const eventsPerPage = 12;
+  const newsPerPage = 12;
 
   useEffect(() => {
-    // Fetch all events
-    fetch("/events.json")
+    // Fetch all news
+    fetch("/news.json")
       .then((res) => res.json())
-      .then((data) => setEvents(data));
+      .then((data) => setNews(data));
   }, []);
 
-  const indexOfLastEvent = page * eventsPerPage;
-  const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
-  const currentEvents = events.slice(indexOfFirstEvent, indexOfLastEvent);
+  const indexOfLastNews = page * newsPerPage;
+  const indexOfFirstNews = indexOfLastNews - newsPerPage;
+  const currentNews = news.slice(indexOfFirstNews, indexOfLastNews);
 
-  const handlePageChange = (event, value) => {
+  const handlePageChange = (news, value) => {
     setPage(value);
   };
   return (
@@ -42,46 +40,42 @@ const Events = () => {
         >
           <div className="w-[100%] absolute h-[400px] bg-black opacity-50"></div>
           <div className=" flex justify-center h-full">
-            <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
-              Events
+            <h3 className=" text-white  text-5xl absolute font-bold pt-48 opacity-100 z-50">
+              News
             </h3>
             <p className=" text-white text-lg absolute font-semibold pt-64 opacity-100 z-50">
-              All events organized and participated by Policy Exchange of
+              All news organized and participated by Policy Exchange of
               Bangladesh are listed here, starting with <br />{" "}
               <span className="ml-40">
-                the upcoming events, followed by our previous event history.
+                the upcoming news, followed by our previous news history.
               </span>
             </p>
           </div>
         </div>
 
-        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-16">
-          {currentEvents.map((event, index) => (
+        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16">
+          {currentNews.map((news, index) => (
             <div
               key={index}
               className="shadow-2xl bg-white rounded-xl publication relative mb-5"
             >
               <div className="overflow-hidden bg-black">
                 <img
-                  src={event.image}
+                  src={news.image}
                   alt=""
-                  className="rounded-t-xl h-64 w-full publication-thumbnail"
+                  className="rounded-t-xl h-52 w-full publication-thumbnail"
                 />
               </div>
               <div className="publications-container">
                 <div className="py-3 px-5">
-                  <p className="mt-2 mb-10 text-sm flex flex-col gap-2 ">
-                    <span className="font-bold text-[#956de6]">
-                      {event.title}
+                  <p className="mt-2 mb-10 flex flex-col gap-4">
+                    <span className="font-bold text-[#956de6] text-lg">
+                      {news.title}
                     </span>
-                    <span className="">{event.subtitle}</span>
+                    <span className="text-sm text-justify">
+                      {news.subTitle}
+                    </span>
                   </p>
-
-                  <div className=" my-2 border-t pt-2 absolute pb-1 bottom-1 w-full">
-                    <p className="flex gap-1 items-center justify-start font-light text-xs text-gray-700 ">
-                      <FaRegCalendarAlt /> {event.date}
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -89,7 +83,7 @@ const Events = () => {
         </Container>
         <div className="flex justify-center">
           <Pagination
-            count={Math.ceil(events.length / eventsPerPage)}
+            count={Math.ceil(news.length / newsPerPage)}
             page={page}
             // slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
             color="primary"
@@ -101,4 +95,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default News;
