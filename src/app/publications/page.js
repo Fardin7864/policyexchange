@@ -111,14 +111,17 @@ const PublicationsPage = () => {
 
                   <div
                     className="flex justify-center my-2 border-t -ml-5 pt-2 absolute bottom-0 w-full duration-300"
-                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseEnter={() => {
+                      setIsHovered(true);
+                      setIsHoveredId(index);
+                    }}
                     onMouseLeave={() => setIsHovered(false)}
                   >
                     <button
                       onClick={() => handleClickOpen(publication)}
                       className="flex gap-1 text-sm items-center justify-center font-semibold text-black hover:text-[#7d4bdf] w-36 duration-300"
                     >
-                      {isHovered ? (
+                      {isHovered && isHoveredId === index ? (
                         <img
                           src="/images/Read.gif"
                           className="h-4 w-4"
@@ -136,7 +139,7 @@ const PublicationsPage = () => {
           ))}
         </Container>
       </div>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose} className="z-0">
         <form onSubmit={handleSubmit}>
           <DialogContent className="flex flex-col items-center p-10 bg-[#00263a]">
             <div className="mb-4">

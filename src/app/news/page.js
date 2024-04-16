@@ -4,6 +4,8 @@
 import { Container } from "@mui/material";
 import { useEffect, useState } from "react";
 import Pagination from "@mui/material/Pagination";
+import Link from "next/link";
+import "./news.css";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -53,31 +55,36 @@ const News = () => {
           </div>
         </div>
 
-        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16">
+        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16 ">
           {currentNews.map((news, index) => (
             <div
               key={index}
-              className="shadow-2xl bg-white rounded-xl publication relative mb-5"
+              className=" bg-inherit rounded-xl publication news relative mb-5 flex"
             >
-              <div className="overflow-hidden bg-black">
-                <img
-                  src={news.image}
-                  alt=""
-                  className="rounded-t-xl h-52 w-full publication-thumbnail"
-                />
-              </div>
-              <div className="publications-container">
-                <div className="py-3 px-5">
-                  <p className="mt-2 mb-10 flex flex-col gap-4">
-                    <span className="font-bold text-[#956de6] text-lg">
-                      {news.title}
-                    </span>
-                    <span className="text-sm text-justify">
-                      {news.subTitle}
-                    </span>
-                  </p>
+              <Link href={`/news/${news.id}`}>
+                <div className="overflow-hidden bg-white">
+                  <img
+                    src={news.image}
+                    alt=""
+                    className="rounded-t-xl h-52 w-full news-thumbnail"
+                  />
                 </div>
-              </div>
+                <div className="border-r-2 border-gray-400">
+                  <div className="py-3 px-5">
+                    <p className="mt-2 mb-10 flex flex-col gap-4">
+                      <span className="font-bold text-[#956de6] text-lg">
+                        {news.title}
+                      </span>
+                      <span className="text-sm text-justify">
+                        {news.subTitle}
+                      </span>
+                    </p>
+                    <button className="text-[#956de6] font-bold">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </Link>
             </div>
           ))}
         </Container>
