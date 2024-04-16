@@ -11,6 +11,11 @@ import { RiTeamLine } from "react-icons/ri";
 
 const CareerPage = () => {
   const [jobs, setJobs] = useState([]);
+  const [showAllJobs, setShowAllJobs] = useState(false);
+
+  const toggleShowAllJobs = () => {
+    setShowAllJobs(!showAllJobs);
+  };
 
   useEffect(() => {
     // Fetch all jobs
@@ -120,7 +125,7 @@ const CareerPage = () => {
 
           <div className="my-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
-              {jobs.map((job) => (
+              {jobs.slice(0, 3).map((job) => (
                 <div
                   key={job.id}
                   className="bg-white py-5 px-10 rounded-xl  jobs-container"
@@ -134,9 +139,28 @@ const CareerPage = () => {
                   </button>
                 </div>
               ))}
+
+              {showAllJobs &&
+                jobs.slice(3).map((job) => (
+                  <div
+                    key={job.id}
+                    className="bg-white py-5 px-10 rounded-xl  jobs-container"
+                  >
+                    <h2 className="font-bold text-xl">{job.title}</h2>
+                    <h3 className="text-[#5620c2] font-semibold mt-1">
+                      {job.subTitle}
+                    </h3>
+                    <button className="rounded-full border px-4 py-2 border-[#a790d5] bg-[#efeaf8] text-[#6634c9] hover:bg-[#6634c9] hover:text-white duration-300 mt-3">
+                      Apply Now
+                    </button>
+                  </div>
+                ))}
             </div>
-            <button className="rounded-full border px-5 py-3 border-[#a790d5] bg-[#6634c9] text-white duration-300  block mx-auto mt-5">
-              View all openings
+            <button
+              className="rounded-full border px-5 py-3 border-[#a790d5] bg-[#6634c9] text-white duration-300  block mx-auto mt-10"
+              onClick={toggleShowAllJobs}
+            >
+              {showAllJobs ? "Close" : "View all openings"}
             </button>
           </div>
 
