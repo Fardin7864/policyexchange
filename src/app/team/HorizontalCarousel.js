@@ -38,8 +38,8 @@ const Card = ({ card }) => {
         }}
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+      <div className="absolute inset-0 z-10 grid place-content-end">
+        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-xl font-black uppercase text-white backdrop-blur-lg">
           {card.title}
         </p>
       </div>
@@ -51,38 +51,38 @@ export default HorizontalScrollCarousel;
 
 const cards = [
   {
-    url: "/hero/card1.webp",
-    title: "Name will",
+    url: "/Team/ceo.jpg",
+    title: "CEO",
     id: 1,
   },
   {
-    url: "/hero/card2.webp",
-    title: "Title 2",
+    url: "/Team/hassib.jpg",
+    title: "Analyst & Programme Coordinator",
     id: 2,
   },
   {
-    url: "/hero/card3.webp",
-    title: "Title 3",
+    url: "/Team/Pinaky.JPG",
+    title: "Senior Analyst",
     id: 3,
   },
   {
-    url: "/hero/card4.webp",
-    title: "Title 4",
+    url: "/Team/Rahmina.jpeg",
+    title: "Programme Analyst",
     id: 4,
   },
   {
-    url: "/hero/card6.webp",
-    title: "Title 5",
+    url: "/Team/Rodoshee.jpeg",
+    title: "Senior Associate and Project Coordinator",
     id: 5,
   },
   {
-    url: "/hero/card7.webp",
-    title: "Title 6",
+    url: "/Team/Sadia.jpeg",
+    title: "Analyst & Programme Coordinator",
     id: 6,
   },
   {
-    url: "/hero/card1.webp",
-    title: "Title 7",
+    url: "/Team/Ziaur.jpg",
+    title: "Senior Policy Analyst",
     id: 7,
   },
 ];

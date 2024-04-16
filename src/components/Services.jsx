@@ -16,6 +16,7 @@ const Services = () => {
         broader development narrative of our nation.
       </Typography>
       <BrandMarquee />
+      <h1 className=" text-center text-5xl font-bold">Our Services</h1>
       <Container className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* card 1 */}
         <div className="">

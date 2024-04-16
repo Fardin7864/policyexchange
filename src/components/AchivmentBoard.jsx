@@ -21,7 +21,7 @@ const AchivmentBoard = () => {
     <Container className=" mb-28">
       <img
         src="/star.png"
-        className="w-[300px] h-[320px] absolute z-50 top-[4730px]"
+        className="w-[300px] h-[320px] absolute z-50 top-[4665px]"
       />
       <div>
         <Container className=" bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
