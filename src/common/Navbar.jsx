@@ -35,7 +35,7 @@ function Navbar() {
   };
 
   return (
-    <div className=" h-[80px] lg:absolute lg:left-[10%] lg:right-[10%] lg:top-4 z-50  max-w-[1440px] lg:w-[1280px] rounded-md mx-auto ">
+    <div className=" h-[80px] z-[100] lg:absolute lg:left-[10%] lg:right-[10%] lg:top-4 max-w-[1440px] lg:w-[1280px] rounded-md mx-auto ">
     <AppBar
       position="static"
       sx={{ backgroundColor: "#00263a" }}
