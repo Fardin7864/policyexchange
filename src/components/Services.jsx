@@ -63,33 +63,37 @@ const Services = () => {
 
         <div className="container">
           <div className="card ">
-            <div
-              className="slide slide1 bg-white hover:text-[#a790d5]"
-              style={{ backgroundColor: "white" }}
-            >
-              <div className="content">
-                <div className="icon flex flex-col gap-14 justify-center items-center">
-                  <Image
-                    src={"/gif/advo.gif"}
-                    width={150}
-                    height={0}
-                    alt="search"
-                    className=" mr-5"
-                  />
-                  <h4 className=" text-xl font-bold text-center mr-6">
-                    Advocacy & Dialogue
-                  </h4>
+            <div className="slide slide3 border-2 border-black bg-white ">
+              <div
+                className="slide slide1 bg-white hover:text-[#a790d5]"
+                style={{ backgroundColor: "white" }}
+              >
+                <div className="content">
+                  <div className="icon flex flex-col gap-14 justify-center items-center">
+                    <Image
+                      src={"/gif/advo.gif"}
+                      width={150}
+                      height={0}
+                      alt="search"
+                      className=" mr-5"
+                    />
+                    <h4 className=" text-xl font-bold text-center mr-6">
+                      Advocacy & Dialogue
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="slide slide2 bg-[#307fe2] shadow-lg">
-              <div className="content ">
-                <p className="text-white">
-                  We execute systematic and targeted efforts, focusing on
-                  theme-specific agendas and ensuring regular engagement with
-                  policy-makers. Additionally, we strategically engage through
-                  media channels for effective evidence dissemination.
-                </p>
+            <div className="slide slide4 bg-[#307fe2] shadow-lg">
+              <div className="slide slide2 bg-[#307fe2] shadow-lg">
+                <div className="content ">
+                  <p className="text-white">
+                    We execute systematic and targeted efforts, focusing on
+                    theme-specific agendas and ensuring regular engagement with
+                    policy-makers. Additionally, we strategically engage through
+                    media channels for effective evidence dissemination.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -99,33 +103,37 @@ const Services = () => {
 
         <div className="container">
           <div className="card ">
-            <div
-              className="slide slide1 bg-white hover:text-[#a790d5]"
-              style={{ backgroundColor: "white" }}
-            >
-              <div className="content">
-                <div className="icon flex flex-col gap-14 justify-center items-center">
-                  <Image
-                    src={"/gif/invest.gif"}
-                    width={100}
-                    height={0}
-                    alt="search"
-                    className=" mr-5"
-                  />
-                  <h4 className=" text-xl font-bold text-center mr-6">
-                    Investment & Market Advisory
-                  </h4>
+            <div className="slide slide3 border-2 border-black bg-white ">
+              <div
+                className="slide slide1 bg-white hover:text-[#a790d5]"
+                style={{ backgroundColor: "white" }}
+              >
+                <div className="content">
+                  <div className="icon flex flex-col gap-14 justify-center items-center">
+                    <Image
+                      src={"/gif/invest.gif"}
+                      width={100}
+                      height={0}
+                      alt="search"
+                      className=" mr-5"
+                    />
+                    <h4 className=" text-xl font-bold text-center mr-6">
+                      Investment & Market Advisory
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="slide slide2 bg-[#307fe2] shadow-lg">
-              <div className="content ">
-                <p className="text-white">
-                  We provide expert advice on policy, regulation, and
-                  institutions, along with insights into economic trends. We
-                  facilitate industry connections, resolve regulatory disputes,
-                  and provide due diligence supervision.
-                </p>
+            <div className="slide slide4 bg-[#307fe2] shadow-lg">
+              <div className="slide slide2 bg-[#307fe2] shadow-lg">
+                <div className="content ">
+                  <p className="text-white">
+                    We provide expert advice on policy, regulation, and
+                    institutions, along with insights into economic trends. We
+                    facilitate industry connections, resolve regulatory
+                    disputes, and provide due diligence supervision.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

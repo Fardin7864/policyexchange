@@ -183,7 +183,7 @@ body {
 
 .container .card .slide.slide1 {
 
-  position: relative;
+  position: absolute;
 
   display: flex;
 
@@ -197,7 +197,7 @@ body {
 
   transform: translateY(-10px);
 
-  margin-left: 8px;
+  margin-left: 15px;
 
 }
 
@@ -215,7 +215,7 @@ body {
 
   transition: .7s;
 
-  transform: translateY(89px);
+  transform: translateY(79px);
 
   margin-left: 15px;
 
@@ -223,9 +223,11 @@ body {
 
 .container .card:hover .slide.slide1{
 
-  transform: translateY(5px);
+  transform: translateY(0px);
 
   margin-left: 0;
+  
+  border: none;
 
 }
 .container .card:hover .slide.slide3{
@@ -233,12 +235,14 @@ body {
   transform: translateY(5px);
 
   margin-left: 0;
+  
+  border: none;
 
 }
 
 .container .card .slide.slide2 {
 
-  position: relative;
+  position: absolute;
 
   display: flex;
 
@@ -252,9 +256,10 @@ body {
 
   transition: .8s;
 
-  transform: translateY(0px);
+  transform: translateY(-10px);
 
-  border: .5px solid black;
+  border: 2px solid black;
+  margin-left: 15px;
 
   /* box-shadow: 10px 20px 40px rgba(0,0,0,0.4); */
 
@@ -278,7 +283,8 @@ body {
 
   transform: translateY(-200px);
 
-  border: .5px solid black;
+  border: 2px solid black;
+
 
   /* box-shadow: 10px 20px 40px rgba(0,0,0,0.4); */
 
@@ -288,10 +294,14 @@ body {
 
   transform: translateY(0);
 
+  border: none;
+
 }
 .container .card:hover .slide.slide4{
 
   transform: translateY(0);
+  
+  border: none;
 
 }
 
@@ -360,5 +370,18 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  /* Add a dark overlay */
+  position: relative;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
 }
 
