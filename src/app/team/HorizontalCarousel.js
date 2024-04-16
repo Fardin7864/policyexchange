@@ -28,7 +28,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200 rounded-md"
     >
       <div
         style={{
@@ -36,10 +36,10 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110 rounded-md hover:rounded-md"
       ></div>
-      <div className="absolute inset-0 z-10 grid place-content-end">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-xl font-black uppercase text-white backdrop-blur-lg">
+      <div className="absolute inset-0 z-10 grid place-items-end w-full">
+        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-xl font-black text-white backdrop-blur-lg  w-full text-center">
           {card.title}
         </p>
       </div>
