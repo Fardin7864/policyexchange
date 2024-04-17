@@ -27,34 +27,31 @@ const Events = () => {
     setPage(value);
   };
   return (
-    <div className="max-w-[1440px] mx-auto ">
-      <div className="">
-        <div
-          className="background-div bg-no-repeat bg-cover with-overlay"
-          style={{
-            backgroundImage: "url('/images/Cover.jpg')",
-            // backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            width: "100%",
-            height: "400px",
-          }}
-        >
-          <div className="w-[100%] absolute h-[400px] bg-black opacity-50"></div>
-          <div className=" flex justify-center h-full">
-            <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
-              Events
-            </h3>
-            <p className=" text-white text-lg absolute font-semibold pt-64 opacity-100 z-50">
-              All events organized and participated by Policy Exchange of
-              Bangladesh are listed here, starting with <br />{" "}
-              <span className="ml-40">
-                the upcoming events, followed by our previous event history.
-              </span>
-            </p>
-          </div>
-        </div>
+    <div className="bg-custom">
+      <div
+        className="background-div bg-no-repeat bg-cover with-overlay"
+        style={{
+          backgroundImage: "url('/event/cover.jpeg')",
 
+          width: "full",
+          height: "400px",
+        }}
+      >
+        <div className="w-[100%] absolute h-[400px] bg-black opacity-60"></div>
+        <div className=" flex justify-center h-full">
+          <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
+            Events
+          </h3>
+          <p className=" text-white text-lg absolute font-semibold pt-64 opacity-100 z-50">
+            All events organized and participated by Policy Exchange of
+            Bangladesh are listed here, starting with <br />{" "}
+            <span className="ml-40">
+              the upcoming events, followed by our previous event history.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div className=" max-w-[1440px] mx-auto ">
         <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-16">
           {currentEvents.map((event, index) => (
             <div
@@ -65,7 +62,7 @@ const Events = () => {
                 <img
                   src={event.image}
                   alt=""
-                  className="rounded-t-xl h-64 w-full publication-thumbnail"
+                  className="rounded-t-xl h-48 w-full publication-thumbnail"
                 />
               </div>
               <div className="publications-container">
