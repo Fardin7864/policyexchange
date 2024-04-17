@@ -223,11 +223,10 @@ body {
 
 .container .card:hover .slide.slide1{
 
-  transform: translateY(0px);
+  transform: translateY(15px);
 
-  margin-left: 0;
+  margin-left: 20px;
   
-  border: none;
 
 }
 .container .card:hover .slide.slide3{
@@ -236,7 +235,6 @@ body {
 
   margin-left: 0;
   
-  border: none;
 
 }
 
@@ -292,16 +290,14 @@ body {
 
 .container .card:hover .slide.slide2{
 
-  transform: translateY(0);
-
-  border: none;
+  transform: translateY(15px);
+  margin-left: 20px;
 
 }
 .container .card:hover .slide.slide4{
 
   transform: translateY(0);
   
-  border: none;
 
 }
 
@@ -330,7 +326,7 @@ body {
 
 .container .card .slide.slide2 .content p {
 
-  margin: 0 38px 0 0;
+  /* margin: 0 38px 0 0; */
 
   padding: 0;
 
@@ -360,7 +356,7 @@ body {
 
 .parallax {
   /* The image used */
-  background-image: url("/client/client.jpg");
+  background-image: url("/events/event.jpeg");
 
   /* Set a specific height */
   min-height: 500px;

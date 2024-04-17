@@ -24,9 +24,11 @@ const TeamList = () => {
                 {
                     team?.map(member=> 
                         <div key={member.id} className=' flex flex-col  items-center py-5'>
-                            <img src={"/person.png"} className=' rounded-full bg-white w-40'/>
+                            {/* <img src={member.img} className=' rounded-full bg-white w-40 h-40'/> */}
+                            <div className='rounded-full bg-white w-40 h-40' style={{ backgroundImage: `url(${member.img})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+
                             <h6 className=' font-oswald text-2xl font-bold py-3 font'>{member.name}</h6>
-                            <p className=' font-semibold'>{member.designation}</p>
+                            <p className=' font-semibold text-center'>{member.designation}</p>
                             <div className=' flex gap-2 py-1 pt-2 text-xl'>
                             <FaLinkedin />
                             <FaInstagram />
