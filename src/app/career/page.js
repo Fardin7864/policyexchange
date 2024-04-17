@@ -25,31 +25,29 @@ const CareerPage = () => {
   }, []);
 
   return (
-    <div className="max-w-[1440px] mx-auto ">
-      <div>
-        <div
-          className="background-div bg-no-repeat bg-cover with-overlay"
-          style={{
-            backgroundImage: "url('/images/Cover.jpg')",
-            // backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            width: "100%",
-            height: "400px",
-          }}
-        >
-          <div className="w-[100%] absolute h-[400px] bg-black opacity-50"></div>
-          <div className=" flex justify-center h-full">
-            <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
-              Join us. You won&apos;t regret it.
-            </h3>
-            <p className=" text-white  text-xl absolute font-semibold pt-64 opacity-100 z-50">
-              Career page by Policy Exchange of Bangladesh
-            </p>
-          </div>
-        </div>
+    <div className="bg-custom">
+      <div
+        className="background-div bg-no-repeat bg-cover with-overlay"
+        style={{
+          backgroundImage: "url('/images/career.jpg')",
 
-        {/*  */}
+          width: "100%",
+          height: "400px",
+        }}
+      >
+        <div className="w-[100%] absolute h-[400px] bg-black opacity-50"></div>
+        <div className=" flex justify-center h-full">
+          <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
+            Join us. You won&apos;t regret it.
+          </h3>
+          <p className=" text-white  text-xl absolute font-semibold pt-64 opacity-100 z-50">
+            Career page by Policy Exchange of Bangladesh
+          </p>
+        </div>
+      </div>
+
+      {/*  */}
+      <div className="max-w-[1440px] mx-auto ">
         <Container className=" pt-16">
           <h2 className="text-center text-lg font-semibold">
             Welcome to the Career Opportunities page at Policy Exchange
@@ -65,13 +63,13 @@ const CareerPage = () => {
             <FadeFromSide direction="left" duration={1}>
               <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#7b5db8] gap-5 rounded-3xl shadow-2xl">
                 <Image
-                  src={"/about/1.webp"}
+                  src={"/images/career2.jpg"}
                   width={600}
                   height={0}
                   alt="career image"
                   className=" rounded-l-3xl w-1/2"
                 />
-                <div className="px-5 w-1/2">
+                <div className="p-5 w-1/2">
                   <h2 className=" text-4xl font-bold text-white">
                     Become a part of our Team
                   </h2>
@@ -89,34 +87,6 @@ const CareerPage = () => {
                     formulation of policies and market solutions.
                   </p>
                 </div>
-              </div>
-            </FadeFromSide>
-
-            {/* Our Background */}
-            <FadeFromSide direction="right" duration={1}>
-              <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#00263a] gap-5 rounded-3xl mt-16 mb-10  shadow-2xl">
-                <div className="px-5 w-1/2">
-                  <h2 className=" text-4xl font-bold text-white">
-                    We learn and grow from each other
-                  </h2>
-                  <p className=" font-medium pt-7 text-white">
-                    At Policy Exchange Bangladesh, we are a team of seasoned
-                    professionals driven by a shared commitment to catalyze
-                    positive change in Bangladesh&apos;s economic landscape. Our
-                    founding team brings together expertise from diverse
-                    backgrounds, including academia, public sector, industry,
-                    and various countries. This diversity enriches our
-                    perspectives and insights, ensuring that our solutions are
-                    not only theoretically sound but also practically viable.
-                  </p>
-                </div>
-                <Image
-                  src={"/about/2.webp"}
-                  width={600}
-                  height={0}
-                  alt="about image"
-                  className=" rounded-r-3xl w-1/2"
-                />
               </div>
             </FadeFromSide>
           </div>
