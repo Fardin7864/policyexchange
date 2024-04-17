@@ -19,18 +19,13 @@ const AchivmentBoard = () => {
     const formatValue = (value) => value.toFixed(0);
   return (
     <Container className=" mb-28">
-      {/* <img
-        src="/star.png"
-        className="w-[300px] h-[320px] absolute z-50 top-[4665px]"
-      /> */}
       <div>
         <Container className=" px-0 bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
           <div className=" relative w-full h-full ">
-            {/* <MdChevronRight className=" text-[#a790d5] text-[90rem] font-extrabold hidden md:block relative -left-[745px]" /> */}
           <img src={"/star.png"} alt="" 
-          className="w-[800px] h-full" />
+          className=" w-full h-[500px] relative -top-28 -left-5" />
           </div>
-          <div className=" relative flex justify-between w-[4000px] px-8 -left-16">
+          <div className=" relative flex justify-between w-[4000px] px-8 -left-12">
             <div>
               <VisibilitySensor onChange={handleVisibilityChange}>
                 <p className=" text-[#a790d5] text-[90px] font-bold my-4 text-center leading-9">

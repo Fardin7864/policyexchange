@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import ActionAreaCard from "./Card";
 import Link from "next/link";
 import Card from "@mui/material/Card";
@@ -8,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea, Container } from "@mui/material";
 import "../styles/button.css";
 
-const NewsCard = ({ image, title, details, bottomBorder, classes }) => {
+const NewsCard = ({ image, title, details, bottomBorder, classes , id }) => {
   return (
     <div className={` rounded-none w-full z-10 bg-none ${classes}`}>
       <CardActionArea>
@@ -19,16 +20,12 @@ const NewsCard = ({ image, title, details, bottomBorder, classes }) => {
           alt="green iguana"
           className={``}
         />
-        {/* <div
-          className={`h-2 w-full`}
-          style={{ backgroundColor: `${bottomBorder}` }}
-        ></div> */}
         <Container className=" py-5 bg-none">
           <div className="border-l border-blue-500 pt-16 relative -top-14">
             <h3 className=" p-6  h-full text-3xl">{title}</h3>
-            <button className="text-blue-600 pl-6 font-semibold underline-from-left ">
+            <Link href={`/news/${id}`} className="text-blue-600 pl-6 font-semibold underline-from-left ">
               READ MORE
-            </button>
+            </Link>
           </div>
         </Container>
       </CardActionArea>
@@ -37,6 +34,14 @@ const NewsCard = ({ image, title, details, bottomBorder, classes }) => {
 };
 
 const Featured = () => {
+
+  const [newses, setNewses ] = useState()
+
+  useEffect(() => { 
+    fetch("/news.json").then(res => res.json()).then(data => setNewses(data.slice(0,2)))
+   },[])
+console.log(newses)
+
   return (
     <div className="  mt-16 rounded-3xl pt-10">
       <Container className=" flex justify-between gap-8 w-full items-start  px-0">
@@ -57,16 +62,18 @@ const Featured = () => {
         </Link>
       </Container>
       <div className="flex flex-col lg:flex-row justify-center py-10  gap-16 w-10/12 mx-auto px-8">
-        <NewsCard
-          image="/news/1.jpg"
-          title="গ্যাসের অভাবে কতোটা সংকটে শিল্প ও অর্থনীতি? | অর্থনীতির সংলাপ | DBC NEWS"
+
+        {
+          newses?.map(news => 
+            <NewsCard
+            key={news.id}
+          image={news.image}
+          title={news.title}
           bottomBorder={"#8D87F9"}
+          id={news.id}
         />
-        <NewsCard
-          image="/news/2.png"
-          title="“Insights On NPL Challenges And Government Initiatives: A Perspective From M. Masrur Reaz,..”"
-          bottomBorder={"#F5CC00"}
-        />
+          )
+        }
       </div>
     </div>
   );

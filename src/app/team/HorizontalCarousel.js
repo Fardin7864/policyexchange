@@ -39,7 +39,8 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110 rounded-md hover:rounded-md"
       ></div>
       <div className="absolute inset-0 z-10 grid place-items-end w-full">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-xl font-black text-white backdrop-blur-lg  w-full text-center">
+        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-lg font-black text-white backdrop-blur-lg  w-full text-center">
+          <span className=" text-2xl">{card.name}</span> <br/>
           {card.title}
         </p>
       </div>
@@ -52,36 +53,43 @@ export default HorizontalScrollCarousel;
 const cards = [
   {
     url: "/Team/ceo.jpg",
+    name: "Dr. M. Masrur Reaz",
     title: "CEO",
     id: 1,
   },
   {
     url: "/Team/hassib.jpg",
+    name: "Md. Hassib Hassan",
     title: "Analyst & Programme Coordinator",
     id: 2,
   },
   {
     url: "/Team/Pinaky.JPG",
+    name:"Pinaky Shanakar (Rahul)",
     title: "Senior Analyst",
     id: 3,
   },
   {
     url: "/Team/Rahmina.jpeg",
+    name: "Rahmina Ahmed",
     title: "Programme Analyst",
     id: 4,
   },
   {
     url: "/Team/Rodoshee.jpeg",
+    name: "Rodoshee Tahsin",
     title: "Senior Associate and Project Coordinator",
     id: 5,
   },
   {
     url: "/Team/Sadia.jpeg",
+    name: "Sadia Sultana",
     title: "Analyst & Programme Coordinator",
     id: 6,
   },
   {
     url: "/Team/Ziaur.jpg",
+    name: "Ziaur Rahman",
     title: "Senior Policy Analyst",
     id: 7,
   },
