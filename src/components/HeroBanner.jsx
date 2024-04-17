@@ -12,10 +12,10 @@ const HeroBanner = () => {
     "Trusted partner",
   ];
   const details = [
-    "Propel your business forward with dynamic strategies, actionable insights, and targeted initiatives, accelerating growth and maximizing potential.",
-    "Ignite a culture of creativity and progress, pioneering groundbreaking solutions, and staying ahead of the curve in an ever-evolving landscape.",
-    "Dive into a collaborative space where ideas flourish, insights emerge, and solutions are born, guiding businesses toward informed strategies and decisions.",
-    "Forge a strong and enduring partnership built on reliability, expertise, and integrity, empowering businesses to navigate challenges and achieve success with confidence.",
+    "With a focus on fostering sustainable development and prosperity, Policy Exchange acts as a catalyst for economic growth, leveraging expertise and insights to propel businesses and industries forward.",
+    "Policy Exchange pioneers innovative solutions, leading the way towards a brighter future with groundbreaking ideas and forward-thinking strategies.",
+    "As a dynamic hub of creativity and intellect, Policy Exchange is where ideas are incubated, refined, and transformed into actionable policies and strategies, shaping the landscape of tomorrow.",
+    "Policy Exchange is more than an advisory firm; we're your trusted partner on the journey to success, providing reliable guidance, strategic counsel, and unwavering support every step of the way.",
   ];
   const [colorIndex, setColorIndex] = useState(0); // Initial color index
   const [titleIndex, setTitleIndex] = useState(0); // Initial title index

@@ -53,7 +53,7 @@ const Pictures = () => {
   return (
     <PhotoProvider>
       <div className="grid grid-cols-7 gap-3 mx-auto ">
-        {picturesToDisplay?.slice(0, 77).map((picture, index) => {
+        {picturesToDisplay?.map((picture, index) => {
           if (index === picturesToDisplay?.length - 1) {
             return (
               <div ref={lastPictureRef} key={picture.id}>

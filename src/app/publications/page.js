@@ -63,30 +63,6 @@ const PublicationsPage = () => {
   }
 
   return (
-<<<<<<< HEAD
-    <div className="max-w-[1440px] mx-auto ">
-      <div className="">
-        <div
-          className="background-div bg-no-repeat bg-cover with-overlay"
-          style={{
-            backgroundImage: "url('/images/Cover.jpg')",
-            // backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            width: "100%",
-            height: "400px",
-          }}
-        >
-          <div className="w-[94.2%] absolute h-[400px] bg-black opacity-50"></div>
-          <div className=" flex justify-center h-full">
-            <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
-              Publications
-            </h3>
-            <p className=" text-white  text-xl absolute font-semibold pt-64 opacity-100 z-50">
-              All publications by Policy Exchange of Bangladesh
-            </p>
-          </div>
-=======
     <div className="bg-custom">
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
@@ -104,7 +80,6 @@ const PublicationsPage = () => {
           <p className=" text-white  text-xl absolute font-semibold pt-64 opacity-100 z-50">
             All publications by Policy Exchange of Bangladesh
           </p>
->>>>>>> 2d97efedabe04a61d9983f34ecfa5a4d0cbc5249
         </div>
       </div>
       <div className="max-w-[1440px] mx-auto ">

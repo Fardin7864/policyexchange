@@ -27,34 +27,6 @@ const News = () => {
     setPage(value);
   };
   return (
-<<<<<<< HEAD
-    <div className="max-w-[1440px] mx-auto ">
-      <div className="">
-        <div
-          className="background-div bg-no-repeat bg-cover with-overlay"
-          style={{
-            backgroundImage: "url('/images/Cover.jpg')",
-            // backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            width: "100%",
-            height: "400px",
-          }}
-        >
-          <div className="w-[94.2%] absolute h-[400px] bg-black opacity-50"></div>
-          <div className=" flex justify-center h-full">
-            <h3 className=" text-white  text-5xl absolute font-bold pt-48 opacity-100 z-50">
-              News
-            </h3>
-            <p className=" text-white text-lg absolute font-semibold pt-64 opacity-100 z-50">
-              All news organized and participated by Policy Exchange of
-              Bangladesh are listed here, starting with <br />{" "}
-              <span className="ml-40">
-                the upcoming news, followed by our previous news history.
-              </span>
-            </p>
-          </div>
-=======
     <div className="bg-custom">
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
@@ -78,7 +50,6 @@ const News = () => {
               the upcoming news, followed by our previous news history.
             </span>
           </p>
->>>>>>> 2d97efedabe04a61d9983f34ecfa5a4d0cbc5249
         </div>
       </div>
       <div className=" max-w-[1440px] mx-auto ">
