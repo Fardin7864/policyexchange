@@ -18,7 +18,7 @@ const OurWorks = () => {
       </h1>
       <div className=" flex gap-20 ">
         {/* 1st col */}
-        <div className=" flex flex-col gap-16">
+        <div className=" flex flex-col gap-16 text-black">
           <div
             onMouseEnter={() => setIsshowCollab(true)}
             onMouseLeave={() => setIsshowCollab(false)}
@@ -26,7 +26,7 @@ const OurWorks = () => {
           >
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48  text-white bg-[#3dab52] p-3 rounded-l-full px-14 ${
+                className={`transition-transform h-48  text-white bg-[#A790D5] p-3 rounded-l-full px-14 ${
                   isshowCollab
                     ? "transform translate-x-0"
                     : "transform translate-x-full"
@@ -43,9 +43,10 @@ const OurWorks = () => {
                 </p>
               </div>
             </div>
-            <div className={`  rounded-r-full h-48 ${isshowCollab ? "bg-[#3dab52]" : " " }`}>
+            <div className={`  rounded-r-full h-48 ${isshowCollab ? "bg-[#A790D5]" : " " }`}>
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                <FaChartLine className="text-8xl" />
+                {/* <FaChartLine className="text-6xl" /> */}
+                <img src="/icons/Collaborative engagement.gif" alt="" />
               </div>
             </div>
           </div>
@@ -58,7 +59,7 @@ const OurWorks = () => {
           >
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48 text-white  bg-[#3dab52] p-3 rounded-l-full px-14 ${
+                className={`transition-transform h-48 text-white  bg-[#A790D5] p-3 rounded-l-full px-14 ${
                   isshowStrategic
                     ? "transform translate-x-0"
                     : "transform translate-x-full"
@@ -72,9 +73,11 @@ const OurWorks = () => {
                 </p>
               </div>
             </div>
-            <div  className={`  rounded-r-full h-48 ${isshowStrategic ? "bg-[#3dab52]" : " " }`}>
+            <div  className={`  rounded-r-full h-48 ${isshowStrategic ? "bg-[#A790D5]" : " " }`}>
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                <RiLuggageCartFill className="text-8xl" />
+                {/* <RiLuggageCartFill className="text-6xl" /> */}
+                <img src="/icons/strategic outreach.gif" alt="" />
+
               </div>
             </div>
           </div>
@@ -87,14 +90,15 @@ const OurWorks = () => {
             onMouseLeave={() => setIsshowinovative(false)}
             className="flex items-center relative"
           >
-            <div   className={`  rounded-l-full h-48 ${isshowinnovative ? "bg-[#3dab52]" : " " }`}>
+            <div   className={`  rounded-l-full h-48 ${isshowinnovative ? "bg-[#A790D5]" : " " }`}>
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                <FcAdvertising className="text-8xl" />
+                {/* <FcAdvertising className="text-6xl" /> */}
+                <img src="/icons/innovative advocacy.gif" alt="" />
               </div>
             </div>
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48 text-white  bg-[#3dab52] p-3 rounded-r-full px-14 ${
+                className={`transition-transform h-48 text-white  bg-[#A790D5] p-3 rounded-r-full px-14 ${
                   isshowinnovative
                     ? "transform -translate-x-0"
                     : "transform -translate-x-full"
@@ -115,14 +119,16 @@ const OurWorks = () => {
             onMouseLeave={() => setIsshowGlobal(false)}
             className="flex items-center relative"
           >
-            <div className={`  rounded-l-full h-48 ${isshowGlobal ? "bg-[#3dab52]" : " " }`}>
+            <div className={`  rounded-l-full h-48 ${isshowGlobal ? "bg-[#A790D5]" : " " }`}>
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                <RiMenuAddLine className="text-8xl" />
+                {/* <RiMenuAddLine className="text-6xl" /> */}
+                <img src="/icons/global policy.gif" alt="" />
+
               </div>
             </div>
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48 text-white  bg-[#3dab52] p-3 rounded-r-full px-14 ${
+                className={`transition-transform h-48 text-white  bg-[#A790D5] p-3 rounded-r-full px-14 ${
                   isshowGlobal
                     ? "transform translate-x-0"
                     : "transform -translate-x-full"
