@@ -57,7 +57,7 @@ const Pictures = () => {
           if (index === picturesToDisplay?.length - 1) {
             return (
               <div ref={lastPictureRef} key={picture.id}>
-                {/* <PhotoView src={picture.img}>
+                <PhotoView src={picture.img}>
                   <div
                     onClick={() => setCurrentImg(picture.img)}
                     className="background-div bg-no-repeat bg-cover with-overlay hover:opacity-75"
@@ -80,7 +80,7 @@ const Pictures = () => {
                       }}
                     ></div>
                   </div>
-                </PhotoView> */}
+                </PhotoView>
               </div>
             );
           } else {

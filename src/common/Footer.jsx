@@ -11,10 +11,10 @@ const Footer = () => {
   return (
     <div className="py-5">
       <div
-        className=" bg-[#00263a] pt-16 pb-24 px-20 max-w-[1440px] mx-auto rounded-3xl
+        className=" bg-[#00263a] pt-16 pb-14 px-20 max-w-[1440px] mx-auto rounded-3xl
         "
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  ">
           <div className=" text-white flex flex-col gap-3 font-medium">
             <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">Contact</h3>
             <p className="hover:text-[#a790d5]">+88-02-8881834</p>
@@ -29,20 +29,31 @@ const Footer = () => {
             <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">
               Resources
             </h3>
-            <p className="hover:text-[#a790d5]">Insights</p>
-            <p className="hover:text-[#a790d5]">Publications</p>
-            <p className="hover:text-[#a790d5]">Photos & Videos</p>
-            <p className="hover:text-[#a790d5]">Policy Exchange News</p>
+            <Link href={"/publications"}>
+              <p className="hover:text-[#a790d5]">Publications</p>
+            </Link>
+            <Link href={"/media"}>
+              <p className="hover:text-[#a790d5]">Photos & Videos</p>
+            </Link>
+            <Link href={"/news"}>
+              <p className="hover:text-[#a790d5]">Policy Exchange News</p>
+            </Link>
           </div>
 
           <div className=" text-white flex flex-col gap-3 font-medium">
             <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">
               Quick Link
             </h3>
-            <p className="hover:text-[#a790d5]">Events</p>
-            <p className="hover:text-[#a790d5]">About Us</p>
-            <p className="hover:text-[#a790d5]">Reserch and Analytics</p>
-            <p className="hover:text-[#a790d5]">Our Team</p>
+
+            <Link href={"/events"}>
+              <p className="hover:text-[#a790d5]">Events</p>
+            </Link>
+            <Link href={"/about"}>
+              <p className="hover:text-[#a790d5]">About Us</p>
+            </Link>
+            <Link href={"/team"}>
+              <p className="hover:text-[#a790d5]">Our Team</p>
+            </Link>
           </div>
 
           <div className=" text-white flex flex-col gap-3 font-medium">
@@ -68,7 +79,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-gray-400 mt-8">
+        <div className="text-center text-gray-400 mt-8  ">
           &copy; {currentYear} All Rights Reserved to Policy Exchange ||
           Developed by{" "}
           <Link
