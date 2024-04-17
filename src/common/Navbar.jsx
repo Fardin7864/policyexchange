@@ -36,10 +36,16 @@ function Navbar() {
 
   return (
     <div className=" h-[80px] z-[100] lg:absolute lg:left-[10%] lg:right-[10%] lg:top-4 max-w-[1440px] lg:w-[1280px] rounded-md mx-auto ">
+    <div className=" relative z-[120] top-4 w-full bg-[#00263a] rounded-t-xl text-white flex justify-end pt-2">
+      <ul className=" flex items-end gap-10 px-10 " style={{fontSize: '12px'}}>
+        <li><Link href={"/team"}>Team</Link></li>
+        <li><Link href={"/news"}>News</Link></li>
+      </ul>
+    </div>
     <AppBar
       position="static"
       sx={{ backgroundColor: "#00263a" }}
-      className=" rounded-xl "
+      className=" rounded-xl rounded-t-none "
     >
       <Container maxWidth="xl" className=" my-auto">
         <Toolbar disableGutters>

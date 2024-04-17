@@ -74,16 +74,6 @@ console.log(newses)
         />
           )
         }
-        {/* <NewsCard
-          image="/news/1.jpg"
-          title="গ্যাসের অভাবে কতোটা সংকটে শিল্প ও অর্থনীতি? | অর্থনীতির সংলাপ | DBC NEWS"
-          bottomBorder={"#8D87F9"}
-        />
-        <NewsCard
-          image="/news/2.png"
-          title="“Insights On NPL Challenges And Government Initiatives: A Perspective From M. Masrur Reaz,..”"
-          bottomBorder={"#F5CC00"}
-        /> */}
       </div>
     </div>
   );
