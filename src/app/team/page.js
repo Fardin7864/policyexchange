@@ -23,6 +23,11 @@ const page = () => {
       </div>
 
       <div className=" max-w-[1440px] mx-auto ">
+        <div className=" w-3/5 mx-auto">
+          <p className=" mt-10 text-xl text-center font-bold">
+          At Policy Exchange Bangladesh, we are a team of seasoned professionals driven by a shared commitment to catalyze positive change in Bangladesh&apos;s economic landscape. Our founding team brings together expertise from diverse backgrounds, including academia, public sector, industry, and various countries. This diversity enriches our perspectives and insights, ensuring that our solutions are not only theoretically sound but also practically viable
+          </p>
+        </div>
         <HorizontalScrollCarousel />
 
         <TeamList />

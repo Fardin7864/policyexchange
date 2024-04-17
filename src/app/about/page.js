@@ -15,7 +15,7 @@ const about = () => {
           <FadeFromSide direction="left" duration={1}>
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#F5CC00] gap-5 rounded-3xl shadow-2xl">
               <Image
-                src={"/about/1.webp"}
+                src={"https://i.ibb.co/NYFKNgb/Our-story.webp"}
                 width={600}
                 height={0}
                 alt="about image"
@@ -58,8 +58,8 @@ const about = () => {
                 </p>
               </div>
               <Image
-                src={"/about/2.webp"}
-                width={600}
+                src={"https://i.ibb.co/HCF7q0x/bg-and-team.jpg"}
+                width={900}
                 height={0}
                 alt="about image"
                 className=" rounded-r-3xl w-1/2"
@@ -71,7 +71,7 @@ const about = () => {
           <FadeFromSide direction="left" duration={1}>
             <div className=" flex flex-col mt-16 lg:flex-row justify-between items-center bg-[#3DAB52] gap-5 rounded-3xl shadow-2xl">
               <Image
-                src={"/about/1.webp"}
+                src={"https://i.ibb.co/n0CG8Yw/Evolution.webp"}
                 width={600}
                 height={0}
                 alt="about image"
@@ -115,7 +115,7 @@ const about = () => {
                 </p>
               </div>
               <Image
-                src={"/about/2.webp"}
+                src={"https://i.ibb.co/XFh0K7r/Whats-App-Image-2023-08-27-at-9-45-37-PM-1.webp"}
                 width={600}
                 height={0}
                 alt="about image"
