@@ -9,7 +9,7 @@ const Pictures = () => {
   // const [currentImg, setCurrentImg] = useState("/publications/2.png");
   const [loading, setLoading] = useState(true);
   const observer = useRef();
-  const [isShow, setisShow] = useState(false)
+  const [isShow, setisShow] = useState(false);
 
   useEffect(() => {
     fetch("/pictures.json")
@@ -41,7 +41,6 @@ const Pictures = () => {
   }, [loading]);
 
   const fetchMorePictures = () => {
-
     const newPictures = Array.from({ length: 10 }, (_, index) => ({
       id: pictures.length + index + 1,
       img: `/publications/${pictures.length + index + 1}.png`,
@@ -49,26 +48,39 @@ const Pictures = () => {
     setPictures((prevPictures) => [...prevPictures, ...newPictures]);
   };
 
- const picturesToDisplay = !isShow? pictures.slice(0,63) : pictures;
+  const picturesToDisplay = !isShow ? pictures.slice(0, 63) : pictures;
 
   return (
     <PhotoProvider>
       <div className="grid grid-cols-7 gap-3 mx-auto ">
-        {picturesToDisplay?.slice(0,77).map((picture, index) => {
+        {picturesToDisplay?.slice(0, 77).map((picture, index) => {
           if (index === picturesToDisplay?.length - 1) {
             return (
               <div ref={lastPictureRef} key={picture.id}>
-                <PhotoView src={picture.img}>
+                {/* <PhotoView src={picture.img}>
                   <div
                     onClick={() => setCurrentImg(picture.img)}
-                    className="background-div bg-no-repeat bg-cover with-overlay "
+                    className="background-div bg-no-repeat bg-cover with-overlay hover:opacity-75"
                     style={{
                       backgroundImage: `url(${picture.img})`,
                       width: "195px",
                       height: "195px",
+                      position: "relative", 
                     }}
-                  ></div>
-                </PhotoView>
+                  >
+                    
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        backgroundColor: "rgba(0, 0, 0, 0.5)", 
+                      }}
+                    ></div>
+                  </div>
+                </PhotoView> */}
               </div>
             );
           } else {
@@ -81,16 +93,44 @@ const Pictures = () => {
                     backgroundImage: `url(${picture.img})`,
                     width: "195px",
                     height: "195px",
+                    position: "relative", // Ensure proper overlay positioning
                   }}
-                ></div>
+                >
+                  {/* Dark overlay */}
+                  <div
+                  className=" hover:bg-[#0000007f] bg-transparent"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      // backgroundColor: "#0000007f",
+                    }}
+                  ></div>
+                </div>
               </PhotoView>
             );
           }
         })}
       </div>
       <div className=" w-full flex justify-center items-center gap-5 text-xl mt-10">
-       <button onClick={() => setisShow(true)} className={`${isShow? "hidden" : "block"} border-2 text-sm rounded-full px-6 py-2 text-white bg-[#00263a]`}>See More</button>
-       <button onClick={() => setisShow(false)} className={`${isShow? "block" : "hidden"} border-2 text-sm rounded-full px-6 py-2 text-white bg-[#00263a]`}>See Less</button>
+        <button
+          onClick={() => setisShow(true)}
+          className={`${
+            isShow ? "hidden" : "block"
+          } border-2 text-sm rounded-full px-6 py-2 text-white bg-[#00263a]`}
+        >
+          See More
+        </button>
+        <button
+          onClick={() => setisShow(false)}
+          className={`${
+            isShow ? "block" : "hidden"
+          } border-2 text-sm rounded-full px-6 py-2 text-white bg-[#00263a]`}
+        >
+          See Less
+        </button>
       </div>
     </PhotoProvider>
   );
