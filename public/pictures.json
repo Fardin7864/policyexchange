@@ -1,59 +1,11 @@
 [
     {
-        "id": 1,
+        "id": 13,
         "img": "https://i.ibb.co/Zggs5t6/3.jpg"
     },
     {
-        "id": 2,
-        "img": "https://i.ibb.co/nsYtgxC/1.jpg"
-    },
-    {
-        "id": 3,
-        "img": "https://i.ibb.co/XkCckcn/2.jpg"
-    },
-    {
-        "id": 4,
-        "img": "https://i.ibb.co/0DGjyJL/5.jpg"
-    },
-    {
-        "id": 5,
-        "img": "https://i.ibb.co/6PgNnjZ/6.jpg"
-    },
-    {
-        "id": 6,
-        "img": "https://i.ibb.co/bBr2PF1/7.jpg"
-    },
-    {
-        "id": 7,
-        "img": "https://i.ibb.co/CB0yHP5/8.jpg"
-    },
-    {
-        "id": 8,
-        "img": "https://i.ibb.co/vdX1PKL/1.png"
-    },
-    {
-        "id": 9,
-        "img": "https://i.ibb.co/1zgJj8z/1.webp"
-    },
-    {
-        "id": 10,
-        "img": "https://i.ibb.co/4s1rQFx/2.png"
-    },
-    {
-        "id": 11,
-        "img": "https://i.ibb.co/nbHC9rK/2.webp"
-    },
-    {
-        "id": 12,
-        "img": "https://i.ibb.co/9VnV47m/3.png"
-    },
-    {
-        "id": 13,
-        "img": "https://i.ibb.co/JjJ0sVr/3.webp"
-    },
-    {
         "id": 14,
-        "img": "https://i.ibb.co/GW9gHxJ/4.jpg"
+        "img": "https://i.ibb.co/XkCckcn/2.jpg"
     },
     {
         "id": 15,
@@ -216,24 +168,8 @@
         "img": "https://i.ibb.co/vDPRtGj/379772409-10159366177480653-307579462731113021-n.webp"
     },
     {
-        "id": 55,
-        "img": "https://i.ibb.co/0Yp0trb/Capture.webp"
-    },
-    {
-        "id": 56,
-        "img": "https://i.ibb.co/4fz83Rs/Capture-2.webp"
-    },
-    {
-        "id": 57,
-        "img": "https://i.ibb.co/cbZjYqZ/Capture-23.webp"
-    },
-    {
         "id": 58,
         "img": "https://i.ibb.co/n0CG8Yw/Evolution.webp"
-    },
-    {
-        "id": 59,
-        "img": "https://i.ibb.co/d6FT6sD/fdi-jul-24.webp"
     },
     {
         "id": 60,
@@ -318,18 +254,6 @@
     {
         "id": 80,
         "img": "https://i.ibb.co/XWkQQZw/379858775-10159366161140653-1414663592930371745-n.webp"
-    },
-    {
-        "id": 81,
-        "img": "https://i.ibb.co/dJq2nFm/Capture-19.webp"
-    },
-    {
-        "id": 82,
-        "img": "https://i.ibb.co/cgTvV5C/Screenshot-2023-12-27-112737.webp"
-    },
-    {
-        "id": 83,
-        "img": "https://i.ibb.co/HpbDBrC/Screenshot-2023-12-27-113908.webp"
     },
     {
         "id": 84,

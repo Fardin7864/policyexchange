@@ -37,7 +37,7 @@ const Services = () => {
                         className=" mr-5"
                       />
                       <h4 className=" text-xl font-bold text-center mr-6">
-                        Research & Analyticss
+                        Research & Analytics
                       </h4>
                     </div>
                   </div>
