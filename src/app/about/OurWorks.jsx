@@ -26,7 +26,7 @@ const OurWorks = () => {
           >
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48  text-white bg-[#A790D5] p-3 rounded-l-full px-14 ${
+                className={`transition-transform pt-6 h-48  text-white bg-[#A790D5] p-3 rounded-l-full px-14 ${
                   isshowCollab
                     ? "transform translate-x-0"
                     : "transform translate-x-full"
@@ -65,10 +65,10 @@ const OurWorks = () => {
                     : "transform translate-x-full"
                 }`}
               >
-                <h3 className="text-2xl font-bold pl-8 ">
+                <h3 className="text-2xl font-bold pl-16 ">
                 Strategic Outreach
                 </h3>
-                <p className=" leading-5 pl-8 pt-2">
+                <p className=" leading-5 pl-16 pt-2">
                 Market-oriented, pragmatic, evidence-based role and voice to fill  gaps in the national landscape by bringing to the fore bold, well-informed alternative approaches to strategies for achieving inclusive economic growth and transformation
                 </p>
               </div>
@@ -128,13 +128,13 @@ const OurWorks = () => {
             </div>
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48 text-white  bg-[#A790D5] p-3 rounded-r-full px-14 ${
+                className={`transition-transform flex flex-col justify-center items-center h-48 text-white  bg-[#A790D5] p-3 rounded-r-full px-14 ${
                   isshowGlobal
                     ? "transform translate-x-0"
                     : "transform -translate-x-full"
                 }`}
               >
-                <h3 className="text-2xl font-bold ">
+                <h3 className="text-2xl font-bold relative -left-10">
                 Global Policy Exploration
                 </h3>
                 <p className=" leading-5 pt-2 pr-8">

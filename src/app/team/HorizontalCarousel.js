@@ -13,17 +13,18 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-55%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-      <Marquee>
-        <motion.div style={{ x }} className="flex gap-4">
+
+      <div className=" mt-10">
+      <Marquee speed="150">
+        <div 
+        // style={{ x }}
+         className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
-        </motion.div>
+        </div>
          </Marquee>
       </div>
-    </section>
   );
 };
 

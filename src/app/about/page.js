@@ -8,21 +8,34 @@ import OurWorks from "./OurWorks";
 const about = () => {
   return (
     <div className=" max-w-[1440px] mx-auto">
-      <h1 className=" text-center text-5xl font-bold mt-36">About Policy Exchange Bangladesh</h1>
-      <Container className="">
+      <h1 className=" text-center text-5xl font-bold mt-36">
+        About Policy Exchange Bangladesh
+      </h1>
+      <Container className="px-0">
         <div className=" py-10">
           {/* Our story */}
           <FadeFromSide direction="left" duration={1}>
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#F5CC00] gap-5 rounded-3xl shadow-2xl">
-              <Image
+              {/* <Image
                 src={"https://i.ibb.co/NYFKNgb/Our-story.webp"}
                 width={600}
                 height={0}
                 alt="about image"
                 className=" rounded-l-3xl w-1/2"
-              />
-              <div className="px-5 w-1/2">
-                <h2 className=" text-4xl font-bold">Our Story:</h2>
+              /> */}
+              <div
+                className="rounded-l-3xl w-1/2"
+                style={{
+                  backgroundImage: `url("https://i.ibb.co/NYFKNgb/Our-story.webp")`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  width: "800px", 
+                  height: "500px",
+                }}
+              ></div>
+              <div className="pr-16 pl-10  w-1/2">
+                <h2 className=" text-4xl font-bold pt-5">Our Story:</h2>
                 <p className=" font-medium py-7">
                   Policy Exchange Bangladesh is a distinguished private,
                   independent advisory firm with a singular focus on the private
@@ -40,7 +53,7 @@ const about = () => {
           </FadeFromSide>
 
           {/* Our Background */}
-          <FadeFromSide direction="right" duration={1}>
+          {/* <FadeFromSide direction="right" duration={1}>
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#307FE2] gap-5 rounded-3xl mt-16 shadow-2xl">
               <div className="px-5 w-1/2">
                 <h2 className=" text-4xl font-bold">
@@ -65,20 +78,13 @@ const about = () => {
                 className=" rounded-r-3xl w-1/2"
               />
             </div>
-          </FadeFromSide>
+          </FadeFromSide> */}
 
           {/* Evaluation  */}
-          <FadeFromSide direction="left" duration={1}>
+          <FadeFromSide direction="right" duration={1}>
             <div className=" flex flex-col mt-16 lg:flex-row justify-between items-center bg-[#3DAB52] gap-5 rounded-3xl shadow-2xl">
-              <Image
-                src={"https://i.ibb.co/n0CG8Yw/Evolution.webp"}
-                width={600}
-                height={0}
-                alt="about image"
-                className=" rounded-l-3xl w-1/2"
-              />
-              <div className="px-5 w-1/2">
-                <h2 className=" text-4xl font-bold">
+              <div className="pl-16 pr-10 w-1/2">
+                <h2 className=" text-4xl font-bold ">
                   Evolution of Policy Exchange Bangladesh:
                 </h2>
                 <p className=" font-medium py-7">
@@ -94,13 +100,36 @@ const about = () => {
                   and unwavering dedication to our mission.
                 </p>
               </div>
+              <div
+                className="rounded-r-3xl w-1/2"
+                style={{
+                  backgroundImage: `url('https://i.ibb.co/n0CG8Yw/Evolution.webp')`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  width: "800px", 
+                  height: "500px",
+                }}
+              ></div>
+              
             </div>
           </FadeFromSide>
 
           {/* Our Misson */}
-          <FadeFromSide direction="right" duration={1}>
+          <FadeFromSide direction="left" duration={1}>
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#8D87F9] gap-5 rounded-3xl my-16 mt-16 shadow-2xl">
-              <div className="px-5 w-1/2">
+              <div
+                className="rounded-l-3xl w-1/2"
+                style={{
+                  backgroundImage: `url("https://i.ibb.co/XFh0K7r/Whats-App-Image-2023-08-27-at-9-45-37-PM-1.webp")`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  width: "800px", 
+                  height: "500px",
+                }}
+              ></div>
+              <div className="pl-16 pr-10 w-1/2">
                 <h2 className=" text-4xl font-bold">Our Mission and Vision:</h2>
                 <p className=" font-medium py-7">
                   At Policy Exchange Bangladesh, our mission is clear - to
@@ -114,20 +143,15 @@ const about = () => {
                   sustainable
                 </p>
               </div>
-              <Image
-                src={"https://i.ibb.co/XFh0K7r/Whats-App-Image-2023-08-27-at-9-45-37-PM-1.webp"}
-                width={600}
-                height={0}
-                alt="about image"
-                className=" rounded-r-3xl w-1/2"
-              />
+              
+              
             </div>
           </FadeFromSide>
         </div>
         <WhatWedo />
       </Container>
       <div className="  ">
-        <OurWorks/>
+        <OurWorks />
       </div>
     </div>
   );

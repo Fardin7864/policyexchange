@@ -60,12 +60,10 @@ const Footer = () => {
             <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">
               Follow Us
             </h3>
-            <div className=" flex gap-2 text-4xl">
+            <div className=" flex gap-5 text-4xl">
              <a href="https://www.facebook.com/profile.php?id=100063526029842" target="_blank"><FaFacebookSquare className=" hover:text-[#a790d5]" /></a> 
               <a href="https://bd.linkedin.com/company/policy-exchange-of-bangladesh" target="_blank"><FaLinkedin className=" hover:text-[#a790d5]" /></a>
-              <a href="https://instagram.com" target="_blank"><FaInstagram className=" hover:text-[#a790d5]" /></a>
-              <a href="https://twitter.com" target="_blank"> <FaXTwitter className=" hover:text-[#a790d5]" /></a>
-             
+              
             </div>
             <p className=" hover:text-[#a790d5]">#GreaterTogether</p>
             <p> </p>
