@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import { Container } from "@mui/material";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
@@ -58,7 +57,7 @@ const NewsDetail = (params) => {
       <div className="max-w-[1440px] mx-auto ">
         <Container className=" gap-5 my-16 ">
           <div className=" bg-inherit rounded-xl publication news relative mb-5 grid grid-cols-7 bg-gray-100">
-            <div className="overflow-hidden bg-black col-span-3">
+            <div className="overflow-hidden col-span-3 flex items-center">
               <img
                 src={newsDetail?.image}
                 alt=""
@@ -78,6 +77,7 @@ const NewsDetail = (params) => {
                     {newsDetail?.detail}
                   </span>
                 </p>
+                {/* youtube link */}
                 {newsDetail?.link && (
                   <>
                     <a
@@ -87,6 +87,44 @@ const NewsDetail = (params) => {
                       className="text-blue-700 font-semibold"
                     >
                       Watch Now
+                    </a>
+                  </>
+                )}
+
+                {/* news paper link */}
+                {newsDetail?.link2 && (
+                  <>
+                    <a
+                      href={newsDetail?.link2}
+                      target="blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 font-semibold underline mx-1"
+                    >
+                      News Link
+                    </a>
+                  </>
+                )}
+                {newsDetail?.link3 && (
+                  <>
+                    <a
+                      href={newsDetail?.link3}
+                      target="blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 font-semibold mx-1 underline"
+                    >
+                      News Link
+                    </a>
+                  </>
+                )}
+                {newsDetail?.link4 && (
+                  <>
+                    <a
+                      href={newsDetail?.link4}
+                      target="blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 font-semibold mx-1 underline"
+                    >
+                      News Link
                     </a>
                   </>
                 )}

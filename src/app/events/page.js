@@ -52,7 +52,7 @@ const Events = () => {
         </div>
       </div>
       <div className=" max-w-[1440px] mx-auto ">
-        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-16">
+        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16">
           {currentEvents.map((event, index) => (
             <div
               key={index}
@@ -62,7 +62,7 @@ const Events = () => {
                 <img
                   src={event.image}
                   alt=""
-                  className="rounded-t-xl h-48 w-full publication-thumbnail"
+                  className="rounded-t-xl h-56 w-full publication-thumbnail"
                 />
               </div>
               <div className="publications-container">
