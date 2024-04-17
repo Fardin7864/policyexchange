@@ -76,7 +76,7 @@ const PublicationsPage = () => {
             height: "400px",
           }}
         >
-          <div className="w-[100%] absolute h-[400px] bg-black opacity-50"></div>
+          <div className="w-[94.2%] absolute h-[400px] bg-black opacity-50"></div>
           <div className=" flex justify-center h-full">
             <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
               Publications

@@ -61,10 +61,11 @@ const Footer = () => {
               Follow Us
             </h3>
             <div className=" flex gap-2 text-4xl">
-              <FaFacebookSquare className=" hover:text-[#a790d5]" />
-              <FaLinkedin className=" hover:text-[#a790d5]" />
-              <FaInstagram className=" hover:text-[#a790d5]" />
-              <FaXTwitter className=" hover:text-[#a790d5]" />
+             <a href="https://www.facebook.com/profile.php?id=100063526029842" target="_blank"><FaFacebookSquare className=" hover:text-[#a790d5]" /></a> 
+              <a href="https://bd.linkedin.com/company/policy-exchange-of-bangladesh" target="_blank"><FaLinkedin className=" hover:text-[#a790d5]" /></a>
+              <a href="https://instagram.com" target="_blank"><FaInstagram className=" hover:text-[#a790d5]" /></a>
+              <a href="https://twitter.com" target="_blank"> <FaXTwitter className=" hover:text-[#a790d5]" /></a>
+             
             </div>
             <p className=" hover:text-[#a790d5]">#GreaterTogether</p>
             <p> </p>
