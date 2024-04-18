@@ -2,12 +2,15 @@
   {
     "id": 1,
     "title": "Dr. M Masrur Reaz, Chairman, Policy Exchange shared his opinions as a keynote speaker on formulating national logistics industry development policy for Bangladesh.",
+    "detail": "Dr. M Masrur Reaz, Chairman, Policy Exchange shared his opinions as a keynote speaker on formulating national logistics industry development policy for Bangladesh.",
     "image": "/event/1.jpg",
-    "date": "February 12, 2023"
+    "date": "February 12, 2023",
+    "images": ["/event/1-1.jpeg", "/event/1-2.jpeg", "event/1-3.jpeg"]
   },
   {
     "id": 2,
     "title": "Policy Exchange is pleased to have facilitated the partnership between FBCCI and CNN International for the planned Bangladesh Business Summit 2023.",
+    "detail": "Dr. M Masrur Reaz, Chairman, Policy Exchange shared his opinions as a keynote speaker on formulating national logistics industry development policy for Bangladesh.",
     "image": "/event/2.jpg",
     "date": "February 12, 2023"
   },

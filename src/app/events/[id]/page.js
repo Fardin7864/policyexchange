@@ -73,13 +73,19 @@ const EventDetail = (params) => {
                   <span className="font-bold text-[#956de6] text-lg">
                     {eventsDetail?.title}
                   </span>
-                  {/* <span className="text-sm text-justify">
+                  <span className="text-sm text-justify">
                     {eventsDetail?.detail}
-                  </span> */}
+                  </span>
                 </p>
               </div>
             </div>
           </div>
+
+          {eventsDetail?.images.map((img, index) => (
+            <div key={index}>
+              <img src={img} alt="" />
+            </div>
+          ))}
         </Container>
       </div>
     </div>

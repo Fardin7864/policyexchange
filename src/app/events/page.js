@@ -55,7 +55,7 @@ const Events = () => {
       <div className=" max-w-[1440px] mx-auto ">
         <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-16">
           {currentEvents.map((event, index) => (
-            <Link href={`/event/${event.id}`} key={index}>
+            <Link href={`/events/${event.id}`} key={index}>
               <div className="shadow-2xl bg-white rounded-xl publication relative mb-5">
                 <div className="overflow-hidden bg-black">
                   <img
@@ -70,7 +70,6 @@ const Events = () => {
                       <span className="font-bold text-[#956de6]">
                         {event.title}
                       </span>
-                      <span className="">{event.subtitle}</span>
                     </p>
 
                     <div className=" my-2 border-t pt-2 absolute pb-1 bottom-1 w-full">
