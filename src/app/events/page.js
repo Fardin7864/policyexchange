@@ -56,7 +56,7 @@ const Events = () => {
         <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-16">
           {currentEvents.map((event, index) => (
             <Link href={`/events/${event.id}`} key={index}>
-              <div className="shadow-2xl bg-white rounded-xl publication relative mb-5">
+              <div className="shadow-2xl bg-white rounded-xl publication relative mb-5 h-96">
                 <div className="overflow-hidden bg-black">
                   <img
                     src={event.image}

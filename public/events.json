@@ -5,12 +5,12 @@
     "detail": "Dr. M Masrur Reaz, Chairman, Policy Exchange shared his opinions as a keynote speaker on formulating national logistics industry development policy for Bangladesh.",
     "image": "/event/1.jpg",
     "date": "February 12, 2023",
-    "images": ["/event/1-1.jpeg", "/event/1-2.jpeg", "event/1-3.jpeg"]
+    "images": ["/event/1-1.jpg", "/event/1-2.jpg", "/event/1-3.jpg"]
   },
   {
     "id": 2,
     "title": "Policy Exchange is pleased to have facilitated the partnership between FBCCI and CNN International for the planned Bangladesh Business Summit 2023.",
-    "detail": "Dr. M Masrur Reaz, Chairman, Policy Exchange shared his opinions as a keynote speaker on formulating national logistics industry development policy for Bangladesh.",
+    "detail": "Policy Exchange is pleased to have facilitated the partnership between FBCCI and CNN International for the planned Bangladesh Business Summit 2023.",
     "image": "/event/2.jpg",
     "date": "February 12, 2023"
   },
@@ -18,78 +18,96 @@
     "id": 3,
     "title": "Policy Exchange spoke as a panelist at the FBCCI session on ‘PPPs for Attaining Vision 2041",
     "image": "/event/3.jpg",
-    "date": "February 12, 2023"
+    "date": "February 12, 2023",
+    "detail": "M. Masrur Reaz, Chairman, Policy Exchange spoke as a panelist at the FBCCI session on ‘PPPs for Attaining Vision 2041’."
   },
   {
     "id": 4,
     "title": "EXPORT DIVERSIFICATION IMPERATIVE: Key Sectoral Opportunities and Policy Priorities for Bangladesh",
     "image": "/event/4.jpg",
-    "date": "October 20, 2022"
+    "date": "October 20, 2022",
+    "detail": "Policy Exchange has recently undertaken an analytical work on export diversification where we made efforts to identify priority sectors. The study also seeks to identify policy, institutional, and market challenges the sectors face, and specific opportunities that will help boost the competitiveness of the sectors. The dissemination seminar will help highlight the findings of the report including the necessary policy, institutional, and market actions/ reforms for strengthening the high-potential sectors for export growth."
   },
   {
     "id": 5,
     "title": "Trade Facilitation: Preparation for the Forthcoming LDC Graduation of Bangladesh",
     "image": "/event/5.jpg",
-    "date": "September 28, 2022"
+    "date": "September 28, 2022",
+    "detail": "The Chairman of Policy Exchange Dr. M Masrur Reaz joined as a panelist at a roundtable, organized by the Economic Relations Division (ERD) of the Ministry of Finance in partnership with MCCI, focusing on Trade Facilitation priorities for preparation for the forthcoming LDC graduation. Excellent initiative by ERD to convene important public and private sector stakeholders on this critical economic policy area.",
+    "images": ["/event/5-1.jpg"]
   },
   {
     "id": 6,
     "title": "ICAB’s Roundtable Discussion on Eight Five-Year Plan.",
     "image": "/event/6.jpg",
-    "date": "September 21, 2022"
+    "date": "September 21, 2022",
+    "detail": "Speakers at a roundtable on Wednesday said the government needs to properly address the issues relating to employment and investment in the 8th Five-Year Plan (8FYP), targeting implementation of the SDGs and the country’s LDC graduation. Besides, the government should remain watchful during the 8FYP implementation, so that mistakes in the 7FYP are not repeated.The speakers said in order to compete in the global market, the country has to focus on social, environmental and labor-related compliances, as these would be key issues after the LDC graduation. Creating employment, export diversification, investment, and policy support to adopt technologies relating to the Fourth Industrial Revolution (4IR) should be on the priority list in the 8FYP, they added.The Institute of Chartered Accountants of Bangladesh (ICAB) organised the roundtable on the 8th five-year plan at CA Bhaban in the city. ICAB President Md. Shahadat Hossain FCA delivered speech while ICAB Council Member and Past President Md. Humayun Kabir FCA moderated the session. Speaking as the chief guest, State Minister for Ministry of Planning Dr. Shamsul Alam said the 8FYP is not only an indicative essay or article. It is a quite doable action plan, whose key features are adjustable, if needed. Policy Research Institute of Bangladesh (PRI) Chairman Dr. Zaidi Sattar said technically and qualitatively the 8FYP is the finest five-year plan. Trade and industry are supposed to be the driving force for the targeted high growth in it. The government needs to take more steps to accelerate growth, slowed down by the Covid pandemic and the Russia-Ukraine war, he opined. Bangladesh Bank (BB) former governor Dr. Atiur Rahman said reducing growth target is justified. “Keeping the GDP growth rate above 6.0 per cent despite the domestic and global turbulence is our success.” Bangladesh has begun to get results of the necessary steps, taken by the central bank to address trade deficit and current account deficit.Agriculture sector would be benefitted, if the policies taken in the 8FYP are duly implemented, he noted. National Board of Revenue (NBR) former chairman Dr. Muhammad Abdul Mazid urged the government to bring further reforms in the tax regime to get the best success from the ongoing five-year plan.Accountability and monitoring of the plan are crucial for proper implementation of the 8FYP, he added. Policy Exchange Bangladesh Chairman Dr. M. Masrur Reaz said the 8FYP is flexible, unlike the previous ones, which is a very positive approach. He also urged the government to review the failures of the previous plans to bring success to it. Business Initiative Leading Development (BUILD) CEO Ferdaus Ara Begum said the more the government would team up with the private sector, the higher would be chances of the 8FYP to be effective and successful. ICAB Chief Executive Officer (CEO) Shubhashish Bose, in his keynote, said the government needs to duly address the issues relating to forex reserve, import surge, export development, remittance inflow, inflation, GDP growth, tax-to-GDP ratio, foreign direct investment, and human resource development. Bangladesh has targeted 8.51 per cent economic growth for the 8FYP. To accommodate this growth target, the gross investment needs to be raised to 36.59 per cent of the GDP by FY 2025, he added. The duration of the 7FYP ended in June 2020. However, due to the Covid-19 pandemic the 8FYP has been delayed. The General Economics Division (GED) of the Planning Commission had to revise its targets and strategies in view of the pandemic. The 8FYP, a projected course of action for five years, represents the first phase of the country’s Perspective Plan 2041.",
+
+    "link": "https://www.icab.org.bd/publication/news/1/530/ICAB%E2%80%99s-Roundtable-Discussion-on-Eight-Five-Year-Plan"
   },
   {
     "id": 7,
     "title": "Keynote presentation at Dhaka Chamber seminar on Port-led Integrated Logistics for Trade Competitiveness.",
     "image": "/event/7.jpg",
-    "date": "September 19, 2022"
+    "date": "September 19, 2022",
+    "detail": "Dr. M. Masrur Reaz delivered the keynote presentation at Dhaka Chamber seminar on Port-led Integrated Logistics for Trade Competitiveness. Speakers including DCCI President, PSA Singapore, DP World, Summit Port Alliance, BAFFA participated at the event. Timely completion of Bay Container Port in Chattogram, and developing multimodal hinterland connectivity will be absolutely key to ensuring Bangladesh sustains and enhances its competitiveness in global markets in the coming decades.",
+    "images": ["/event/7-1.jpg", "/event/7-2.jpg"]
   },
   {
     "id": 8,
     "title": "Improving Trade Facilitation for Export Competitiveness: Progress, Lessons and Policy Priorities for Bangladesh",
     "image": "/event/8.jpg",
-    "date": "August 31, 2022"
+    "date": "August 31, 2022",
+    "detail": "The Chairman of Policy Exchange Dr. M Masrur Reaz joined a roundtable held by Policy Research Institute(PRI) highlighting on recent Trade Facilitation (TF) reforms undertaken by GoB with an aim to assess their progress and effectiveness, and derive lessons for future initiatives by broader development community. TF measures include simplifying complex border procedures and improving logistics and trade infrastructure, and other measures that reduce time and cost to trade. Together, they have a high potential to enhance competitiveness and boost diversification efforts."
   },
   {
     "id": 9,
     "title": "The ‘Nation Branding’ event jointly organized by Bloomberg and Bangladesh Securities and Exchange Commission (BSEC).",
     "image": "/event/9.jpg",
-    "date": "July 31, 2022"
+    "date": "July 31, 2022",
+    "detail": "Chairman and CEO of Policy Exchange Bangladesh, Dr. M Masrur Reaz joined as a moderator in the excellent panel at the ‘Nation Branding’ event jointly organized by Bloomberg and Bangladesh Securities and Exchange Commission (BSEC). Bloomberg shared some excellent experience from East Asia as to how high and middle-income countries are continually working to bolster their global image through systematic country branding for investments and talent, which of course are backed by conducive policy reforms. This is part of the engagement between Bloomberg and Bangladesh that commenced a year ago in New York, facilitated by Bloomberg local agent Spellbound Leo Burnett and Policy Exchange Bangladesh ."
   },
   {
     "id": 10,
     "title": "Conference on FDI in Logistics organized by the three Nordic Embassies.",
     "image": "/event/10.jpg",
-    "date": "July 24, 2022"
+    "date": "July 24, 2022",
+    "detail": "Chairman & CEO of Policy Exchange Dr. M Masrur Reaz joined as moderator(remotely) in a conference on FDI in Logistics organized by the three Nordic Embassies."
   },
   {
     "id": 11,
     "title": "Visit by the US State Department’s Special Representative on Commerce and Business",
     "image": "/event/11.jpg",
-    "date": "July 21, 2022"
+    "date": "July 21, 2022",
+    "detail": "Chairman of Policy Exchange Dr. M. Masrur Reaz joined a dinner hosted by the US Ambassador to Bangladesh Peter Haas on the occasion of the visit by the US State Department’s Special Representative on Commerce and Business Mr. Dilawar Sayed. The dinner convened an enlightened group of entrepreneurs, policy analysts, bankers, and tech executives over a great discussion on trade and investment opportunities that Bangladesh boasts, and priorities Bangladesh must address to tap into US markets and FDI."
   },
   {
     "id": 12,
     "title": "Dialogue on Implementation of Public Infrastructure Projects",
     "image": "/event/12.jpg",
-    "date": "June 29, 2022"
+    "date": "June 29, 2022",
+    "detail": "Chairman of Policy Exchange Bangladesh joined a dialogue on Implementation of Public Infrastructure Projects, jointly organized by Centre for Policy Dialogue (CPD) & The Asia Foundation.",
+    "images": ["/event/12-1.jpg"]
   },
   {
     "id": 13,
     "title": "The Chairman & CEO of Policy Exchange Meets with BII Global CEO",
     "image": "/event/13.jpg",
-    "date": "June 22, 2022"
+    "date": "June 22, 2022",
+    "detail": "The Chairman & CEO of Policy Exchange Bangladesh Dr. M. Masrur Reaz had the pleasure of meeting with Nick O’Donohoe, CEO of British Investment International (BII), formerly known as Commonwealth Development Corporation, global investment arm of the British government. BII, which has a $3 billion investable capital at it’s disposal, plans to facilitate significant investment in Bangladesh in green growth, infrastructure, and several other priority areas for the country. The meeting was also attended by BII Asia Managing Director Srini, A K Khan from Bangladesh private sector, and BII Country Director M. Rehan Rashid."
   },
   {
     "id": 14,
     "title": "The Chairman & CEO of Policy Exchange Joined National Budget Discussion of Channel 24 and PRI",
     "image": "/event/14.jpg",
-    "date": "June 22, 2022"
+    "date": "June 22, 2022",
+    "detail": "The Chairman & CEO of Policy Exchange of Bangladesh Dr. M Masrur Reaz joined the National Budget Discussion of Channel 24 and PRI. Recognition of inflation as challenge, business tax rate rationalization, incentive for greening of businesses are some of the encouraging propositions. That said, a lot more could be offered to tame inflation, strengthening revenue regime and institutional capacity, and advancing trade and investment reforms."
   },
   {
     "id": 15,
     "title": "Keynote by the Chairman & CEO of Policy Exchange at First Economic Diplomacy Week by Ministry of Foreign Affairs.",
     "image": "/event/15.jpeg",
-    "date": "June 11, 2022"
+    "date": "June 11, 2022",
+    "detail": "The Chairman & CEO of Policy Exchange Bangladesh Dr. M Masrur Reaz joined as a keynote speaker at the export diversification session at the first ever Economic Diplomacy Week organized by the Ministry of Foreign Affairs, Bangladesh. The excellent and timely initiative by the MoFA which will help leverage it’s global networks in pursuing trade and investment opportunities for Bangladesh."
   }
 ]

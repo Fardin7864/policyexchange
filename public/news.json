@@ -34,10 +34,8 @@
     "title": "SheSTEM: Advancing Women in STEM supported by the Embassy of the Kingdom of the Netherlands",
     "subTitle": "Policy Exchange Bangladesh is pleased to be involved in the innovative project “SheSTEM: Career Knows No Gender,” which is being supported by the Embassy of the Kingdom of the Netherlands",
     "image": "https://www.policyexchangebd.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-16-at-20.20.48-870x570.jpeg",
-    "image2": "/news/4-1.jpeg",
-    "image3": "/news/4-2.jpeg",
-    "image4": "/news/4-3.jpeg",
     "date": "November 17, 2023",
+    "images": ["/news/4-1.jpeg", "/news/4-2.jpeg", "/news/4-3.jpeg"],
     "detail": "Policy Exchange Bangladesh is pleased to be involved in the innovative project “SheSTEM: Career Knows No Gender,” which is being supported by the Embassy of the Kingdom of the Netherlands. This multi-year program is driven by 10 Minute School, a2i, LightCastle Partners, DevLearn and Policy Exchange Bangladesh to change the landscape of female participation in STEM fields (science, technology, engineering, and mathematics). Despite the different roles of the consortium members, the combined effort is to break gender barriers in STEM related employment in the country. To achieve that goal, Policy Exchange Bangladesh will actively contribute in providing technical assistance and in raising awareness of Bangladesh Public Service Commission (BPSC) by sensitizing and by improving the knowledge in the global best practices, establishing a gender friendly screening tool which will eventually help in fair evaluation. The ultimate goal is to increase awareness and adoption of gender neutral strategies within BPSC, fostering an environment that actively encourages female employment in public institutions. Simultaneously, Policy Exchange Bangladesh will raise awareness and sensitize the officials of the Ministry of Public Administration (MOPA) and then incentivize so that the inclusion of female participation in STEM roles within public institutions become visible."
   },
   {
@@ -46,9 +44,7 @@
     "subTitle": "On November 7, 2023, the Metropolitan Chamber of Commerce and Industry, Dhaka (MCCI), in partnership with the Policy Exchange of Bangladesh (PEB) and supported by the Foreign, Commonwealth & Development",
     "image": "https://www.policyexchangebd.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-09-at-13.06.04-1-870x570.jpeg",
     "date": "November 12, 2023",
-    "image2": "/news/5-1.jpeg",
-    "image3": "/news/5-2.jpeg",
-    "image4": "/news/5-3.jpeg",
+    "images": ["/news/5-1.jpeg", "/news/5-2.jpeg", "/news/5-3.jpeg"],
     "detail": "On November 7, 2023, the Metropolitan Chamber of Commerce and Industry, Dhaka (MCCI), in partnership with the Policy Exchange of Bangladesh (PEB) and supported by the Foreign, Commonwealth & Development Office (FCDO), organized a Focus Group Discussion on the “Procurement Manager’s Index (PMI) of Bangladesh” at its Gulshan office. The event witnessed participation from representatives of MCCI, PEB, FCDO, and MCCI member firms. Dr. M. Masrur Reaz, Chairman & CEO of PEB, adeptly moderated the discussion, fostering valuable insights and constructive discourse."
   },
   {
@@ -56,9 +52,7 @@
     "title": "Empowering Women Workers: Unveiling Strategies for a Sustainable Apparel Sector",
     "subTitle": "Policy Exchange Bangladesh, in collaboration with LightCastle Partners, hosted a Learning Dissemination and Roundtable Discussion on November 4th, 2023.",
     "image": "https://www.policyexchangebd.com/wp-content/uploads/2023/11/Copy-of-IMG_9229-870x570.jpg",
-    "image2": "/news/6-1.jpg",
-    "image3": "/news/6-2.jpg",
-    "image4": "/news/6-3.jpg",
+    "images": ["/news/6-1.jpg", "/news/6-2.jpg", "/news/6-3.jpg"],
     "date": "November 10, 2023",
     "detail": "Policy Exchange Bangladesh, in collaboration with LightCastle Partners, hosted a Learning Dissemination and Roundtable Discussion on November 4th, 2023. The event unveiled the findings of the comprehensive study titled “Threads of Progress: A Comprehensive Landscape Study of the Apparel Industry and the Future for Women Workers,” was conducted as part of the Bunon 2030 initiative, under the Oporajita project, supported by H&M Foundation and managed by The Asia Foundation. The study emphasized the need for sustainable growth, addressing challenges posed by automation, circularity, and global dynamics. Policy recommendations were presented to fortify the industry against future shocks while ensuring the well-being of garment workers. The event facilitated insightful discussions with industry leaders, academics, and development partners, highlighting key strategies for a resilient future."
   },
@@ -85,9 +79,7 @@
     "title": "High-Level Breakfast Meeting Explores Bangladesh-UK Collaboration for Future Growth",
     "subTitle": "Policy Exchange Bangladesh and the British High Commission Dhaka jointly arranged a breakfast meeting last week featuring Professor Adnan Khan, the Chief Economist of the UK’s Foreign, Commonwealth",
     "image": "https://www.policyexchangebd.com/wp-content/uploads/2023/09/379858775_10159366161140653_1414663592930371745_n-870x570.jpg",
-    "image2": "/news/9-1.jpg",
-    "image3": "/news/9-2.jpg",
-    "image4": "/news/9-3.jpg",
+    "images": ["/news/9-1.jpg", "/news/9-2.jpg", "/news/9-3.jpg"],
     "date": "September 19, 2023",
     "detail": "Policy Exchange Bangladesh and the British High Commission Dhaka jointly arranged a breakfast meeting last week featuring Professor Adnan Khan, the Chief Economist of the UK’s Foreign, Commonwealth, and Development Office (FCDO). This event brought together prominent entrepreneurs from Bangladesh’s private sector for discussion on critical factors for Bangladesh’s future growth, including long-term finance, exports, economic diversification, and the digital economy. The participants also explored opportunities for collaboration between Bangladesh and the UK in these key areas."
   },
@@ -97,10 +89,12 @@
     "subTitle": "Dr. M. Masrur Reaz, CEO of Policy Exchange Bangladesh, engaged in a dinner discussion with the Second US-Bangladesh Business Council Executive Delegation. ",
     "image": "https://www.policyexchangebd.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-30-at-10.34.54-PM-870x570.jpeg",
     "date": "August 31, 2023",
-    "image2": "/news/10-1.jpeg",
-    "image3": "/news/10-2.jpeg",
-    "image4": "/news/10-3.jpeg",
-    "image5": "/news/10-4.jpeg",
+    "images": [
+      "/news/10-1.jpeg",
+      "/news/10-2.jpeg",
+      "/news/10-3.jpeg",
+      "/news/10-4.jpeg"
+    ],
     "detail": "Dr. M. Masrur Reaz, CEO of Policy Exchange Bangladesh, engaged in a dinner discussion with the Second US-Bangladesh Business Council Executive Delegation. The event brought together 40 leading US companies, including industry giants like Boeing, Blackstone, Meta, and ExxonMobil, to explore the exciting potential of emerging sectors in Bangladesh."
   },
   {

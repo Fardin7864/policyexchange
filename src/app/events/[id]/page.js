@@ -26,6 +26,14 @@ const EventDetail = (params) => {
     setEventsDetail(eventsDetails);
   }, [events, params.params.id]);
 
+  //
+
+  const [showAll, setShowAll] = useState(false);
+
+  const toggleShowAll = () => {
+    setShowAll(!showAll);
+  };
+
   return (
     <div className="bg-custom">
       <div
@@ -61,7 +69,7 @@ const EventDetail = (params) => {
               <img
                 src={eventsDetail?.image}
                 alt=""
-                className="rounded-t-xl h-80 w-full news-thumbnail"
+                className="rounded-xl h-80 w-full news-thumbnail"
               />
             </div>
             <div className="border-r-2 border-gray-400 col-span-4">
@@ -69,23 +77,42 @@ const EventDetail = (params) => {
                 <p className="flex gap-1 items-center justify-start font-light text-xs text-gray-700 mt-5">
                   <FaRegCalendarAlt /> {eventsDetail?.date}
                 </p>
-                <p className="mt-2 mb-10 flex flex-col gap-4">
-                  <span className="font-bold text-[#956de6] text-lg">
+                <div className="mt-2 mb-10 flex flex-col gap-4">
+                  <p className="font-bold text-[#956de6] text-lg">
                     {eventsDetail?.title}
-                  </span>
-                  <span className="text-sm text-justify">
+                  </p>
+
+                  {eventsDetail?.detail && (
+                    <div>
+                      {showAll || eventsDetail.detail.length <= 500 ? (
+                        <p>{eventsDetail.detail}</p>
+                      ) : (
+                        <div>
+                          <p>{eventsDetail.detail.slice(0, 500)}</p>
+                          <button
+                            onClick={toggleShowAll}
+                            className="font-semibold mt-2 text-[#956de6]"
+                          >
+                            Show {showAll ? "less" : "more"}
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  {/* <span className="text-sm text-justify">
                     {eventsDetail?.detail}
-                  </span>
-                </p>
+                  </span> */}
+                </div>
               </div>
             </div>
           </div>
-
-          {eventsDetail?.images.map((img, index) => (
-            <div key={index}>
-              <img src={img} alt="" />
-            </div>
-          ))}
+          <div className="grid grid-cols-3 gap-3 mt-10">
+            {eventsDetail?.images?.map((img, index) => (
+              <div key={index}>
+                <img src={img} alt="" className="rounded-xl w-full" />
+              </div>
+            ))}
+          </div>
         </Container>
       </div>
     </div>
