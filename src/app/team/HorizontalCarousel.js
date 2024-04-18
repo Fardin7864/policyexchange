@@ -15,7 +15,7 @@ const HorizontalScrollCarousel = () => {
   return (
 
       <div className=" mt-10">
-      <Marquee speed="150">
+      <Marquee speed="120">
         <div 
         // style={{ x }}
          className="flex gap-4">

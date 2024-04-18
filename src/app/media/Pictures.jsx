@@ -49,7 +49,7 @@ const Pictures = () => {
     setPictures((prevPictures) => [...prevPictures, ...newPictures]);
   };
 
-  const picturesToDisplay = !isShow ? pictures.slice(0, 63) : pictures.slice(0,77);
+  const picturesToDisplay = !isShow ? pictures.slice(0, 63) : pictures.slice(0,98);
 
   return (
     <PhotoProvider>
