@@ -40,7 +40,7 @@ const News = () => {
       >
         <div className="w-[100%] absolute h-[400px] bg-black opacity-60"></div>
         <div className=" flex justify-center h-full">
-          <h3 className=" text-white  text-5xl absolute font-bold pt-48 opacity-100 z-50">
+          <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
             News
           </h3>
           <p className=" text-white text-lg absolute font-semibold pt-64 opacity-100 z-50">
@@ -53,7 +53,7 @@ const News = () => {
         </div>
       </div>
       <div className=" max-w-[1440px] mx-auto ">
-        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16 ">
+        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-16 ">
           {currentNews.map((news, index) => (
             <div
               key={index}

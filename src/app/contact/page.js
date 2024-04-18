@@ -6,24 +6,24 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const ContactPage = () => {
   return (
-    <div className="max-w-[1440px] mx-auto ">
-      <div>
-        <div
-          className="background-div bg-no-repeat bg-cover with-overlay"
-          style={{
-            backgroundImage: "url('/banners/about.webp')",
-            width: "full",
-            height: "400px",
-          }}
-        >
-          <div className="w-[94.2%] absolute h-[400px] bg-blue-800 opacity-20"></div>
-          <div className=" flex justify-center h-full">
-            <h3 className=" text-white  text-5xl absolute font-bold pt-64 opacity-100 z-50">
-              Contact us
-            </h3>
-          </div>
+    <div className="bg-custom">
+      <div
+        className="background-div bg-no-repeat bg-cover with-overlay"
+        style={{
+          backgroundImage: "url('/banners/about.webp')",
+          width: "full",
+          height: "400px",
+        }}
+      >
+        <div className="w-[94.2%] absolute h-[400px] bg-blue-800 opacity-20"></div>
+        <div className=" flex justify-center h-full">
+          <h3 className=" text-white  text-5xl absolute font-bold pt-64 opacity-100 z-50">
+            Contact us
+          </h3>
         </div>
-        {/* content */}
+      </div>
+      {/* content */}
+      <div>
         <Container className="flex md:flex-row flex-col-reverse justify-between  gap-5 mt-20">
           <div className="w-full md:w-1/2">
             <div>
