@@ -14,7 +14,7 @@ import { BsPeopleFill } from "react-icons/bs";
     
     return(
         <div className=' flex flex-col items-center'>
-            <div className=' p-5 w-52 h-52 bg-[#3080e2] flex justify-center items-center rounded-full'>
+            <div className=' p-5 w-40 h-40 bg-[#3080e2] flex justify-center items-center rounded-full'>
             {Icon}
             </div>
             <div className=' mt-5 text-center px-2'>
