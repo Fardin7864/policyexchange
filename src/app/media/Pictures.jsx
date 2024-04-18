@@ -3,6 +3,7 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { useEffect, useState, useRef } from "react";
 import { ArrowLeft, ArrowRight } from "@mui/icons-material";
+import Image from "next/image";
 
 const Pictures = () => {
   const [pictures, setPictures] = useState([]);
@@ -48,7 +49,7 @@ const Pictures = () => {
     setPictures((prevPictures) => [...prevPictures, ...newPictures]);
   };
 
-  const picturesToDisplay = !isShow ? pictures.slice(0, 63) : pictures;
+  const picturesToDisplay = !isShow ? pictures.slice(0, 63) : pictures.slice(0,77);
 
   return (
     <PhotoProvider>
@@ -68,6 +69,12 @@ const Pictures = () => {
                       position: "relative", 
                     }}
                   >
+                    {/* <Image
+                    src={picture.img}
+                    width={195}
+                    height={195}
+                    alt="img"
+                    /> */}
                     
                     <div
                       style={{
@@ -90,12 +97,19 @@ const Pictures = () => {
                   onClick={() => setCurrentImg(picture.img)}
                   className="background-div bg-no-repeat bg-cover with-overlay "
                   style={{
-                    backgroundImage: `url(${picture.img})`,
+                    // backgroundImage: `url(${picture.img})`,
                     width: "195px",
                     height: "195px",
                     position: "relative", // Ensure proper overlay positioning
                   }}
                 >
+                  <Image
+                    src={picture.img}
+                    width={195}
+                    height={195}
+                    style={{ width: '195px', height: '195px', objectFit: 'cover' }}
+                    alt="img"                    
+                    />
                   {/* Dark overlay */}
                   <div
                   className=" hover:bg-[#0000007f] bg-transparent"
