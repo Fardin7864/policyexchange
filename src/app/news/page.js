@@ -40,7 +40,7 @@ const News = () => {
       >
         <div className="w-[100%] absolute h-[400px] bg-black opacity-60"></div>
         <div className=" flex justify-center h-full">
-          <h3 className=" text-white  text-5xl absolute font-bold pt-48 opacity-100 z-50">
+          <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
             News
           </h3>
           <p className=" text-white text-lg absolute font-semibold pt-64 opacity-100 z-50">

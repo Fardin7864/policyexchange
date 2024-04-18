@@ -8,21 +8,14 @@ import OurWorks from "./OurWorks";
 const about = () => {
   return (
     <div className=" max-w-[1440px] mx-auto">
-      <h1 className=" text-center text-5xl font-bold mt-36">
+      <h1 className=" text-center text-5xl font-bold mt-52 mb-16">
         About Policy Exchange Bangladesh
       </h1>
       <Container className="px-0">
         <div className=" py-10">
           {/* Our story */}
           <FadeFromSide direction="left" duration={1}>
-            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#F5CC00] gap-5 rounded-3xl shadow-2xl">
-              {/* <Image
-                src={"https://i.ibb.co/NYFKNgb/Our-story.webp"}
-                width={600}
-                height={0}
-                alt="about image"
-                className=" rounded-l-3xl w-1/2"
-              /> */}
+            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#A790D5] gap-5 rounded-3xl shadow-2xl">
               <div
                 className="rounded-l-3xl w-1/2"
                 style={{
@@ -30,7 +23,7 @@ const about = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
-                  width: "800px", 
+                  width: "800px",
                   height: "500px",
                 }}
               ></div>
@@ -52,37 +45,9 @@ const about = () => {
             </div>
           </FadeFromSide>
 
-          {/* Our Background */}
-          {/* <FadeFromSide direction="right" duration={1}>
-            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#307FE2] gap-5 rounded-3xl mt-16 shadow-2xl">
-              <div className="px-5 w-1/2">
-                <h2 className=" text-4xl font-bold">
-                  Our Background and Team:
-                </h2>
-                <p className=" font-medium py-7">
-                  At Policy Exchange Bangladesh, we are a team of seasoned
-                  professionals driven by a shared commitment to catalyze
-                  positive change in Bangladesh&apos;s economic landscape. Our
-                  founding team brings together expertise from diverse
-                  backgrounds, including academia, public sector, industry, and
-                  various countries. This diversity enriches our perspectives
-                  and insights, ensuring that our solutions are not only
-                  theoretically sound but also practically viable.
-                </p>
-              </div>
-              <Image
-                src={"https://i.ibb.co/HCF7q0x/bg-and-team.jpg"}
-                width={900}
-                height={0}
-                alt="about image"
-                className=" rounded-r-3xl w-1/2"
-              />
-            </div>
-          </FadeFromSide> */}
-
           {/* Evaluation  */}
           <FadeFromSide direction="right" duration={1}>
-            <div className=" flex flex-col mt-16 lg:flex-row justify-between items-center bg-[#3DAB52] gap-5 rounded-3xl shadow-2xl">
+            <div className=" flex flex-col mt-16 lg:flex-row justify-between items-center bg-[#a2bcd6] gap-5 rounded-3xl shadow-2xl">
               <div className="pl-16 pr-10 w-1/2">
                 <h2 className=" text-4xl font-bold ">
                   Evolution of Policy Exchange Bangladesh:
@@ -117,7 +82,7 @@ const about = () => {
 
           {/* Our Misson */}
           <FadeFromSide direction="left" duration={1}>
-            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#8D87F9] gap-5 rounded-3xl my-16 mt-16 shadow-2xl">
+            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#9de7d7] gap-5 rounded-3xl my-16 mt-16 shadow-2xl">
               <div
                 className="rounded-l-3xl w-1/2"
                 style={{
@@ -129,7 +94,7 @@ const about = () => {
                   height: "500px",
                 }}
               ></div>
-              <div className="pl-16 pr-10 w-1/2">
+              <div className="pl-10 pr-16 w-1/2">
                 <h2 className=" text-4xl font-bold">Our Mission and Vision:</h2>
                 <p className=" font-medium py-7">
                   At Policy Exchange Bangladesh, our mission is clear - to
@@ -143,8 +108,6 @@ const about = () => {
                   sustainable
                 </p>
               </div>
-              
-              
             </div>
           </FadeFromSide>
         </div>
