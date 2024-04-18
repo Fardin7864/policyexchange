@@ -131,6 +131,19 @@ const NewsDetail = (params) => {
               </div>
             </div>
           </div>
+          {newsDetail?.image2 ||
+          newsDetail?.image3 ||
+          newsDetail?.image4 ||
+          newsDetail?.image5 ? (
+            <div className="grid grid-cols-3 gap-2 border-0">
+              <img src={newsDetail?.image2} className="h-72 w-full" alt="" />
+              <img className="h-72 w-full" src={newsDetail?.image3} alt="" />
+              <img className="h-72 w-full" src={newsDetail?.image4} alt="" />
+              {newsDetail?.image5 && (
+                <img className="h-72 w-full" src={newsDetail?.image5} alt="" />
+              )}
+            </div>
+          ) : null}
         </Container>
       </div>
     </div>
