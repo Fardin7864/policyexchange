@@ -17,10 +17,10 @@ import { BsPeopleFill } from "react-icons/bs";
             <div className=' p-5 w-52 h-52 bg-[#3080e2] flex justify-center items-center rounded-full'>
             {Icon}
             </div>
-            {/* <div className=' mt-5 text-center px-28 border-2 border-black'>
+            <div className=' mt-5 text-center px-2'>
                 <h3 className=' text-2xl font-semibold pb-3'>{title}</h3>
-                <p className=' '>{details}</p>
-            </div> */}
+                <p>{details}</p>
+            </div>
         </div>
     )
  }

@@ -18,13 +18,14 @@ export default function ActionAreaCard({image, title, details,bottomBorder,class
         />
         <div className={`h-2 w-full`} style={{backgroundColor: `${bottomBorder}`}}></div>
         <CardContent className={` my-5 bg-white`}>
-          <Typography gutterBottom variant="h5" component="div" className=' text-lg'>
+          <Typography gutterBottom variant="h5" component="div" className=' text-lg text-[#a790d5]'>
             {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             {details}
           </Typography>
         </CardContent>
+        
       </CardActionArea>
     </Card>
   );
