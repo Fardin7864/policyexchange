@@ -26,7 +26,7 @@ const OurWorks = () => {
           >
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48  text-white bg-[#A790D5] p-3 rounded-l-full px-14 ${
+                className={`transition-transform pt-6 h-48  text-white bg-[#A790D5] p-3 rounded-l-full px-14 ${
                   isshowCollab
                     ? "transform translate-x-0"
                     : "transform translate-x-full"
@@ -45,12 +45,10 @@ const OurWorks = () => {
             </div>
             <div className={`  rounded-r-full h-48 ${isshowCollab ? "bg-[#A790D5]" : " " }`}>
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                {/* <FaChartLine className="text-6xl" /> */}
                 <img src="/icons/Collaborative engagement.gif" alt="" />
               </div>
             </div>
           </div>
-
           {/* 2nd */}
           <div
             onMouseEnter={() => setIsshowStrategic(true)}
@@ -65,19 +63,17 @@ const OurWorks = () => {
                     : "transform translate-x-full"
                 }`}
               >
-                <h3 className="text-2xl font-bold pl-8 ">
+                <h3 className="text-2xl font-bold pl-16 ">
                 Strategic Outreach
                 </h3>
-                <p className=" leading-5 pl-8 pt-2">
-                Market-oriented, pragmatic, evidence-based role and voice to fill  gaps in the national landscape by bringing to the fore bold, well-informed alternative approaches to strategies for achieving inclusive economic growth and transformation
+                <p className=" leading-5 pl-16 pt-2">
+                Providing practical, market-driven solutions and perspectives to address gaps in the national economic landscape, advocating for innovative approaches to inclusive growth and transformation.
                 </p>
               </div>
             </div>
             <div  className={`  rounded-r-full h-48 ${isshowStrategic ? "bg-[#A790D5]" : " " }`}>
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                {/* <RiLuggageCartFill className="text-6xl" /> */}
                 <img src="/icons/strategic outreach.gif" alt="" />
-
               </div>
             </div>
           </div>
@@ -92,7 +88,6 @@ const OurWorks = () => {
           >
             <div   className={`  rounded-l-full h-48 ${isshowinnovative ? "bg-[#A790D5]" : " " }`}>
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                {/* <FcAdvertising className="text-6xl" /> */}
                 <img src="/icons/innovative advocacy.gif" alt="" />
               </div>
             </div>
@@ -121,24 +116,22 @@ const OurWorks = () => {
           >
             <div className={`  rounded-l-full h-48 ${isshowGlobal ? "bg-[#A790D5]" : " " }`}>
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                {/* <RiMenuAddLine className="text-6xl" /> */}
                 <img src="/icons/global policy.gif" alt="" />
-
               </div>
             </div>
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48 text-white  bg-[#A790D5] p-3 rounded-r-full px-14 ${
+                className={`transition-transform flex flex-col justify-center items-center h-48 text-white  bg-[#A790D5] p-3 rounded-r-full px-14 ${
                   isshowGlobal
                     ? "transform translate-x-0"
                     : "transform -translate-x-full"
                 }`}
               >
-                <h3 className="text-2xl font-bold ">
+                <h3 className="text-2xl font-bold relative -left-12">
                 Global Policy Exploration
                 </h3>
                 <p className=" leading-5 pt-2 pr-8">
-                Study and generate public policy ideas in Bangladesh and other developing and emerging countries
+                Conduct comprehensive research and formulate innovative public policy initiatives tailored for Bangladesh and other developing and emerging nations
                 </p>
               </div>
             </div>

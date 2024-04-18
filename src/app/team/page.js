@@ -15,7 +15,7 @@ const page = () => {
       >
         <div className="w-[100%] absolute h-[400px] bg-gray-600 opacity-20"></div>
         <div className=" flex justify-center h-full">
-          <h3 className=" text-white text-center text-5xl absolute font-bold pt-64 opacity-100 z-50">
+          <h3 className=" text-white text-center text-5xl absolute font-bold pt-52 opacity-100 z-50">
             Meet Out Team
           </h3>
         </div>
