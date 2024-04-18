@@ -42,7 +42,7 @@ const NewsDetail = (params) => {
       >
         <div className="w-[100%] absolute h-[400px] bg-black opacity-60"></div>
         <div className=" flex justify-center h-full">
-          <h3 className=" text-white  text-5xl absolute font-bold pt-48 opacity-100 z-50">
+          <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
             News
           </h3>
           <p className=" text-white text-lg absolute font-semibold pt-64 opacity-100 z-50">
@@ -55,8 +55,8 @@ const NewsDetail = (params) => {
         </div>
       </div>
       <div className="max-w-[1440px] mx-auto ">
-        <Container className=" gap-5 my-16 ">
-          <div className=" bg-inherit rounded-xl publication news relative mb-5 grid grid-cols-7 bg-gray-100">
+        <Container className=" gap-5 py-16 ">
+          <div className="  rounded-xl publication news relative mb-8 grid grid-cols-7 ">
             <div className="overflow-hidden col-span-3 flex items-center">
               <img
                 src={newsDetail?.image}
@@ -131,19 +131,14 @@ const NewsDetail = (params) => {
               </div>
             </div>
           </div>
-          {newsDetail?.image2 ||
-          newsDetail?.image3 ||
-          newsDetail?.image4 ||
-          newsDetail?.image5 ? (
-            <div className="grid grid-cols-3 gap-2 border-0">
-              <img src={newsDetail?.image2} className="h-72 w-full" alt="" />
-              <img className="h-72 w-full" src={newsDetail?.image3} alt="" />
-              <img className="h-72 w-full" src={newsDetail?.image4} alt="" />
-              {newsDetail?.image5 && (
-                <img className="h-72 w-full" src={newsDetail?.image5} alt="" />
-              )}
-            </div>
-          ) : null}
+
+          <div className="grid grid-cols-3 gap-3 mt-10">
+            {newsDetail?.images.map((img, index) => (
+              <div key={index}>
+                <img src={img} alt="" className="rounded-xl h-72 w-full" />
+              </div>
+            ))}
+          </div>
         </Container>
       </div>
     </div>

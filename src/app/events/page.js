@@ -6,6 +6,7 @@ import { Container } from "@mui/material";
 import { useEffect, useState } from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import Pagination from "@mui/material/Pagination";
+import Link from "next/link";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -52,36 +53,34 @@ const Events = () => {
         </div>
       </div>
       <div className=" max-w-[1440px] mx-auto ">
-        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16">
+        <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-16">
           {currentEvents.map((event, index) => (
-            <div
-              key={index}
-              className="shadow-2xl bg-white rounded-xl publication relative mb-5"
-            >
-              <div className="overflow-hidden bg-black">
-                <img
-                  src={event.image}
-                  alt=""
-                  className="rounded-t-xl h-56 w-full publication-thumbnail"
-                />
-              </div>
-              <div className="publications-container">
-                <div className="py-3 px-5">
-                  <p className="mt-2 mb-10 text-sm flex flex-col gap-2 ">
-                    <span className="font-bold text-[#956de6]">
-                      {event.title}
-                    </span>
-                    <span className="">{event.subtitle}</span>
-                  </p>
-
-                  <div className=" my-2 border-t pt-2 absolute pb-1 bottom-1 w-full">
-                    <p className="flex gap-1 items-center justify-start font-light text-xs text-gray-700 ">
-                      <FaRegCalendarAlt /> {event.date}
+            <Link href={`/events/${event.id}`} key={index}>
+              <div className="shadow-2xl bg-white rounded-xl publication relative mb-5 h-96">
+                <div className="overflow-hidden bg-black">
+                  <img
+                    src={event.image}
+                    alt=""
+                    className="rounded-t-xl h-56 w-full publication-thumbnail"
+                  />
+                </div>
+                <div className="publications-container">
+                  <div className="py-3 px-5">
+                    <p className="mt-2 mb-10 text-sm flex flex-col gap-2 ">
+                      <span className="font-bold text-[#956de6]">
+                        {event.title}
+                      </span>
                     </p>
+
+                    <div className=" my-2 border-t pt-2 absolute pb-1 bottom-1 w-full">
+                      <p className="flex gap-1 items-center justify-start font-light text-xs text-gray-700 ">
+                        <FaRegCalendarAlt /> {event.date}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </Container>
         <div className="flex justify-center">

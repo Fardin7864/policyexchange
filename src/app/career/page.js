@@ -61,7 +61,7 @@ const CareerPage = () => {
           <div className=" pt-16 pb-10">
             {/* Our story */}
             <FadeFromSide direction="left" duration={1}>
-              <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#7b5db8] gap-5 rounded-3xl shadow-2xl">
+              <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#9de7d7] gap-5 rounded-3xl shadow-2xl">
                 <Image
                   src={"/images/career2.jpg"}
                   width={600}
@@ -70,10 +70,10 @@ const CareerPage = () => {
                   className=" rounded-l-3xl w-1/2"
                 />
                 <div className="p-5 w-1/2">
-                  <h2 className=" text-4xl font-bold text-white">
+                  <h2 className=" text-4xl font-bold">
                     Become a part of our Team
                   </h2>
-                  <p className=" font-medium py-7 text-white">
+                  <p className=" font-medium py-7">
                     Policy Exchange Bangladesh is a distinguished private,
                     independent advisory firm with a singular focus on the
                     private sector economy. Our journey began with a vision to
@@ -101,10 +101,10 @@ const CareerPage = () => {
                   className="bg-white py-5 px-10 rounded-xl  jobs-container"
                 >
                   <h2 className="font-bold text-xl">{job.title}</h2>
-                  <h3 className="text-[#5620c2] font-semibold mt-1">
+                  <h3 className="text-[#307fe2] font-semibold mt-1">
                     {job.subTitle}
                   </h3>
-                  <button className="rounded-full border px-4 py-2 border-[#a790d5] bg-[#efeaf8] text-[#6634c9] hover:bg-[#6634c9] hover:text-white duration-300 mt-3">
+                  <button className="rounded-full border px-4 py-2 border-[#98c3f7] bg-[#f3f8ff] text-[#307fe2] hover:bg-[#307fe2] hover:text-white duration-300 mt-3 font-bold">
                     Apply Now
                   </button>
                 </div>
@@ -117,20 +117,20 @@ const CareerPage = () => {
                     className="bg-white py-5 px-10 rounded-xl  jobs-container"
                   >
                     <h2 className="font-bold text-xl">{job.title}</h2>
-                    <h3 className="text-[#5620c2] font-semibold mt-1">
+                    <h3 className="text-[#307fe2] font-semibold mt-1">
                       {job.subTitle}
                     </h3>
-                    <button className="rounded-full border px-4 py-2 border-[#a790d5] bg-[#efeaf8] text-[#6634c9] hover:bg-[#6634c9] hover:text-white duration-300 mt-3">
+                    <button className="rounded-full border px-4 py-2 border-[#98c3f7] bg-[#f3f8ff] text-[#307fe2] hover:bg-[#307fe2] hover:text-white duration-300 mt-3 font-bold">
                       Apply Now
                     </button>
                   </div>
                 ))}
             </div>
             <button
-              className="rounded-full border px-5 py-3 border-[#a790d5] bg-[#6634c9] text-white duration-300  block mx-auto mt-10"
+              className="rounded-full border px-5 py-3 border-[#a790d5] hover:bg-[#956de6] bg-[#307fe2] text-white  duration-300  block mx-auto mt-10 font-semibold"
               onClick={toggleShowAllJobs}
             >
-              {showAllJobs ? "Close" : "View all openings"}
+              {showAllJobs ? "Hide" : "View all openings"}
             </button>
           </div>
 
@@ -139,11 +139,11 @@ const CareerPage = () => {
           <div className="mt-16">
             <h2 className="text-center text-4xl font-bold">
               Learn Our Recruitment{" "}
-              <span className="text-[#6634c9]">Process</span>{" "}
+              <span className="text-[#956de6]">Process</span>{" "}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 mb-16 gap-5">
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <IoDocumentTextOutline className="text-5xl font-bold text-[#6634c9] mb-3" />
+                <IoDocumentTextOutline className="text-5xl font-bold text-[#956de6] mb-3" />
                 <h4 className="font-bold text-xl">CV Submission</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Submit your CV through our online portal or via email. Ensure
@@ -151,7 +151,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <FiPhoneCall className="text-5xl font-bold text-[#6634c9] mb-3" />
+                <FiPhoneCall className="text-5xl font-bold text-[#956de6] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Phone Screening</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   After reviewing your CV, selected candidates will undergo a
@@ -159,7 +159,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8 rounded-xl shadow-2xl">
-                <GrCloudComputer className="text-5xl font-bold text-[#6634c9] mb-3" />
+                <GrCloudComputer className="text-5xl font-bold text-[#956de6] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Skill Assessment</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Qualified candidates will be invited to complete an assessment
@@ -167,7 +167,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <RiTeamLine className="text-5xl font-bold text-[#6634c9] mb-3" />
+                <RiTeamLine className="text-5xl font-bold text-[#956de6] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Final Interview</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Successful candidates from the assessment stage will progress
