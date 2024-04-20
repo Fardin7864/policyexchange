@@ -127,7 +127,7 @@ const CareerPage = () => {
                 ))}
             </div>
             <button
-              className="rounded-full border px-5 py-3 border-[#a790d5] hover:bg-[#956de6] bg-[#307fe2] text-white  duration-300  block mx-auto mt-10 font-semibold"
+              className="rounded-full border px-5 py-3 border-[#a790d5] hover:bg-[#A790D5] bg-[#307fe2] text-white  duration-300  block mx-auto mt-10 font-semibold"
               onClick={toggleShowAllJobs}
             >
               {showAllJobs ? "Hide" : "View all openings"}
@@ -139,11 +139,11 @@ const CareerPage = () => {
           <div className="mt-16">
             <h2 className="text-center text-4xl font-bold">
               Learn Our Recruitment{" "}
-              <span className="text-[#956de6]">Process</span>{" "}
+              <span className="text-[#A790D5]">Process</span>{" "}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 mb-16 gap-5">
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <IoDocumentTextOutline className="text-5xl font-bold text-[#956de6] mb-3" />
+                <IoDocumentTextOutline className="text-5xl font-bold text-[#A790D5] mb-3" />
                 <h4 className="font-bold text-xl">CV Submission</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Submit your CV through our online portal or via email. Ensure
@@ -151,7 +151,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <FiPhoneCall className="text-5xl font-bold text-[#956de6] mb-3" />
+                <FiPhoneCall className="text-5xl font-bold text-[#A790D5] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Phone Screening</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   After reviewing your CV, selected candidates will undergo a
@@ -159,7 +159,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8 rounded-xl shadow-2xl">
-                <GrCloudComputer className="text-5xl font-bold text-[#956de6] mb-3" />
+                <GrCloudComputer className="text-5xl font-bold text-[#A790D5] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Skill Assessment</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Qualified candidates will be invited to complete an assessment
@@ -167,7 +167,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <RiTeamLine className="text-5xl font-bold text-[#956de6] mb-3" />
+                <RiTeamLine className="text-5xl font-bold text-[#A790D5] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Final Interview</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Successful candidates from the assessment stage will progress
