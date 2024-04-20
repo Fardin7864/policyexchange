@@ -254,7 +254,11 @@ const CareerPage = () => {
             <li> Day Shift 9 AM to 6 PM. 6 days a week job</li>
           </ul>
           <h5 className="font-bold">Apply here</h5>
-          <a href="https://docs.google.com/forms" target="blank">
+          <a
+            href="https://docs.google.com/forms"
+            target="blank"
+            className="text-blue-400"
+          >
             https://docs.google.com/forms
           </a>
         </DialogContent>
