@@ -8,6 +8,10 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
 import { GrCloudComputer } from "react-icons/gr";
 import { RiTeamLine } from "react-icons/ri";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import Button from "@mui/material/Button";
 
 const CareerPage = () => {
   const [jobs, setJobs] = useState([]);
@@ -23,6 +27,17 @@ const CareerPage = () => {
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
+
+  //
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <div className="bg-custom">
@@ -104,7 +119,10 @@ const CareerPage = () => {
                   <h3 className="text-[#307fe2] font-semibold mt-1">
                     {job.subTitle}
                   </h3>
-                  <button className="rounded-full border px-4 py-2 border-[#98c3f7] bg-[#f3f8ff] text-[#307fe2] hover:bg-[#307fe2] hover:text-white duration-300 mt-3 font-bold">
+                  <button
+                    onClick={handleClickOpen}
+                    className="rounded-full border px-4 py-2 border-[#98c3f7] bg-[#f3f8ff] text-[#307fe2] hover:bg-[#307fe2] hover:text-white duration-300 mt-3 font-bold"
+                  >
                     Apply Now
                   </button>
                 </div>
@@ -120,7 +138,10 @@ const CareerPage = () => {
                     <h3 className="text-[#307fe2] font-semibold mt-1">
                       {job.subTitle}
                     </h3>
-                    <button className="rounded-full border px-4 py-2 border-[#98c3f7] bg-[#f3f8ff] text-[#307fe2] hover:bg-[#307fe2] hover:text-white duration-300 mt-3 font-bold">
+                    <button
+                      onClick={handleClickOpen}
+                      className="rounded-full border px-4 py-2 border-[#98c3f7] bg-[#f3f8ff] text-[#307fe2] hover:bg-[#307fe2] hover:text-white duration-300 mt-3 font-bold"
+                    >
                       Apply Now
                     </button>
                   </div>
@@ -178,6 +199,71 @@ const CareerPage = () => {
           </div>
         </Container>
       </div>
+      <Dialog open={open} onClose={handleClose} className="z-0">
+        <DialogContent className="py-10 px-16 bg-[#00263a] text-white">
+          <h3 className="font-bold mb-2 text-lg uppercase">Job Context</h3>
+          <ul className="list-disc mb-5">
+            <li>
+              We are looking for an experienced and passionate Expert Social
+              Media Manager who has practical experience in social media
+              marketing, and the digital marketing sector as well expert in
+              video editing, and graphic designing.
+            </li>
+            <li>
+              The candidate must be willing to stay long-term, be willing to
+              grow with the company, and increase his or her expertise in the
+              field through learning about Digital Marketing & Social Media
+              Marketing
+            </li>
+          </ul>
+          <h3 className="font-bold mb-2 text-lg uppercase">
+            Job Responsibilities
+          </h3>
+          <ul className="list-disc mb-5">
+            <li>
+              Have in-depth knowledge of infographics and how to publish them.
+            </li>
+            <li>Must have knowledge in using Meta Business Suite.</li>
+            <li>Able to do Digital marketing for ASL BPO and its clients.</li>
+            <li>
+              Able to create attractive content for Facebook, Instagram, and
+              Twitter Post for Products and Blogs.
+            </li>
+            <li>
+              Increasing brand recognition to generate audience attention.
+            </li>
+            <li>You must help drive the companys online/digital sales.</li>
+            <li>
+              Preparing promotional presentations and organizing promotional
+              even
+            </li>
+          </ul>
+          <h3 className="font-bold mb-2 text-lg uppercase">
+            Educational Requirements
+          </h3>
+          <ul className="list-disc mb-5">
+            <li>Bachelor degree in any discipline</li>
+            <li>
+              Skills Required: Digital Marketing, Social Media Management,
+              Social Media Marketing
+            </li>
+          </ul>
+          <h3 className="font-bold mb-2 text-lg uppercase">Salary</h3>
+          <ul className="list-disc mb-5">
+            <li>Tk. 25000 - 30000 (Monthly)</li>
+            <li> Day Shift 9 AM to 6 PM. 6 days a week job</li>
+          </ul>
+          <h5 className="font-bold">Apply here</h5>
+          <a href="https://docs.google.com/forms" target="blank">
+            https://docs.google.com/forms
+          </a>
+        </DialogContent>
+        <DialogActions className="bg-[#00263a] border-t">
+          <Button onClick={handleClose} className="text-white">
+            Cancel
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 };
