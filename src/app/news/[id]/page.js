@@ -133,7 +133,7 @@ const NewsDetail = (params) => {
           </div>
 
           <div className="grid grid-cols-3 gap-3 mt-10">
-            {newsDetail?.images.map((img, index) => (
+            {newsDetail?.images?.map((img, index) => (
               <div key={index}>
                 <img src={img} alt="" className="rounded-xl h-72 w-full" />
               </div>
