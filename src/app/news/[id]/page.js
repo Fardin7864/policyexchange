@@ -70,7 +70,7 @@ const NewsDetail = (params) => {
                   <FaRegCalendarAlt /> {newsDetail?.date}
                 </p>
                 <p className="mt-2 mb-10 flex flex-col gap-4">
-                  <span className="font-bold text-[#956de6] text-lg">
+                  <span className="font-bold text-[#A790D5] text-lg">
                     {newsDetail?.title}
                   </span>
                   <span className="text-sm text-justify">
@@ -133,7 +133,7 @@ const NewsDetail = (params) => {
           </div>
 
           <div className="grid grid-cols-3 gap-3 mt-10">
-            {newsDetail?.images.map((img, index) => (
+            {newsDetail?.images?.map((img, index) => (
               <div key={index}>
                 <img src={img} alt="" className="rounded-xl h-72 w-full" />
               </div>
