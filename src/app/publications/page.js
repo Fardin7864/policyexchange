@@ -124,7 +124,7 @@ const PublicationsPage = () => {
                           alt=""
                         />
                       ) : (
-                        <PiBookOpenText className="text-lg text-[#7d4bdf]" />
+                        <PiBookOpenText className="text-lg text-[#A790D5]" />
                       )}
                       Read
                     </button>
