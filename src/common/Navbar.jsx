@@ -12,10 +12,13 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const pages = ["About", "News", "Publications", "Events", "Media", "Contact"];
 
 function Navbar() {
+  const pathname = usePathname();
+  const [isDashboard, setDashboard] = React.useState(false);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -34,8 +37,20 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
+  //
+
+  React.useEffect(() => {
+    if (pathname.split("/")[1] === "dashboard") setDashboard(true);
+    else {
+      setDashboard(false);
+    }
+  }, [pathname]);
   return (
-    <div className=" h-[80px] z-[100] lg:absolute lg:left-[10%] lg:right-[10%] lg:top-4 max-w-[1440px] lg:w-[1280px] rounded-md mx-auto ">
+    <div
+      className={` h-[80px] z-[100] lg:absolute lg:left-[10%] lg:right-[10%] lg:top-4 max-w-[1440px] lg:w-[1280px] rounded-md mx-auto 
+      ${isDashboard ? `hidden` : `block`}
+      `}
+    >
       <div className=" relative z-[120] top-[18px] w-full bg-[#00263a] rounded-t-xl text-white flex justify-end pt-1">
         <ul
           className=" flex items-end gap-10 px-8 pt-[10px] "

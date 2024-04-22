@@ -73,40 +73,8 @@ const CareerPage = () => {
             drive positive change through informed policy decisions. Your career
             starts here, where innovation meets impact.
           </h2>
-          <div className=" pt-16 pb-10">
-            {/* Our story */}
-            <FadeFromSide direction="left" duration={1}>
-              <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#9de7d7] gap-5 rounded-3xl shadow-2xl">
-                <Image
-                  src={"/images/career2.jpg"}
-                  width={600}
-                  height={0}
-                  alt="career image"
-                  className=" rounded-l-3xl w-1/2"
-                />
-                <div className="p-5 w-1/2">
-                  <h2 className=" text-4xl font-bold">
-                    Become a part of our Team
-                  </h2>
-                  <p className=" font-medium py-7">
-                    Policy Exchange Bangladesh is a distinguished private,
-                    independent advisory firm with a singular focus on the
-                    private sector economy. Our journey began with a vision to
-                    address the economic development challenges in Bangladesh
-                    and champion private sector-led growth. The inspiration
-                    behind our founding stemmed from recognizing the pivotal
-                    role the private sector plays in driving sustainable
-                    economic progress. Motivated by a passion for fostering
-                    innovation and growth, we set out to create a platform
-                    dedicated to ideation, evidence development, and the
-                    formulation of policies and market solutions.
-                  </p>
-                </div>
-              </div>
-            </FadeFromSide>
-          </div>
 
-          <h2 className="text-center text-4xl font-bold">Jobs for you</h2>
+          <h2 className="text-center text-4xl font-bold mt-16">Jobs for you</h2>
 
           <div className="my-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">

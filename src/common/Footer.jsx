@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
@@ -8,8 +11,19 @@ const Footer = () => {
   // Get current year
   const currentYear = new Date().getFullYear();
 
+  //
+  const pathname = usePathname();
+  const [isDashboard, setDashboard] = React.useState(false);
+
+  React.useEffect(() => {
+    if (pathname.split("/")[1] == "dashboard") setDashboard(true);
+    else {
+      setDashboard(false);
+    }
+  }, [pathname]);
+
   return (
-    <div className="py-5">
+    <div className={`py-5 ${isDashboard ? `hidden` : `block`}`}>
       <div
         className=" bg-[#00263a] pt-16 pb-14 px-20 max-w-[1440px] mx-auto rounded-3xl
         "
@@ -61,9 +75,18 @@ const Footer = () => {
               Follow Us
             </h3>
             <div className=" flex gap-5 text-4xl">
-             <a href="https://www.facebook.com/profile.php?id=100063526029842" target="_blank"><FaFacebookSquare className=" hover:text-[#a790d5]" /></a> 
-              <a href="https://bd.linkedin.com/company/policy-exchange-of-bangladesh" target="_blank"><FaLinkedin className=" hover:text-[#a790d5]" /></a>
-              
+              <a
+                href="https://www.facebook.com/profile.php?id=100063526029842"
+                target="_blank"
+              >
+                <FaFacebookSquare className=" hover:text-[#a790d5]" />
+              </a>
+              <a
+                href="https://bd.linkedin.com/company/policy-exchange-of-bangladesh"
+                target="_blank"
+              >
+                <FaLinkedin className=" hover:text-[#a790d5]" />
+              </a>
             </div>
             <p className=" hover:text-[#a790d5]">#GreaterTogether</p>
             <p> </p>

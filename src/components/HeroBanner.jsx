@@ -4,7 +4,7 @@ import { useSwiper } from "swiper/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 const HeroBanner = () => {
-  const colors = ["#9de7d7", "#a790d5", "#307fe2", "#7fd349"]; // Array of colors
+  const colors = ["#a2bcd6"]; // Array of colors
   const titles = [
     "Catalyzing growth",
     "Driving innovation",
@@ -19,7 +19,7 @@ const HeroBanner = () => {
   ];
   const [colorIndex, setColorIndex] = useState(0); // Initial color index
   const [titleIndex, setTitleIndex] = useState(0); // Initial title index
-  const [detailsIndex, setDetailIndex] = useState(0)
+  const [detailsIndex, setDetailIndex] = useState(0);
   const swiper = useSwiper();
 
   const handlePrevClick = () => {
@@ -31,8 +31,8 @@ const HeroBanner = () => {
       prevIndex === 0 ? titles.length - 1 : prevIndex - 1
     ); // Update title index
     setDetailIndex((prevIndex) =>
-    prevIndex === 0 ? details.length - 1 : prevIndex - 1
-  ); 
+      prevIndex === 0 ? details.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNextClick = () => {
@@ -44,8 +44,8 @@ const HeroBanner = () => {
       prevIndex === titles.length - 1 ? 0 : prevIndex + 1
     ); // Update title index
     setDetailIndex((prevIndex) =>
-    prevIndex === details.length - 1 ? 0 : prevIndex + 1
-  );
+      prevIndex === details.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
@@ -57,9 +57,7 @@ const HeroBanner = () => {
         <div className=" w-[60%] bg-[#00263a] rounded-l-full rounded-r-full">
           <div className=" flex flex-col justify-center h-full text-white pl-20 pr-28">
             <h3 className=" text-4xl font-bold mb-5">{titles[titleIndex]}</h3>
-            <p className=" font-normal">
-              {details[detailsIndex]}
-            </p>
+            <p className=" font-normal">{details[detailsIndex]}</p>
           </div>
         </div>
         <div className="swiper-nav-btns flex gap-8 items-center w-[40%] justify-center">
