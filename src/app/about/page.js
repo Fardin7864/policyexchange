@@ -15,7 +15,7 @@ const about = () => {
         <div className=" py-10">
           {/* Our story */}
           <FadeFromSide direction="left" duration={1}>
-            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#A790D5] gap-5 rounded-3xl shadow-2xl">
+            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#a2bcd6] gap-5 rounded-3xl shadow-2xl">
               <div
                 className="rounded-l-3xl w-1/2"
                 style={{
@@ -72,15 +72,14 @@ const about = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
-                  width: "800px", 
+                  width: "800px",
                   height: "500px",
                 }}
               ></div>
-              
             </div>
           </FadeFromSide>
 
-          {/* Our Misson */}
+          {/* Our Misson
           <FadeFromSide direction="left" duration={1}>
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#9de7d7] gap-5 rounded-3xl my-16 mt-16 shadow-2xl">
               <div
@@ -90,7 +89,7 @@ const about = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
-                  width: "800px", 
+                  width: "800px",
                   height: "500px",
                 }}
               ></div>
@@ -109,7 +108,7 @@ const about = () => {
                 </p>
               </div>
             </div>
-          </FadeFromSide>
+          </FadeFromSide> */}
         </div>
         <WhatWedo />
       </Container>

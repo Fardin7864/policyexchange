@@ -26,7 +26,7 @@ const OurWorks = () => {
           >
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform pt-6 h-48  text-white bg-[#A790D5] p-3 rounded-l-full px-14 ${
+                className={`transition-transform pt-6 h-48 bg-[#a2bcd6] p-3 rounded-l-full px-14 ${
                   isshowCollab
                     ? "transform translate-x-0"
                     : "transform translate-x-full"
@@ -43,9 +43,13 @@ const OurWorks = () => {
                 </p>
               </div>
             </div>
-            <div className={`  rounded-r-full h-48 ${isshowCollab ? "bg-[#A790D5]" : " " }`}>
+            <div
+              className={`  rounded-r-full h-48 ${
+                isshowCollab ? "bg-[#a2bcd6]" : " "
+              }`}
+            >
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                <img src="/icons/Collaborative engagement.gif" alt="" />
+                <img className="w-16" src="/about/1.png" alt="" />
               </div>
             </div>
           </div>
@@ -57,23 +61,30 @@ const OurWorks = () => {
           >
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48 text-white  bg-[#A790D5] p-3 rounded-l-full px-14 ${
+                className={`transition-transform h-48  bg-[#a2bcd6] p-3 rounded-l-full px-14 ${
                   isshowStrategic
                     ? "transform translate-x-0"
                     : "transform translate-x-full"
                 }`}
               >
                 <h3 className="text-2xl font-bold pl-16 ">
-                Strategic Outreach
+                  Strategic Outreach
                 </h3>
                 <p className=" leading-5 pl-16 pt-2">
-                Providing practical, market-driven solutions and perspectives to address gaps in the national economic landscape, advocating for innovative approaches to inclusive growth and transformation.
+                  Providing practical, market-driven solutions and perspectives
+                  to address gaps in the national economic landscape, advocating
+                  for innovative approaches to inclusive growth and
+                  transformation.
                 </p>
               </div>
             </div>
-            <div  className={`  rounded-r-full h-48 ${isshowStrategic ? "bg-[#A790D5]" : " " }`}>
+            <div
+              className={`  rounded-r-full h-48 ${
+                isshowStrategic ? "bg-[#a2bcd6]" : " "
+              }`}
+            >
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                <img src="/icons/strategic outreach.gif" alt="" />
+                <img className="w-16" src="/about/2.png" alt="" />
               </div>
             </div>
           </div>
@@ -86,24 +97,29 @@ const OurWorks = () => {
             onMouseLeave={() => setIsshowinovative(false)}
             className="flex items-center relative"
           >
-            <div   className={`  rounded-l-full h-48 ${isshowinnovative ? "bg-[#A790D5]" : " " }`}>
+            <div
+              className={`  rounded-l-full h-48 ${
+                isshowinnovative ? "bg-[#a2bcd6]" : " "
+              }`}
+            >
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                <img src="/icons/innovative advocacy.gif" alt="" />
+                <img className="w-16" src="/about/3.png" alt="" />
               </div>
             </div>
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48 text-white  bg-[#A790D5] p-3 rounded-r-full px-14 ${
+                className={`transition-transform h-48  bg-[#a2bcd6] p-3 rounded-r-full px-14 ${
                   isshowinnovative
                     ? "transform -translate-x-0"
                     : "transform -translate-x-full"
                 }`}
               >
-                <h3 className="text-2xl font-bold ">
-                Innovative Advocacy
-                </h3>
+                <h3 className="text-2xl font-bold ">Innovative Advocacy</h3>
                 <p className=" leading-5 pt-2 ">
-                Creating awareness and ownership through dissemination work to a national audience of policy-makers, opinion formers and the wider public through briefings, printed and digital publications, infographics and multimedia platforms
+                  Creating awareness and ownership through dissemination work to
+                  a national audience of policy-makers, opinion formers and the
+                  wider public through briefings, printed and digital
+                  publications, infographics and multimedia platforms
                 </p>
               </div>
             </div>
@@ -114,24 +130,30 @@ const OurWorks = () => {
             onMouseLeave={() => setIsshowGlobal(false)}
             className="flex items-center relative"
           >
-            <div className={`  rounded-l-full h-48 ${isshowGlobal ? "bg-[#A790D5]" : " " }`}>
+            <div
+              className={`  rounded-l-full h-48 ${
+                isshowGlobal ? "bg-[#a2bcd6]" : " "
+              }`}
+            >
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
-                <img src="/icons/global policy.gif" alt="" />
+                <img className="w-16" src="/about/4.png" alt="" />
               </div>
             </div>
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform flex flex-col justify-center items-center h-48 text-white  bg-[#A790D5] p-3 rounded-r-full px-14 ${
+                className={`transition-transform flex flex-col justify-center items-center h-48 bg-[#a2bcd6] p-3 rounded-r-full px-14 ${
                   isshowGlobal
                     ? "transform translate-x-0"
                     : "transform -translate-x-full"
                 }`}
               >
                 <h3 className="text-2xl font-bold relative -left-12">
-                Global Policy Exploration
+                  Global Policy Exploration
                 </h3>
                 <p className=" leading-5 pt-2 pr-8">
-                Conduct comprehensive research and formulate innovative public policy initiatives tailored for Bangladesh and other developing and emerging nations
+                  Conduct comprehensive research and formulate innovative public
+                  policy initiatives tailored for Bangladesh and other
+                  developing and emerging nations
                 </p>
               </div>
             </div>

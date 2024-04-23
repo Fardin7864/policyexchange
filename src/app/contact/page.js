@@ -10,12 +10,12 @@ const ContactPage = () => {
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{
-          backgroundImage: "url('/banners/about.webp')",
+          backgroundImage: "url('/contact.jpeg')",
           width: "full",
           height: "400px",
         }}
       >
-        <div className="w-[94.2%] absolute h-[400px] bg-blue-800 opacity-20"></div>
+        <div className="w-full absolute h-[400px] bg-black opacity-60"></div>
         <div className=" flex justify-center h-full">
           <h3 className=" text-white  text-5xl absolute font-bold pt-64 opacity-100 z-50">
             Contact us

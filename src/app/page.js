@@ -8,25 +8,22 @@ import Publications from "@/components/Publications";
 import Services from "@/components/Services";
 import Head from "next/head";
 
-
 export default function Home() {
-
   return (
     <main className=" background-img ">
-
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <Carousel />
+      <Carousel />
       <div className="max-w-[1440px] mx-auto">
         <Services />
         <Featured />
         <Publications />
-        <Events/>
+        <Events />
         {/* <HomeEvents/> */}
-        
-        <AchivmentBoard/>
+
+        {/* <AchivmentBoard/> */}
         <MeetTeam />
       </div>
     </main>
