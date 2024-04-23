@@ -30,8 +30,8 @@ const Services = () => {
                   <div className="content">
                     <div className="icon flex flex-col gap-14 justify-center items-center">
                       <Image
-                        src={"/gif/search.gif"}
-                        width={100}
+                        src={"/logos/service1.gif"}
+                        width={120}
                         height={0}
                         alt="search"
                         className=" mr-5"
@@ -72,8 +72,8 @@ const Services = () => {
                 <div className="content">
                   <div className="icon flex flex-col gap-14 justify-center items-center">
                     <Image
-                      src={"/gif/advo.gif"}
-                      width={150}
+                      src={"/logos/service2.gif"}
+                      width={120}
                       height={0}
                       alt="search"
                       className=" mr-5"
@@ -112,8 +112,8 @@ const Services = () => {
                 <div className="content">
                   <div className="icon flex flex-col gap-14 justify-center items-center">
                     <Image
-                      src={"/gif/invest.gif"}
-                      width={100}
+                      src={"/logos/service3.gif"}
+                      width={120}
                       height={0}
                       alt="search"
                       className=" mr-5"

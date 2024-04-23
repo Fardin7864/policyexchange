@@ -4,6 +4,8 @@ import Image from "next/image";
 import React from "react";
 import WhatWedo from "./WhatWedo";
 import OurWorks from "./OurWorks";
+import Mission from "./Mission";
+import Vision from "./Vision";
 
 const about = () => {
   return (
@@ -79,8 +81,10 @@ const about = () => {
             </div>
           </FadeFromSide>
 
-          {/* Our Misson
-          <FadeFromSide direction="left" duration={1}>
+          {/* Our Misson */}
+          <Mission />
+          <Vision />
+          {/* <FadeFromSide direction="left" duration={1}>
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#9de7d7] gap-5 rounded-3xl my-16 mt-16 shadow-2xl">
               <div
                 className="rounded-l-3xl w-1/2"
@@ -108,7 +112,7 @@ const about = () => {
                 </p>
               </div>
             </div>
-          </FadeFromSide> */}
+          </FadeFromSide>  */}
         </div>
         <WhatWedo />
       </Container>

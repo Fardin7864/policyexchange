@@ -1,37 +1,33 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import WhatWeDoCard from "./WhatWeDocard";
-import { FaSearch } from "react-icons/fa";
-import { FaBookmark, FaChartPie, FaCrown } from "react-icons/fa";
-import { BsBank2 } from "react-icons/bs";
-import { FaDisplay } from "react-icons/fa6";
-import { BsPeopleFill } from "react-icons/bs";
 
 const WhatWedo = () => {
   return (
-    <div>
-      <h1 className=" text-center text-4xl font-bold mb-10">WHAT WE DO</h1>
-      <div className="grid grid-cols-3 gap-8 mt-5 ">
+    <div className="grid grid-cols-7 gap-3 mt-14 bg-[#74D194] rounded-2xl pt-8 px-16">
+      <h1 className="col-span-2 text-6xl font-extrabold mb-10">
+        WHAT <br /> WE <br /> DO
+      </h1>
+      <div className=" col-span-5">
         <WhatWeDoCard
-          icon={<FaSearch className="text-5xl text-center text-white" />}
-          title="Policy Research"
-          details="Policy Exchange Bangladesh primarily conducts policy research in the areas of trade, investment, industrial and trade infrastructure, financial markets, digital economy, and green growth. The firm advises on topics such as the economy and finance to better regulations, the digital economy and trade, innovation and entrepreneurship, energy and climate."
+          icon={<img src="/about/5.png" className="h-8 w-8" alt="" />}
+          title="Perform policy research"
+          details="Perform policy research on a wide range of policy areas: from the economy and finance to better regulations, the digital economy and trade, innovation and entrepreneurship, energy and climate, among other areas."
         />
         <WhatWeDoCard
-          icon={<FaBookmark className="text-5xl text-center text-white" />}
-          title="Industry Reports"
-          details="Industry reports are essential tools for businesses to stay informed about the latest trends, emerging markets, and competition in their field. Policy Exchange Bangladesh, we specialize in preparing comprehensive industry reports for businesses across a range of sectors. Our reports are carefully researched, unbiased, and tailored to meet the unique needs of each client."
+          icon={<img src="/about/6.png" className="h-8 w-8" alt="" />}
+          title="Creating consensus and actions"
+          details="Creating consensus and actions for required policy and market solutions by convening the policy makers, practitioners, industry players, and other stakeholders."
         />
         <WhatWeDoCard
-          icon={<FaChartPie className="text-5xl text-center text-white" />}
-          title="Facilitated Policy Industry and Market Actions"
-          details="Policy Exchange Bangladesh specialized in facilitating industry policy and market actions that drive growth and development for businesses across a range of sectors. Our team of experts has extensive knowledge of the regulatory landscape and market trends, and we work closely with clients to develop customized solutions that align with their goals and objectives."
+          icon={<img src="/about/7.png" className="h-8 w-8" alt="" />}
+          title="Advisor to policy-makers and investors"
+          details="We act as trusted, expert advisers to policy-makers and investors. Provide advisory to market and  keen investors in Bangladesh markets and specific sectors, and bring together enterprises interested in data, venture formation and growth."
         />
-      </div>
-      <div className=" my-10 max-w-96 mx-auto">
         <WhatWeDoCard
-          icon={<BsPeopleFill className="text-5xl text-center text-white" />}
-          title="Industry Advisory "
-          details="Bangladesh presents both opportunities and challenges for businesses seeking to enter or expand their operations in the country. Policy Exchange Bangladesh, we offer industry advisory services to help businesses navigate the complex landscape of the Bangladeshi market and make informed decisions that drive growth and profitability."
+          icon={<img src="/about/8.png" className="h-8 w-8" alt="" />}
+          title="Organizing and Facilitating High Level Dialogues"
+          details="Policy Exchange holds regular dialogue on important economic and business issues through targeted round tables, seminars, and conclaves."
         />
       </div>
     </div>

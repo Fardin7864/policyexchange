@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import * as React from "react";
 import Paper from "@mui/material/Paper";
@@ -17,20 +18,22 @@ import { FaEdit } from "react-icons/fa";
 
 //
 const columns = [
-  { id: "name", label: "Name", minWidth: 170 },
-  { id: "designation", label: "Designation", minWidth: 100 },
-  { id: "email", label: "Email", minWidth: 100 },
+  { id: "image", label: "Image", minWidth: 100 },
+  { id: "title", label: "Title", minWidth: 170 },
+  { id: "date", label: "Date", minWidth: 100 },
+  { id: "link", label: "Link", minWidth: 100 },
+  { id: "detail", label: "Detail", minWidth: 100 },
   { id: "manage", label: "Manage", minWidth: 100 },
 ];
 
-export default function ManageTeam() {
-  const [team, setTeam] = React.useState([]);
+export default function ManageNews() {
+  const [news, setNews] = React.useState([]);
 
   React.useState(() => {
     try {
-      fetch("/team.json")
+      fetch("/news.json")
         .then((res) => res.json())
-        .then((data) => setTeam(data?.team_members));
+        .then((data) => setNews(data));
     } catch (error) {
       console.log(error);
     }
@@ -75,7 +78,7 @@ export default function ManageTeam() {
             sx={{ display: "flex", alignItems: "center" }}
             color="inherit"
           >
-            Manage Team
+            Manage Events
           </Typography>
         </Breadcrumbs>
       </div>
@@ -100,7 +103,7 @@ export default function ManageTeam() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {team
+              {news
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row) => {
                   return (
@@ -113,7 +116,26 @@ export default function ManageTeam() {
                             align={column.align}
                             className="text-center"
                           >
-                            {column.id === "manage" ? (
+                            {column.id === "image" ? (
+                              <img
+                                src={value}
+                                alt="Publication"
+                                style={{ width: "100px", height: "auto" }}
+                              />
+                            ) : column.id === "link" ? (
+                              value ? (
+                                <a
+                                  href={value}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-blue-600"
+                                >
+                                  {value}
+                                </a>
+                              ) : (
+                                "N/A"
+                              )
+                            ) : column.id === "manage" ? (
                               <div className="flex gap-3 justify-center">
                                 <FaEdit
                                   onClick={() => handleEdit(row.id)}
@@ -141,7 +163,7 @@ export default function ManageTeam() {
         <TablePagination
           rowsPerPageOptions={[5, 10, 25]}
           component="div"
-          count={team.length}
+          count={news.length}
           rowsPerPage={rowsPerPage}
           page={page}
           onPageChange={handleChangePage}
