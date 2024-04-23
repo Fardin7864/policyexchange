@@ -37,9 +37,8 @@ const OurWorks = () => {
                 </h3>
                 <p className="pl-8 leading-5 pt-2">
                   Work together with recognized scholars, leading policymakers,
-                  and industry leaders and analysts for producing research,
-                  advocacy, and dialogue outcomes reflecting innovation and
-                  influential policy and strategy debate
+                  and industry leaders for producing research, advocacy, and
+                  dialogue outcomes reflecting innovation and influential policy
                 </p>
               </div>
             </div>
@@ -153,7 +152,7 @@ const OurWorks = () => {
                 <p className=" leading-5 pt-2 pr-8">
                   Conduct comprehensive research and formulate innovative public
                   policy initiatives tailored for Bangladesh and other
-                  developing and emerging nations
+                  developing and emerging nations.
                 </p>
               </div>
             </div>
