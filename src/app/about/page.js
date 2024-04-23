@@ -1,11 +1,9 @@
 import FadeFromSide from "@/util/FadeFromSide";
 import { Container } from "@mui/material";
-import Image from "next/image";
 import React from "react";
 import WhatWedo from "./WhatWedo";
 import OurWorks from "./OurWorks";
 import Mission from "./Mission";
-import Vision from "./Vision";
 
 const about = () => {
   return (
@@ -50,7 +48,7 @@ const about = () => {
           {/* Evaluation  */}
           <FadeFromSide direction="right" duration={1}>
             <div className=" flex flex-col mt-16 lg:flex-row justify-between items-center bg-[#a2bcd6] gap-5 rounded-3xl shadow-2xl">
-              <div className="pl-16 pr-10 w-1/2">
+              <div className="pl-16 pr-10 w-1/2 mt-5">
                 <h2 className=" text-4xl font-bold ">
                   Evolution of Policy Exchange Bangladesh:
                 </h2>
@@ -83,7 +81,7 @@ const about = () => {
 
           {/* Our Misson */}
           <Mission />
-          <Vision />
+
           {/* <FadeFromSide direction="left" duration={1}>
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#9de7d7] gap-5 rounded-3xl my-16 mt-16 shadow-2xl">
               <div

@@ -54,7 +54,7 @@ export default function ManagePublications() {
   return (
     <>
       {/* breadcrumb */}
-      <div role="presentation" className="my-5">
+      <div role="presentation" className="my-5 flex justify-between">
         <Breadcrumbs aria-label="breadcrumb">
           <Link
             underline="hover"
@@ -80,6 +80,9 @@ export default function ManagePublications() {
             Manage Publications
           </Typography>
         </Breadcrumbs>
+        <button className="bg-[#00263a] px-3 py-2 text-white rounded-lg duration-300 hover:bg-[#0282B7]">
+          Add New
+        </button>
       </div>
 
       <Paper sx={{ width: "100%", overflow: "hidden" }}>

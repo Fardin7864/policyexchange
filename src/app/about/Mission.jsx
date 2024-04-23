@@ -62,7 +62,7 @@ const Mission = () => {
   return (
     <div className="ag-timeline-block">
       <div className="ag-timeline_title-box">
-        <div className="ag-timeline_tagline">Mission</div>
+        <div className="ag-timeline_tagline -ml-7">Mission & Vision</div>
       </div>
       <section className="ag-section">
         <div className="ag-format-container">
@@ -71,71 +71,117 @@ const Mission = () => {
               <div className="js-timeline_line-progress ag-timeline_line-progress"></div>
             </div>
             <div className="ag-timeline_list">
-              {/*  */}
+              {/* mission-1 */}
               <div className="js-timeline_item ag-timeline_item">
                 <div className="ag-timeline-card_box">
                   <div className="js-timeline-card_point-box ag-timeline-card_point-box">
-                    <div className="ag-timeline-card_point">1</div>
+                    <div className="ag-timeline-card_point">{/* 1 */}</div>
                   </div>
-                  {/* <div className="ag-timeline-card_meta-box">
-                    <div className="ag-timeline-card_meta">Mission 1</div>
-                  </div> */}
                 </div>
                 <div className="ag-timeline-card_item">
                   <div className="ag-timeline-card_inner">
                     <div className="ag-timeline-card_info">
-                      {/* <div className="ag-timeline-card_title">Mission 1</div> */}
                       <div className="ag-timeline-card_desc">
                         Contribute to the economic development of Bangladesh.
                       </div>
                     </div>
                   </div>
-                  <div className="ag-timeline-card_arrow"></div>
+                  <div className="ag-timeline-card_arrow arrow-1"></div>
                 </div>
               </div>
-              {/*  */}
+
+              {/* vision-1 */}
               <div className="js-timeline_item ag-timeline_item">
                 <div className="ag-timeline-card_box">
-                  {/* <div className="ag-timeline-card_meta-box">
-                    <div className="ag-timeline-card_meta">Mission 2</div>
-                  </div> */}
                   <div className="js-timeline-card_point-box ag-timeline-card_point-box">
-                    <div className="ag-timeline-card_point">2</div>
+                    <div className="ag-timeline-card_point">{/* 2 */}</div>
+                  </div>
+                </div>
+                <div className="ag-timeline-card_item item-2">
+                  <div className="ag-timeline-card_inner">
+                    <div className="ag-timeline-card_info">
+                      <div className="ag-timeline-card_desc">
+                        Be the trusted partner and advisor for businesses,
+                        policymakers, investors, and stakeholders.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="ag-timeline-card_arrow arrow-2"></div>
+                </div>
+              </div>
+              {/* mission-2 */}
+              <div className="js-timeline_item ag-timeline_item">
+                <div className="ag-timeline-card_box">
+                  <div className="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div className="ag-timeline-card_point">{/* 3 */}</div>
                   </div>
                 </div>
                 <div className="ag-timeline-card_item">
                   <div className="ag-timeline-card_inner">
                     <div className="ag-timeline-card_info">
-                      {/* <div className="ag-timeline-card_title">Mission 2</div> */}
                       <div className="ag-timeline-card_desc">
                         Foster a profound understanding of the private sector.
                       </div>
                     </div>
                   </div>
-                  <div className="ag-timeline-card_arrow"></div>
+                  <div className="ag-timeline-card_arrow arrow-1"></div>
                 </div>
               </div>
-              {/*  */}
+              {/* vision-2 */}
               <div className="js-timeline_item ag-timeline_item">
                 <div className="ag-timeline-card_box">
                   <div className="js-timeline-card_point-box ag-timeline-card_point-box">
-                    <div className="ag-timeline-card_point">3</div>
+                    <div className="ag-timeline-card_point">{/* 4 */}</div>
                   </div>
-                  <div className="ag-timeline-card_meta-box">
-                    {/* <div className="ag-timeline-card_meta">Mission 3</div> */}
+                </div>
+                <div className="ag-timeline-card_item item-2">
+                  <div className="ag-timeline-card_inner">
+                    <div className="ag-timeline-card_info">
+                      <div className="ag-timeline-card_desc">
+                        Navigate the complexities of Bangladesh&apos;s economy.
+                      </div>
+                    </div>
                   </div>
+                  <div className="ag-timeline-card_arrow arrow-2"></div>
+                </div>
+              </div>
+              {/*  mission -3*/}
+              <div className="js-timeline_item ag-timeline_item">
+                <div className="ag-timeline-card_box">
+                  <div className="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div className="ag-timeline-card_point">{/* 5 */}</div>
+                  </div>
+                  <div className="ag-timeline-card_meta-box"></div>
                 </div>
                 <div className="ag-timeline-card_item">
                   <div className="ag-timeline-card_inner">
                     <div className="ag-timeline-card_info">
-                      {/* <div className="ag-timeline-card_title">Mission 3</div> */}
                       <div className="ag-timeline-card_desc">
                         Champion policies and market solutions for growth and
                         prosperity.
                       </div>
                     </div>
                   </div>
-                  <div className="ag-timeline-card_arrow"></div>
+                  <div className="ag-timeline-card_arrow arrow-1"></div>
+                </div>
+              </div>
+
+              {/* vision-3*/}
+              <div className="js-timeline_item ag-timeline_item">
+                <div className="ag-timeline-card_box">
+                  <div className="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div className="ag-timeline-card_point">{/* 6 */}</div>
+                  </div>
+                </div>
+                <div className="ag-timeline-card_item item-2">
+                  <div className="ag-timeline-card_inner">
+                    <div className="ag-timeline-card_info">
+                      <div className="ag-timeline-card_desc">
+                        Seize its vast potential for sustainable development.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="ag-timeline-card_arrow arrow-2"></div>
                 </div>
               </div>
             </div>
