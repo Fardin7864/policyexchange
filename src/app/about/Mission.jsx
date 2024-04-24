@@ -6,16 +6,17 @@ import "./mission.css";
 
 const Mission = () => {
   const [agFlag, setAgFlag] = useState(false);
-  const [agHeight, setAgHeight] = useState(window.innerHeight);
+  const [agHeight, setAgHeight] = useState(0);
 
   useEffect(() => {
+    setAgHeight(window?.innerHeight || 0);
     function fnOnScroll() {
       fnUpdateProgress();
       fnUpdateFrame();
     }
 
     function fnOnResize() {
-      setAgHeight(window.innerHeight);
+      setAgHeight(window?.innerHeight);
       fnUpdateProgress();
       fnUpdateFrame();
     }
@@ -31,12 +32,12 @@ const Mission = () => {
       }
     }
 
-    window.addEventListener("scroll", fnOnScroll);
-    window.addEventListener("resize", fnOnResize);
+    window?.addEventListener("scroll", fnOnScroll);
+    window?.addEventListener("resize", fnOnResize);
 
     return () => {
-      window.removeEventListener("scroll", fnOnScroll);
-      window.removeEventListener("resize", fnOnResize);
+      window?.removeEventListener("scroll", fnOnScroll);
+      window?.removeEventListener("resize", fnOnResize);
     };
   }, [agFlag]);
 
@@ -49,7 +50,7 @@ const Mission = () => {
 
     agTimelineItems.forEach((item) => {
       const agTop = item.getBoundingClientRect().top;
-      const agPosY = window.scrollY || window.pageYOffset;
+      const agPosY = window?.scrollY || window?.pageYOffset;
 
       if (agTop + agPosY < agPosY + agHeight / 1.5) {
         item.classList.add("js-ag-active");

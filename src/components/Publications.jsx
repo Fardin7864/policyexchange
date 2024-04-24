@@ -44,7 +44,7 @@ const Publications = () => {
 
   const handleViewPublication = () => {
     if (selectedPublication && selectedPublication.driveLink) {
-      window.open(selectedPublication.driveLink, "_blank");
+      window?.open(selectedPublication.driveLink, "_blank");
     }
   };
 
