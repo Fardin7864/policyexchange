@@ -2,7 +2,6 @@
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { useEffect, useState, useRef } from "react";
-import { ArrowLeft, ArrowRight } from "@mui/icons-material";
 import Image from "next/image";
 
 const Pictures = () => {

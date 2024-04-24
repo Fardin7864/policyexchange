@@ -1,5 +1,4 @@
 "use client";
-import { MdChevronRight } from "react-icons/md";
 import { Container } from "@mui/material";
 
 import AnimatedNumber from "animated-number-react";

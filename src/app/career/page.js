@@ -1,7 +1,5 @@
 "use client";
-import FadeFromSide from "@/util/FadeFromSide";
 import { Container, Typography } from "@mui/material";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import "./career.css";
 import { IoDocumentTextOutline } from "react-icons/io5";

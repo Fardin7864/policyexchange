@@ -1,10 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
-import { FaChartLine } from "react-icons/fa";
-import { FcAdvertising } from "react-icons/fc";
-import { RiLuggageCartFill } from "react-icons/ri";
-import { RiMenuAddLine } from "react-icons/ri";
 
 const OurWorks = () => {
   const [isshowCollab, setIsshowCollab] = useState(false);
