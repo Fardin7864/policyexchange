@@ -1,5 +1,4 @@
 // "use client";
-import AchivmentBoard from "@/components/AchivmentBoard";
 import Carousel from "@/components/CustomSlides";
 import Events from "@/components/Events";
 import Featured from "@/components/Featured";

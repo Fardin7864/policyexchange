@@ -92,7 +92,7 @@ function DashboardLayout({ children }, props) {
           </IconButton>
           <Link href={"/"} className="">
             <Image
-              src={"/logotrans.png"}
+              src={"/logos/logo33.png"}
               width={130}
               height={0}
               alt="logo"

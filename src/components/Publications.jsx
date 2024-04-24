@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,9 +16,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
-import { FaChevronRight } from "react-icons/fa6";
 import TestimonialBanner from "./TestimonialBanner";
-import ActionAreaCard from "./Card";
 const Publications = () => {
   const [open, setOpen] = useState(false);
   const [selectedPublication, setSelectedPublication] = useState(null);
@@ -56,7 +55,7 @@ const Publications = () => {
 
   return (
     <>
-      <h2 className=" text-center text-5xl font-bold py-20">
+      <h2 className="text-[#0E1514] text-center text-5xl font-bold py-20">
         Our Publications
       </h2>
 
@@ -88,7 +87,7 @@ const Publications = () => {
                 <div className="publications-container">
                   <div className="py-3 px-5">
                     <p className="mt-2 mb-10 text-sm flex flex-col gap-2 ">
-                      <span className="font-bold text-[#956de6]">
+                      <span className="font-bold text-[#7393CF]">
                         {publication.title}
                       </span>
                       <span className="">{publication.subtitle}</span>
@@ -104,7 +103,7 @@ const Publications = () => {
                     >
                       <button
                         onClick={() => handleClickOpen(publication)}
-                        className="flex gap-1 text-sm items-center justify-center font-semibold text-black hover:text-[#7d4bdf] w-36 duration-300"
+                        className="flex gap-1 text-sm items-center justify-center font-semibold text-black hover:text-[#7393CF] w-36 duration-300"
                       >
                         {isHovered && isHoveredId === index ? (
                           <img
@@ -113,7 +112,7 @@ const Publications = () => {
                             alt=""
                           />
                         ) : (
-                          <PiBookOpenText className="text-lg text-[#7d4bdf]" />
+                          <PiBookOpenText className="text-lg text-[#7393CF]" />
                         )}
                         Read
                       </button>
@@ -139,7 +138,7 @@ const Publications = () => {
                 <div className="publications-container">
                   <div className="py-3 px-5">
                     <p className="mt-2 mb-10 text-sm flex flex-col gap-2 ">
-                      <span className="font-bold text-[#956de6]">
+                      <span className="font-bold text-[#7393CF]">
                         {publication.title}
                       </span>
                       <span className="">{publication.subtitle}</span>
@@ -155,7 +154,7 @@ const Publications = () => {
                     >
                       <button
                         onClick={() => handleClickOpen(publication)}
-                        className="flex gap-1 text-sm items-center justify-center font-semibold text-black hover:text-[#7d4bdf] w-36 duration-300"
+                        className="flex gap-1 text-sm items-center justify-center font-semibold text-black hover:text-[#7393CF] w-36 duration-300"
                       >
                         {isHovered && isHoveredId === index ? (
                           <img
@@ -164,7 +163,7 @@ const Publications = () => {
                             alt=""
                           />
                         ) : (
-                          <PiBookOpenText className="text-lg text-[#7d4bdf]" />
+                          <PiBookOpenText className="text-lg text-[#7393CF]" />
                         )}
                         Read
                       </button>
@@ -178,7 +177,7 @@ const Publications = () => {
       </Swiper>
       <div className=" w-full flex justify-center items-center">
         <Link href={"/publications"}>
-          <button className=" bg-[#a790d5] hover:bg-[#307fe2] active:opacity-60 py-3 px-5 rounded-full text-white font-bold">
+          <button className=" bg-[#74D194] hover:bg-[#179A44] active:opacity-60 py-3 px-5 rounded-full duration-300 text-white font-bold">
             {" "}
             Vew All Publications{" "}
           </button>

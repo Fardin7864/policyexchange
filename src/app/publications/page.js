@@ -99,7 +99,7 @@ const PublicationsPage = () => {
               <div className="publications-container">
                 <div className="py-3 px-5">
                   <p className="mt-2 mb-10 text-sm flex flex-col gap-2 ">
-                    <span className="font-bold text-[#956de6]">
+                    <span className="font-bold text-[#7393CF]">
                       {publication.title}
                     </span>
                     <span className="">{publication.subtitle}</span>
@@ -115,7 +115,7 @@ const PublicationsPage = () => {
                   >
                     <button
                       onClick={() => handleClickOpen(publication)}
-                      className="flex gap-1 text-sm items-center justify-center font-semibold text-black hover:text-[#7d4bdf] w-36 duration-300"
+                      className="flex gap-1 text-sm items-center justify-center font-semibold text-black hover:text-[#7393CF] w-36 duration-300"
                     >
                       {isHovered && isHoveredId === index ? (
                         <img
@@ -124,7 +124,7 @@ const PublicationsPage = () => {
                           alt=""
                         />
                       ) : (
-                        <PiBookOpenText className="text-lg text-[#A790D5]" />
+                        <PiBookOpenText className="text-lg text-[#7393CF]" />
                       )}
                       Read
                     </button>

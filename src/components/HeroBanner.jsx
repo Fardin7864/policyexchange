@@ -4,7 +4,7 @@ import { useSwiper } from "swiper/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 const HeroBanner = () => {
-  const colors = ["#a2bcd6"]; // Array of colors
+  const colors = ["#79C4E4"]; // Array of colors
   const titles = [
     "Catalyzing growth",
     "Driving innovation",

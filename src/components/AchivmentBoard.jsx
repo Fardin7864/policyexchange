@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { MdChevronRight } from "react-icons/md";
 import { Container } from "@mui/material";
 
@@ -7,28 +7,31 @@ import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 
 const AchivmentBoard = () => {
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-    const handleVisibilityChange = (isVisible) => {
-      if (isVisible) {
-        setIsVisible(true);
-      }
-    };
-  
-    const value = 30;
-    const formatValue = (value) => value.toFixed(0);
+  const handleVisibilityChange = (isVisible) => {
+    if (isVisible) {
+      setIsVisible(true);
+    }
+  };
+
+  const value = 30;
+  const formatValue = (value) => value.toFixed(0);
   return (
     <Container className=" mb-28">
       <div>
         <Container className=" px-0 bg-[#00263a] w-full h-72 rounded-3xl overflow-hidden flex justify-center items-center">
           <div className=" relative w-full h-full ">
-          <img src={"/star.png"} alt="" 
-          className=" w-full h-[500px] relative -top-28 -left-5" />
+            <img
+              src={"/star.png"}
+              alt=""
+              className=" w-full h-[500px] relative -top-28 -left-5"
+            />
           </div>
           <div className=" relative flex justify-between w-[4000px] px-8 -left-12">
             <div>
               <VisibilitySensor onChange={handleVisibilityChange}>
-                <p className=" text-[#a790d5] text-[90px] font-bold my-4 text-center leading-9">
+                <p className=" text-[#7393CF] text-[90px] font-bold my-4 text-center leading-9">
                   {isVisible && (
                     <AnimatedNumber
                       value={30}
@@ -45,7 +48,7 @@ const AchivmentBoard = () => {
             </div>
             <div>
               <VisibilitySensor onChange={handleVisibilityChange}>
-                <p className=" text-[#a790d5] text-[90px] font-bold my-4 leading-9">
+                <p className=" text-[#7393CF] text-[90px] font-bold my-4 leading-9">
                   {isVisible && (
                     <AnimatedNumber
                       value={50}
@@ -62,7 +65,7 @@ const AchivmentBoard = () => {
             </div>
             <div>
               <VisibilitySensor onChange={handleVisibilityChange}>
-                <p className=" text-[#a790d5] text-[90px] font-bold my-4 text-center leading-9">
+                <p className=" text-[#7393CF] text-[90px] font-bold my-4 text-center leading-9">
                   {isVisible && (
                     <AnimatedNumber
                       value={100}
