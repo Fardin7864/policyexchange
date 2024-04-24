@@ -83,36 +83,6 @@ const about = () => {
 
           {/* Our Misson */}
           <Mission />
-
-          {/* <FadeFromSide direction="left" duration={1}>
-            <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#9de7d7] gap-5 rounded-3xl my-16 mt-16 shadow-2xl">
-              <div
-                className="rounded-l-3xl w-1/2"
-                style={{
-                  backgroundImage: `url("https://i.ibb.co/XFh0K7r/Whats-App-Image-2023-08-27-at-9-45-37-PM-1.webp")`,
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  width: "800px",
-                  height: "500px",
-                }}
-              ></div>
-              <div className="pl-10 pr-16 w-1/2">
-                <h2 className=" text-4xl font-bold">Our Mission and Vision:</h2>
-                <p className=" font-medium py-7">
-                  At Policy Exchange Bangladesh, our mission is clear - to
-                  contribute to the economic development of Bangladesh by
-                  fostering a profound understanding of the private sector and
-                  championing policies and market solutions that drive growth
-                  and prosperity. Our vision is to be the trusted partner and
-                  advisor for businesses, policymakers, investors, and
-                  stakeholders seeking to navigate the complexities of
-                  Bangladesh&apos;s economy and seize its vast potential for
-                  sustainable
-                </p>
-              </div>
-            </div>
-          </FadeFromSide>  */}
         </div>
         <WhatWedo />
       </Container>

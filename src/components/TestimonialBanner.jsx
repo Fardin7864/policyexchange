@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { useSwiper } from "swiper/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 

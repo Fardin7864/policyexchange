@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
 import "../styles/Whyus.css";
-import img1 from "../../public/services/1.jpg";
 
 export const RoundedCard = ({ image, title, details }) => {
   return (
@@ -47,7 +47,10 @@ const WhyUs = () => {
                 </div>
               </div>
               <p className="card__description">
-              We specialize in providing comprehensive services ranging from policy, regulatory, market, and sectoral analysis to developing knowledge products, conducting evaluation, monitoring, and learning activities, as well as administering surveys.
+                We specialize in providing comprehensive services ranging from
+                policy, regulatory, market, and sectoral analysis to developing
+                knowledge products, conducting evaluation, monitoring, and
+                learning activities, as well as administering surveys.
               </p>
             </div>
           </a>
@@ -70,7 +73,10 @@ const WhyUs = () => {
                 </div>
               </div>
               <p className="card__description">
-              We execute systematic and targeted efforts, focusing on theme-specific agendas and ensuring regular engagement with policy-makers. Additionally, we strategically engage through media channels for effective evidence dissemination.
+                We execute systematic and targeted efforts, focusing on
+                theme-specific agendas and ensuring regular engagement with
+                policy-makers. Additionally, we strategically engage through
+                media channels for effective evidence dissemination.
               </p>
             </div>
           </a>
@@ -92,7 +98,10 @@ const WhyUs = () => {
                 </div>
               </div>
               <p className="card__description">
-              We provide expert advice on policy, regulation, and institutions, along with insights into economic trends. We facilitate industry connections, resolve regulatory disputes, and provide due diligence supervision.
+                We provide expert advice on policy, regulation, and
+                institutions, along with insights into economic trends. We
+                facilitate industry connections, resolve regulatory disputes,
+                and provide due diligence supervision.
               </p>
             </div>
           </a>
