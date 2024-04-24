@@ -45,21 +45,7 @@ function DashboardLayout({ children }, props) {
   const drawer = (
     <div>
       <Toolbar />
-      <Divider />
-      <List>
-        {["Add Team Member", "Add Publications", "Add Event", "Add News"].map(
-          (text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
-      </List>
+
       <Divider />
       <List>
         {[
@@ -81,7 +67,6 @@ function DashboardLayout({ children }, props) {
     </div>
   );
 
-  // Remove this const when copying and pasting into your project.
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
@@ -108,7 +93,7 @@ function DashboardLayout({ children }, props) {
           <Link href={"/"} className="">
             <Image
               src={"/logotrans.png"}
-              width={150}
+              width={130}
               height={0}
               alt="logo"
               className="my-2"
@@ -121,7 +106,6 @@ function DashboardLayout({ children }, props) {
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
       >
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
           container={container}
           variant="temporary"
@@ -129,7 +113,7 @@ function DashboardLayout({ children }, props) {
           onTransitionEnd={handleDrawerTransitionEnd}
           onClose={handleDrawerClose}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },
