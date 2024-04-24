@@ -54,9 +54,11 @@ const Carousel = () => {
           <div
             className="background-div bg-cover with-overlay "
             style={{
-              backgroundImage: "url('/carousel/first.png')",
+              backgroundImage: "url('/logos/banner.png')",
               width: "full",
               height: "650px",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
             }}
             //
           >

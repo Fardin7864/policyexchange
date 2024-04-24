@@ -27,7 +27,7 @@ const OurWorks = () => {
           >
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform pt-5 h-48 bg-[#a2bcd6] rounded-l-full px-12 ${
+                className={`transition-transform pt-5 h-48 bg-[#79C4E4] rounded-l-full px-12 ${
                   isshowCollab
                     ? "transform translate-x-0"
                     : "transform translate-x-full"
@@ -46,7 +46,7 @@ const OurWorks = () => {
             </div>
             <div
               className={`  rounded-r-full h-48 ${
-                isshowCollab ? "bg-[#a2bcd6]" : " "
+                isshowCollab ? "bg-[#79C4E4]" : " "
               }`}
             >
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
@@ -70,7 +70,7 @@ const OurWorks = () => {
           >
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48  bg-[#a2bcd6] pt-6 pb-3 rounded-l-full pl-6 pr-10 ${
+                className={`transition-transform h-48  bg-[#79C4E4] pt-6 pb-3 rounded-l-full pl-6 pr-10 ${
                   isshowStrategic
                     ? "transform translate-x-0"
                     : "transform translate-x-full"
@@ -89,7 +89,7 @@ const OurWorks = () => {
             </div>
             <div
               className={`  rounded-r-full h-48 ${
-                isshowStrategic ? "bg-[#a2bcd6]" : " "
+                isshowStrategic ? "bg-[#79C4E4]" : " "
               }`}
             >
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
@@ -116,7 +116,7 @@ const OurWorks = () => {
           >
             <div
               className={`  rounded-l-full h-48 ${
-                isshowinnovative ? "bg-[#a2bcd6]" : " "
+                isshowinnovative ? "bg-[#79C4E4]" : " "
               }`}
             >
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
@@ -133,7 +133,7 @@ const OurWorks = () => {
             </div>
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform h-48  bg-[#a2bcd6] p-3 rounded-r-full pl-6 pr-16 ${
+                className={`transition-transform h-48  bg-[#79C4E4] p-3 rounded-r-full pl-6 pr-16 ${
                   isshowinnovative
                     ? "transform -translate-x-0"
                     : "transform -translate-x-full"
@@ -159,7 +159,7 @@ const OurWorks = () => {
           >
             <div
               className={`  rounded-l-full h-48 ${
-                isshowGlobal ? "bg-[#a2bcd6]" : " "
+                isshowGlobal ? "bg-[#79C4E4]" : " "
               }`}
             >
               <div className="bg-white w-48 h-48 flex justify-center items-center rounded-full shadow-2xl">
@@ -176,7 +176,7 @@ const OurWorks = () => {
             </div>
             <div className="w-full overflow-hidden ">
               <div
-                className={`transition-transform flex flex-col justify-center  h-48 bg-[#a2bcd6] p-3 rounded-r-full pl-10 pr-14 ${
+                className={`transition-transform flex flex-col justify-center  h-48 bg-[#79C4E4] p-3 rounded-r-full pl-10 pr-14 ${
                   isshowGlobal
                     ? "transform translate-x-0"
                     : "transform -translate-x-full"

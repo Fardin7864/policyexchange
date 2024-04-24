@@ -4,11 +4,9 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,7 +57,7 @@ function Navbar() {
           <li>
             <Link
               href={"/team"}
-              className=" hover:text-[#a790d5] border-b border-dotted hover:border-b-[#a790d5]"
+              className=" hover:text-[#7393CF] border-b border-dotted hover:border-b-[#7393CF]"
             >
               Team
             </Link>
@@ -67,7 +65,7 @@ function Navbar() {
           <li>
             <Link
               href={"/career"}
-              className=" hover:text-[#a790d5] border-b border-dotted hover:border-b hover:border-b-[#a790d5]"
+              className=" hover:text-[#7393CF] border-b border-dotted hover:border-b hover:border-b-[#7393CF]"
             >
               Career
             </Link>
@@ -83,7 +81,7 @@ function Navbar() {
           <Toolbar disableGutters>
             <Link href={"/"} className=" relative -top-[11px] z-[200]">
               <Image
-                src={"/logotrans.png"}
+                src={"/logos/logo33.png"}
                 width={150}
                 height={0}
                 alt="logo"
@@ -148,7 +146,7 @@ function Navbar() {
                   href={`/${page.toLocaleLowerCase()}`}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
-                  className="h-12 text-axi-400 text-lg hover:text-[#a790d5] hover:border-b-4 hover:border-b-[#a790d5] flex justify-center items-center px-2"
+                  className="h-12 text-axi-400 text-lg hover:text-[#7393CF] hover:border-b-4 hover:border-b-[#7393CF] flex justify-center items-center px-2"
                 >
                   {page}
                 </Link>

@@ -30,48 +30,48 @@ const Footer = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  ">
           <div className=" text-white flex flex-col gap-3 font-medium">
-            <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">Contact</h3>
-            <p className="hover:text-[#a790d5]">+88-02-8881834</p>
-            <p className="hover:text-[#a790d5]">+8801844-582748</p>
-            <p className="hover:text-[#a790d5]">info@policyexchangebd.com</p>
-            <p className="hover:text-[#a790d5]">
+            <h3 className=" text-[#7393CF] text-2xl font-bold pb-5">Contact</h3>
+            <p className="hover:text-[#7393CF]">+88-02-8881834</p>
+            <p className="hover:text-[#7393CF]">+8801844-582748</p>
+            <p className="hover:text-[#7393CF]">info@policyexchangebd.com</p>
+            <p className="hover:text-[#7393CF]">
               House 14/c, 5th Floor, Road 95, Gulshan 2, Dhaka 1216, Bangladesh
             </p>
           </div>
 
           <div className=" text-white flex flex-col gap-3 font-medium">
-            <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">
+            <h3 className=" text-[#7393CF] text-2xl font-bold pb-5">
               Resources
             </h3>
             <Link href={"/publications"}>
-              <p className="hover:text-[#a790d5]">Publications</p>
+              <p className="hover:text-[#7393CF]">Publications</p>
             </Link>
             <Link href={"/media"}>
-              <p className="hover:text-[#a790d5]">Photos & Videos</p>
+              <p className="hover:text-[#7393CF]">Photos & Videos</p>
             </Link>
             <Link href={"/news"}>
-              <p className="hover:text-[#a790d5]">Policy Exchange News</p>
+              <p className="hover:text-[#7393CF]">Policy Exchange News</p>
             </Link>
           </div>
 
           <div className=" text-white flex flex-col gap-3 font-medium">
-            <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">
+            <h3 className=" text-[#7393CF] text-2xl font-bold pb-5">
               Quick Link
             </h3>
 
             <Link href={"/events"}>
-              <p className="hover:text-[#a790d5]">Events</p>
+              <p className="hover:text-[#7393CF]">Events</p>
             </Link>
             <Link href={"/about"}>
-              <p className="hover:text-[#a790d5]">About Us</p>
+              <p className="hover:text-[#7393CF]">About Us</p>
             </Link>
             <Link href={"/team"}>
-              <p className="hover:text-[#a790d5]">Our Team</p>
+              <p className="hover:text-[#7393CF]">Our Team</p>
             </Link>
           </div>
 
           <div className=" text-white flex flex-col gap-3 font-medium">
-            <h3 className=" text-[#a790d5] text-2xl font-bold pb-5">
+            <h3 className=" text-[#7393CF] text-2xl font-bold pb-5">
               Follow Us
             </h3>
             <div className=" flex gap-5 text-4xl">
@@ -79,19 +79,19 @@ const Footer = () => {
                 href="https://www.facebook.com/profile.php?id=100063526029842"
                 target="_blank"
               >
-                <FaFacebookSquare className=" hover:text-[#a790d5]" />
+                <FaFacebookSquare className=" hover:text-[#7393CF]" />
               </a>
               <a
                 href="https://bd.linkedin.com/company/policy-exchange-of-bangladesh"
                 target="_blank"
               >
-                <FaLinkedin className=" hover:text-[#a790d5]" />
+                <FaLinkedin className=" hover:text-[#7393CF]" />
               </a>
             </div>
-            <p className=" hover:text-[#a790d5]">#GreaterTogether</p>
+            <p className=" hover:text-[#7393CF]">#GreaterTogether</p>
             <p> </p>
             <Image
-              src={"/logotrans.png"}
+              src={"/logos/logo33.png"}
               width={250}
               height={0}
               alt="logo"

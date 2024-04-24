@@ -8,7 +8,13 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
-import { Typography } from "@mui/material";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  Typography,
+} from "@mui/material";
 import Link from "next/link";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import HomeIcon from "@mui/icons-material/Home";
@@ -25,6 +31,7 @@ const columns = [
 
 export default function ManageTeam() {
   const [team, setTeam] = React.useState([]);
+  const [open, setOpen] = React.useState(false);
 
   React.useState(() => {
     try {
@@ -48,6 +55,17 @@ export default function ManageTeam() {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+
+  //
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  //
 
   return (
     <>
@@ -79,7 +97,10 @@ export default function ManageTeam() {
           </Typography>
         </Breadcrumbs>
 
-        <button className="bg-[#00263a] px-3 py-2 text-white rounded-lg duration-300 hover:bg-[#0282B7]">
+        <button
+          onClick={() => handleClickOpen()}
+          className="bg-[#00263a] px-3 py-2 text-white rounded-lg duration-300 hover:bg-[#0282B7]"
+        >
           Add New
         </button>
       </div>
@@ -152,6 +173,63 @@ export default function ManageTeam() {
           onRowsPerPageChange={handleChangeRowsPerPage}
         />
       </Paper>
+
+      {/* modal */}
+
+      <Dialog open={open} onClose={handleClose} className="z-10">
+        <form>
+          <DialogContent className="flex flex-col items-center p-10 bg-[#00263a]">
+            <div className="mb-4">
+              <label htmlFor="name" className="ml-2 font-normal text-white">
+                Name *
+              </label>
+              <br />
+              <input
+                required
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter Your Name"
+                className="rounded-xl border-2 border-gray-300 w-full mt-2 placeholder:text-sm"
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="email" className="ml-2 font-normal text-white">
+                Email *
+              </label>
+              <br />
+              <input
+                required
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email"
+                className="rounded-xl border-2 border-gray-300 w-full mt-2 placeholder:text-sm"
+              />
+            </div>
+            <div>
+              <label htmlFor="number" className="ml-2 font-normal text-white">
+                Phone Number *
+              </label>
+              <br />
+              <input
+                required
+                type="text"
+                id="number"
+                name="number"
+                placeholder="Enter Your Phone No."
+                className="rounded-xl border-2 border-gray-300 w-full mt-2 placeholder:text-sm"
+              />
+            </div>
+          </DialogContent>
+          <DialogActions className="bg-[#00263a] border-t">
+            <Button onClick={handleClose} className="text-white">
+              Cancel
+            </Button>
+            <Button className="text-white">Add New Team Member</Button>
+          </DialogActions>
+        </form>
+      </Dialog>
     </>
   );
 }

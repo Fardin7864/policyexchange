@@ -40,10 +40,8 @@ const EventDetail = (params) => {
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{
           backgroundImage: "url('/news/cover.jpeg')",
-          // backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-
           width: "100%",
           height: "400px",
         }}
@@ -78,7 +76,7 @@ const EventDetail = (params) => {
                   <FaRegCalendarAlt /> {eventsDetail?.date}
                 </p>
                 <div className="mt-2 mb-10 flex flex-col gap-4">
-                  <p className="font-bold text-[#956de6] text-lg">
+                  <p className="font-bold text-[#7393CF] text-lg">
                     {eventsDetail?.title}
                   </p>
 
@@ -91,7 +89,7 @@ const EventDetail = (params) => {
                           <p>{eventsDetail.detail.slice(0, 500)}</p>
                           <button
                             onClick={toggleShowAll}
-                            className="font-semibold mt-2 text-[#956de6]"
+                            className="font-semibold mt-2 text-[#7393CF]"
                           >
                             Show {showAll ? "less" : "more"}
                           </button>

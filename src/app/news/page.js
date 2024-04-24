@@ -70,14 +70,14 @@ const News = () => {
                 <div className="border-r-2 border-gray-400">
                   <div className="py-3 px-5">
                     <p className="mt-2 mb-10 flex flex-col gap-4">
-                      <span className="font-bold text-[#A790D5] text-lg">
+                      <span className="font-bold text-[#7393CF] text-lg">
                         {news.title}
                       </span>
                       <span className="text-sm text-justify">
                         {news.subTitle}
                       </span>
                     </p>
-                    <button className="text-[#A790D5] font-bold">
+                    <button className="text-[#7393CF] font-bold">
                       Read more
                     </button>
                   </div>
