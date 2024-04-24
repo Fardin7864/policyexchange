@@ -1,9 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { FaXTwitter } from "react-icons/fa6";
-import { IoMdPerson } from "react-icons/io";
 
 const TeamList = () => {
   const [team, setTeam] = useState();

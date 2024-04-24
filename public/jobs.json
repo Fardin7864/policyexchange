@@ -1,53 +1,17 @@
 [
-    {
-        "id": 1,
-       "title":"Digital Marketer",
-       "subTitle":"Full Time job"
-       
-
-    },
-    {
-        "id": 2,
-        "title":"Digital Marketer",
-        "subTitle":"Contractual job"
-        
-    },
-    {
-        "id": 3,
-        "title":"Digital Marketer",
-        "subTitle":"Full Time job"
-    },
-    {
-        "id": 4,
-        "title":"Digital Marketer",
-        "subTitle":"Contractual job"
-    },
-    {
-        "id": 5,
-        "title":"Digital Marketer",
-        "subTitle":"Full Time job"
-    },
-    {
-        "id": 6,
-        "title":"Digital Marketer",
-        "subTitle":"Contractual job"
-    },
-    {
-        "id": 7,
-        "title":"Digital Marketer",
-       "subTitle":"Full Time job"
-    },
-    {
-        "id": 8,
-        "title":"Digital Marketer",
-        "subTitle":"Contractual job"
-    }
-    ,
-    {
-        "id": 9,
-        "title":"Digital Marketer",
-        "subTitle":"Contractual job"
-    }
-    
-
+  {
+    "id": 1,
+    "title": "Digital Marketer",
+    "subTitle": "Full Time job"
+  },
+  {
+    "id": 2,
+    "title": "Digital Marketer",
+    "subTitle": "Contractual job"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketer",
+    "subTitle": "Full Time job"
+  }
 ]

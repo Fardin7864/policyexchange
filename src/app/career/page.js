@@ -1,7 +1,5 @@
 "use client";
-import FadeFromSide from "@/util/FadeFromSide";
-import { Container } from "@mui/material";
-import Image from "next/image";
+import { Container, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import "./career.css";
 import { IoDocumentTextOutline } from "react-icons/io5";
@@ -44,8 +42,8 @@ const CareerPage = () => {
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{
-          backgroundImage: "url('/images/career.jpg')",
-
+          backgroundImage: "url('/services/career.jpg')",
+          backgroundSize: "cover",
           width: "100%",
           height: "400px",
         }}
@@ -64,7 +62,7 @@ const CareerPage = () => {
       {/*  */}
       <div className="max-w-[1440px] mx-auto ">
         <Container className=" pt-16">
-          <h2 className="text-center text-lg font-semibold">
+          <Typography className=" text-[#00263a] text-xl font-bold mx-auto text-center mb-8 lg:w-[80%] md:w-[90%] w-full">
             Welcome to the Career Opportunities page at Policy Exchange
             Bangladesh. Here, we offer a gateway to meaningful roles in policy
             research, analysis, and advocacy. Dive into our diverse array of
@@ -72,67 +70,49 @@ const CareerPage = () => {
             of Bangladesh. Explore our vacancies and join us in our mission to
             drive positive change through informed policy decisions. Your career
             starts here, where innovation meets impact.
-          </h2>
+          </Typography>
 
           <h2 className="text-center text-4xl font-bold mt-16">Jobs for you</h2>
 
           <div className="my-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
-              {jobs.slice(0, 3).map((job) => (
-                <div
-                  key={job.id}
-                  className="bg-white py-5 px-10 rounded-xl  jobs-container"
-                >
-                  <h2 className="font-bold text-xl">{job.title}</h2>
-                  <h3 className="text-[#307fe2] font-semibold mt-1">
-                    {job.subTitle}
-                  </h3>
-                  <button
-                    onClick={handleClickOpen}
-                    className="rounded-full border px-4 py-2 border-[#98c3f7] bg-[#f3f8ff] text-[#307fe2] hover:bg-[#307fe2] hover:text-white duration-300 mt-3 font-bold"
-                  >
-                    Apply Now
-                  </button>
-                </div>
-              ))}
-
-              {showAllJobs &&
-                jobs.slice(3).map((job) => (
+            {jobs.length === 0 ? (
+              <>
+                <h2 className="text-center font-semibold text-xl text-[#7393CF] ">
+                  No jobs are available right now!
+                </h2>
+              </>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+                {jobs.map((job) => (
                   <div
                     key={job.id}
-                    className="bg-white py-5 px-10 rounded-xl  jobs-container"
+                    className="bg-white py-5 px-10 rounded-xl jobs-container"
                   >
                     <h2 className="font-bold text-xl">{job.title}</h2>
-                    <h3 className="text-[#307fe2] font-semibold mt-1">
+                    <h3 className="text-[#7393CF] font-semibold mt-1">
                       {job.subTitle}
                     </h3>
                     <button
                       onClick={handleClickOpen}
-                      className="rounded-full border px-4 py-2 border-[#98c3f7] bg-[#f3f8ff] text-[#307fe2] hover:bg-[#307fe2] hover:text-white duration-300 mt-3 font-bold"
+                      className="rounded-full border px-4 py-2 text-[#179A44] hover:text-white border-[#74D194] duration-300 hover:bg-[#179A44]  mt-3 font-bold"
                     >
                       Apply Now
                     </button>
                   </div>
                 ))}
-            </div>
-            <button
-              className="rounded-full border px-5 py-3 border-[#a790d5] hover:bg-[#A790D5] bg-[#307fe2] text-white  duration-300  block mx-auto mt-10 font-semibold"
-              onClick={toggleShowAllJobs}
-            >
-              {showAllJobs ? "Hide" : "View all openings"}
-            </button>
+              </div>
+            )}
           </div>
 
           {/*  */}
 
           <div className="mt-16">
             <h2 className="text-center text-4xl font-bold">
-              Learn Our Recruitment{" "}
-              <span className="text-[#A790D5]">Process</span>{" "}
+              Learn Our Recruitment Process
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 mb-16 gap-5">
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <IoDocumentTextOutline className="text-5xl font-bold text-[#A790D5] mb-3" />
+                <IoDocumentTextOutline className="text-5xl font-bold text-[#7393CF] mb-3" />
                 <h4 className="font-bold text-xl">CV Submission</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Submit your CV through our online portal or via email. Ensure
@@ -140,7 +120,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <FiPhoneCall className="text-5xl font-bold text-[#A790D5] mb-3" />
+                <FiPhoneCall className="text-5xl font-bold text-[#7393CF] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Phone Screening</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   After reviewing your CV, selected candidates will undergo a
@@ -148,7 +128,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8 rounded-xl shadow-2xl">
-                <GrCloudComputer className="text-5xl font-bold text-[#A790D5] mb-3" />
+                <GrCloudComputer className="text-5xl font-bold text-[#7393CF] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Skill Assessment</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Qualified candidates will be invited to complete an assessment
@@ -156,7 +136,7 @@ const CareerPage = () => {
                 </p>
               </div>
               <div className="bg-white py-5 px-8  rounded-xl shadow-2xl">
-                <RiTeamLine className="text-5xl font-bold text-[#A790D5] mb-3" />
+                <RiTeamLine className="text-5xl font-bold text-[#7393CF] mb-3" />
                 <h4 className="font-bold text-xl mb-1">Final Interview</h4>
                 <p className="text-gray-700 text-justify mt-2">
                   Successful candidates from the assessment stage will progress

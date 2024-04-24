@@ -6,10 +6,18 @@ import "./mission.css";
 
 const Mission = () => {
   const [agFlag, setAgFlag] = useState(false);
-  const [agHeight, setAgHeight] = useState(0);
+  const [agHeight, setAgHeight] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerHeight;
+    } else {
+      return 0;
+    }
+  });
 
   useEffect(() => {
-    setAgHeight(window?.innerHeight || 0);
+    // setAgHeight(window.innerHeight);
+    // fnUpdateProgress();
+
     function fnOnScroll() {
       fnUpdateProgress();
       fnUpdateFrame();
@@ -52,7 +60,7 @@ const Mission = () => {
       const agTop = item.getBoundingClientRect().top;
       const agPosY = window?.scrollY || window?.pageYOffset;
 
-      if (agTop + agPosY < agPosY + agHeight / 1.5) {
+      if (agTop + agPosY < agPosY + agHeight / 1.3) {
         item.classList.add("js-ag-active");
       } else {
         item.classList.remove("js-ag-active");

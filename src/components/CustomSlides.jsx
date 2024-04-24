@@ -10,30 +10,18 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
 import HeroBanner from "./HeroBanner";
-import BrandMarquee from "./BrandMarquee";
 
 const Carousel = () => {
   const swiperRef = useRef(null);
+  const [swiperIndex, setSwiperIndex] = useState(0);
 
   useEffect(() => {
     const swiper = swiperRef.current.swiper;
     swiper.on("slideChange", () => {
-      // Determine the direction of the slide change
-      const previousIndex = swiper.previousIndex;
       const currentIndex = swiper.realIndex;
-
-      if (previousIndex < currentIndex) {
-        console.log("Slide changed to the right");
-      } else if (previousIndex > currentIndex) {
-        console.log("Slide changed to the left");
-      }
+      setSwiperIndex(currentIndex);
     });
   }, []);
-
-  const handleSlideClick = (e) => {
-    e.preventDefault();
-    console.log("1");
-  };
 
   return (
     <div>
@@ -54,9 +42,11 @@ const Carousel = () => {
           <div
             className="background-div bg-cover with-overlay "
             style={{
-              backgroundImage: "url('/carousel/first.png')",
+              backgroundImage: "url('/logos/banner.png')",
               width: "full",
               height: "650px",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
             }}
             //
           >
@@ -105,7 +95,7 @@ const Carousel = () => {
         </SwiperSlide>
         {/* <SwiperNavButtons/> */}
         <div className=" max-w-[1440px] mx-auto">
-          <HeroBanner />
+          <HeroBanner currentSlideIndex={swiperIndex} />
           {/* <BrandMarquee/> */}
         </div>
       </Swiper>

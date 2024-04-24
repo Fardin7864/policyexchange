@@ -2,7 +2,6 @@
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { useEffect, useState, useRef } from "react";
-import { ArrowLeft, ArrowRight } from "@mui/icons-material";
 import Image from "next/image";
 
 const Pictures = () => {
@@ -49,7 +48,9 @@ const Pictures = () => {
     setPictures((prevPictures) => [...prevPictures, ...newPictures]);
   };
 
-  const picturesToDisplay = !isShow ? pictures.slice(0, 63) : pictures.slice(0,98);
+  const picturesToDisplay = !isShow
+    ? pictures.slice(0, 63)
+    : pictures.slice(0, 98);
 
   return (
     <PhotoProvider>
@@ -66,7 +67,7 @@ const Pictures = () => {
                       backgroundImage: `url(${picture.img})`,
                       width: "195px",
                       height: "195px",
-                      position: "relative", 
+                      position: "relative",
                     }}
                   >
                     {/* <Image
@@ -75,7 +76,7 @@ const Pictures = () => {
                     height={195}
                     alt="img"
                     /> */}
-                    
+
                     <div
                       style={{
                         position: "absolute",
@@ -83,7 +84,7 @@ const Pictures = () => {
                         left: 0,
                         width: "100%",
                         height: "100%",
-                        backgroundColor: "rgba(0, 0, 0, 0.5)", 
+                        backgroundColor: "rgba(0, 0, 0, 0.5)",
                       }}
                     ></div>
                   </div>
@@ -107,12 +108,16 @@ const Pictures = () => {
                     src={picture.img}
                     width={195}
                     height={195}
-                    style={{ width: '195px', height: '195px', objectFit: 'cover' }}
-                    alt="img"                    
-                    />
+                    style={{
+                      width: "195px",
+                      height: "195px",
+                      objectFit: "cover",
+                    }}
+                    alt="img"
+                  />
                   {/* Dark overlay */}
                   <div
-                  className=" hover:bg-[#0000007f] bg-transparent"
+                    className=" hover:bg-[#0000007f] bg-transparent"
                     style={{
                       position: "absolute",
                       top: 0,
@@ -133,7 +138,7 @@ const Pictures = () => {
           onClick={() => setisShow(true)}
           className={`${
             isShow ? "hidden" : "block"
-          } border-2 text-sm rounded-full px-6 py-2 text-white bg-[#00263a]`}
+          } border-2 text-sm rounded-full px-6 py-2 text-white bg-[#74D194] duration-300 hover:bg-[#179A44]`}
         >
           See More
         </button>
@@ -141,7 +146,7 @@ const Pictures = () => {
           onClick={() => setisShow(false)}
           className={`${
             isShow ? "block" : "hidden"
-          } border-2 text-sm rounded-full px-6 py-2 text-white bg-[#00263a]`}
+          } border-2 text-sm rounded-full px-6 py-2 text-white bg-[#74D194] duration-300 hover:bg-[#179A44]`}
         >
           See Less
         </button>

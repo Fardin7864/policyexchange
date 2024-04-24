@@ -70,7 +70,7 @@ const NewsDetail = (params) => {
                   <FaRegCalendarAlt /> {newsDetail?.date}
                 </p>
                 <p className="mt-2 mb-10 flex flex-col gap-4">
-                  <span className="font-bold text-[#A790D5] text-lg">
+                  <span className="font-bold text-[#7393CF] text-lg">
                     {newsDetail?.title}
                   </span>
                   <span className="text-sm text-justify">

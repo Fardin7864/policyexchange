@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSwiper } from "swiper/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
-const HeroBanner = () => {
-  const colors = ["#a2bcd6"]; // Array of colors
+const HeroBanner = ({ currentSlideIndex }) => {
+  const colors = ["#79C4E4", "#79C4E4", "#79C4E4", "#79C4E4"]; // Array of colors
   const titles = [
     "Catalyzing growth",
     "Driving innovation",
@@ -20,8 +20,21 @@ const HeroBanner = () => {
   const [colorIndex, setColorIndex] = useState(0); // Initial color index
   const [titleIndex, setTitleIndex] = useState(0); // Initial title index
   const [detailsIndex, setDetailIndex] = useState(0);
+  //
   const swiper = useSwiper();
 
+  //
+  useEffect(() => {
+    advanceHeroBannerSlide();
+  }, [currentSlideIndex]);
+
+  const advanceHeroBannerSlide = () => {
+    setColorIndex(currentSlideIndex);
+    setTitleIndex(currentSlideIndex);
+    setDetailIndex(currentSlideIndex);
+  };
+
+  //
   const handlePrevClick = () => {
     swiper.slidePrev(); // Move to the previous slide
     setColorIndex((prevIndex) =>

@@ -16,7 +16,9 @@ const Services = () => {
         broader development narrative of our nation.
       </Typography>
       <BrandMarquee />
-      <h1 className=" text-center text-5xl font-bold">Our Services</h1>
+      <h1 className=" text-center text-5xl font-bold text-[#0E1514]">
+        Our Services
+      </h1>
       <Container className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* card 1 */}
         <div className="">
@@ -24,17 +26,17 @@ const Services = () => {
             <div className="card">
               <div className="slide slide3 border-2 border-black bg-white ">
                 <div
-                  className="slide slide1 bg-white hover:text-[#a790d5] shadow-2xl"
+                  className="slide slide1 text-[#0E1514] bg-white hover:text-[#7393CF] shadow-2xl"
                   style={{ backgroundColor: "white" }}
                 >
                   <div className="content">
                     <div className="icon flex flex-col gap-14 justify-center items-center">
                       <Image
-                        src={"/logos/service1.gif"}
+                        src={"/icons/1.png"}
                         width={120}
                         height={0}
                         alt="search"
-                        className=" mr-5"
+                        className=""
                       />
                       <h4 className=" text-xl font-bold text-center mr-6">
                         Research & Analytics
@@ -43,8 +45,8 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="slide slide4 bg-[#307fe2] shadow-lg">
-                <div className="slide slide2 bg-[#307fe2] shadow-lg">
+              <div className="slide slide4 bg-[#0282B7] shadow-lg">
+                <div className="slide slide2 bg-[#0282B7] shadow-lg">
                   <div className="content ">
                     <p className="text-white">
                       We specialize in providing comprehensive services ranging
@@ -66,17 +68,17 @@ const Services = () => {
           <div className="card ">
             <div className="slide slide3 border-2 border-black bg-white ">
               <div
-                className="slide slide1 bg-white hover:text-[#a790d5]"
+                className="slide slide1 text-[#0E1514] bg-white hover:text-[#7393CF]"
                 style={{ backgroundColor: "white" }}
               >
                 <div className="content">
                   <div className="icon flex flex-col gap-14 justify-center items-center">
                     <Image
-                      src={"/logos/service2.gif"}
+                      src={"/icons/2.png"}
                       width={120}
                       height={0}
                       alt="search"
-                      className=" mr-5"
+                      className=""
                     />
                     <h4 className=" text-xl font-bold text-center mr-6">
                       Advocacy & Dialogue
@@ -85,8 +87,8 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="slide slide4 bg-[#307fe2] shadow-lg">
-              <div className="slide slide2 bg-[#307fe2] shadow-lg">
+            <div className="slide slide4 bg-[#0282B7] shadow-lg">
+              <div className="slide slide2 bg-[#0282B7] shadow-lg">
                 <div className="content ">
                   <p className="text-white">
                     We execute systematic and targeted efforts, focusing on
@@ -106,17 +108,17 @@ const Services = () => {
           <div className="card ">
             <div className="slide slide3 border-2 border-black bg-white ">
               <div
-                className="slide slide1 bg-white hover:text-[#a790d5]"
+                className="slide slide1 text-[#0E1514] bg-white hover:text-[#7393CF]"
                 style={{ backgroundColor: "white" }}
               >
                 <div className="content">
                   <div className="icon flex flex-col gap-14 justify-center items-center">
                     <Image
-                      src={"/logos/service3.gif"}
+                      src={"/icons/3.png"}
                       width={120}
                       height={0}
                       alt="search"
-                      className=" mr-5"
+                      className=" mt-8"
                     />
                     <h4 className=" text-xl font-bold text-center mr-6">
                       Investment & Market Advisory
@@ -125,8 +127,8 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="slide slide4 bg-[#307fe2] shadow-lg">
-              <div className="slide slide2 bg-[#307fe2] shadow-lg">
+            <div className="slide slide4 bg-[#0282B7] shadow-lg">
+              <div className="slide slide2 bg-[#0282B7] shadow-lg">
                 <div className="content ">
                   <p className="text-white">
                     We provide expert advice on policy, regulation, and

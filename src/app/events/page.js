@@ -67,7 +67,7 @@ const Events = () => {
                 <div className="publications-container">
                   <div className="py-3 px-5">
                     <p className="mt-2 mb-10 text-sm flex flex-col gap-2 ">
-                      <span className="font-bold text-[#956de6]">
+                      <span className="font-bold text-[#7393CF]">
                         {event.title}
                       </span>
                     </p>

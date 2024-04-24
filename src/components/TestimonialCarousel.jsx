@@ -6,11 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
-import {  FaChevronRight } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
 import TestimonialBanner from "./TestimonialBanner";
 
 const TestimonialCarousel = () => {
-
   return (
     <>
       <h2 className=" text-center text-5xl font-bold py-20">
@@ -42,9 +41,12 @@ const TestimonialCarousel = () => {
             {/* content */}
           </div>
           {/* sub banner / text doc */}
-          <div className=" text-md font-medium text-gray-100 bg-[#a790d5] w-[80%] mx-auto py-10 px-14 flex flex-col gap-5 rounded-3xl relative -top-36">
+          <div className=" text-md font-medium text-gray-100 bg-[#7393CF] w-[80%] mx-auto py-10 px-14 flex flex-col gap-5 rounded-3xl relative -top-36">
             <p>
-            We have been in the market for quite some time now. For Lightcastle, it is essential to maintain our quality of work. We have a longstanding partnership with Policy Ex, and they provide us with all the guarantees we need
+              We have been in the market for quite some time now. For
+              Lightcastle, it is essential to maintain our quality of work. We
+              have a longstanding partnership with Policy Ex, and they provide
+              us with all the guarantees we need
             </p>
             <div>
               <p>Light Castle</p>

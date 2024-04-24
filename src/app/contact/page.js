@@ -1,7 +1,5 @@
 import React from "react";
 import { Container, Typography } from "@mui/material";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
 import { IoIosArrowForward } from "react-icons/io";
 
 const ContactPage = () => {
@@ -10,14 +8,15 @@ const ContactPage = () => {
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{
-          backgroundImage: "url('/contact.jpeg')",
+          backgroundImage: "url('/services/contact.jpeg')",
           width: "full",
           height: "400px",
+          backgroundPosition: "center",
         }}
       >
-        <div className="w-full absolute h-[400px] bg-black opacity-60"></div>
+        <div className="w-full absolute h-[400px] bg-black opacity-50"></div>
         <div className=" flex justify-center h-full">
-          <h3 className=" text-white  text-5xl absolute font-bold pt-64 opacity-100 z-50">
+          <h3 className=" text-white  text-5xl absolute font-bold pt-52 opacity-100 z-50">
             Contact us
           </h3>
         </div>
@@ -165,7 +164,7 @@ const ContactPage = () => {
                 support services. See our Terms and Conditions and Privacy
                 Notice for more information.
               </p>
-              <button className="flex  items-center gap-1 rounded-full font-semibold my-5 px-4 py-2 bg-[#9de7d7] hover:bg-[#00263a] duration-300 hover:text-white">
+              <button className="flex  items-center gap-1 rounded-full font-semibold my-5 px-4 py-2 text-white bg-[#74D194] duration-300 hover:bg-[#179A44]">
                 Submit <IoIosArrowForward />
               </button>
             </form>

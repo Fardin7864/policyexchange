@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,7 +24,7 @@
   font-family: "axiforma-extrabold";
   src: url("/public/font/Kastelov\ \ Axiforma\ ExtraBold.otf");
 }
-.font-titillium{
+.font-titillium {
   font-family: "Titillium Web", sans-serif;
 }
 .font-oswald {
@@ -128,11 +128,9 @@ body {
   transition: bg 0.3s ease;
 }
 
-
 /* Custom card section  */
 
 .container .card .icon {
-
   position: absolute;
 
   top: 0;
@@ -148,11 +146,9 @@ body {
   border: 2px solid black;
 
   border-radius: 30px;
-
 }
 
 .container .card .icon .fa {
-
   position: absolute;
 
   top: 50%;
@@ -164,25 +160,21 @@ body {
   font-size: 80px;
 
   color: #fff;
-
 }
 
 .container .card .slide {
-
   width: 300px;
 
   height: 300px;
 
   transition: 0.5s;
-  
-  border-radius: 30px;
-  
-  /* border: 2px solid black; */
 
+  border-radius: 30px;
+
+  /* border: 2px solid black; */
 }
 
 .container .card .slide.slide1 {
-
   position: absolute;
 
   display: flex;
@@ -193,16 +185,14 @@ body {
 
   z-index: 1;
 
-  transition: .7s;
+  transition: 0.7s;
 
   transform: translateY(-10px);
 
   margin-left: 15px;
-
 }
 
 .container .card .slide.slide3 {
-
   position: relative;
 
   display: flex;
@@ -213,33 +203,25 @@ body {
 
   z-index: 1;
 
-  transition: .7s;
+  transition: 0.7s;
 
   transform: translateY(79px);
 
   margin-left: 15px;
-
 }
 
-.container .card:hover .slide.slide1{
-
+.container .card:hover .slide.slide1 {
   transform: translateY(15px);
 
   margin-left: 20px;
-  
-
 }
-.container .card:hover .slide.slide3{
-
+.container .card:hover .slide.slide3 {
   transform: translateY(5px);
 
   margin-left: 0;
-  
-
 }
 
 .container .card .slide.slide2 {
-
   position: absolute;
 
   display: flex;
@@ -252,7 +234,7 @@ body {
 
   box-sizing: border-box;
 
-  transition: .8s;
+  transition: 0.8s;
 
   transform: translateY(-10px);
 
@@ -260,11 +242,9 @@ body {
   margin-left: 15px;
 
   /* box-shadow: 10px 20px 40px rgba(0,0,0,0.4); */
-
 }
 
 .container .card .slide.slide4 {
-
   position: relative;
 
   display: flex;
@@ -277,32 +257,24 @@ body {
 
   box-sizing: border-box;
 
-  transition: .8s;
+  transition: 0.8s;
 
   transform: translateY(-200px);
 
   border: 2px solid black;
 
-
   /* box-shadow: 10px 20px 40px rgba(0,0,0,0.4); */
-
 }
 
-.container .card:hover .slide.slide2{
-
+.container .card:hover .slide.slide2 {
   transform: translateY(15px);
   margin-left: 20px;
-
 }
-.container .card:hover .slide.slide4{
-
+.container .card:hover .slide.slide4 {
   transform: translateY(0);
-  
-
 }
 
-.container .card .slide.slide2::after{
-
+.container .card .slide.slide2::after {
   content: "";
 
   position: absolute;
@@ -321,11 +293,9 @@ body {
 
   background: white;
   /* margin: 0 38px 0 0; */
-
 }
 
 .container .card .slide.slide2 .content p {
-
   /* margin: 0 38px 0 0; */
 
   padding: 0;
@@ -333,11 +303,9 @@ body {
   text-align: center;
 
   /* color: #414141; */
-
 }
 
 .container .card .slide.slide2 .content h3 {
-
   margin: 0 0 10px 0;
 
   padding: 0;
@@ -347,8 +315,7 @@ body {
   text-align: center;
 
   color: #414141;
-
-} 
+}
 
 /* .container .card .slide.slide.slide2 {
   border: 2px solid red;
@@ -381,3 +348,15 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
 }
 
+/*  */
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  color: #74d194 !important;
+  font-weight: 600 !important;
+  background-color: #00263a !important;
+}
+
+.css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon {
+  color: #00263a !important;
+  height: 35px !important;
+  width: 35px !important;
+}
