@@ -24,7 +24,7 @@ const Mission = () => {
     }
 
     function fnOnResize() {
-      setAgHeight(window.innerHeight);
+      setAgHeight(window?.innerHeight);
       fnUpdateProgress();
       fnUpdateFrame();
     }
@@ -40,12 +40,12 @@ const Mission = () => {
       }
     }
 
-    window.addEventListener("scroll", fnOnScroll);
-    window.addEventListener("resize", fnOnResize);
+    window?.addEventListener("scroll", fnOnScroll);
+    window?.addEventListener("resize", fnOnResize);
 
     return () => {
-      window.removeEventListener("scroll", fnOnScroll);
-      window.removeEventListener("resize", fnOnResize);
+      window?.removeEventListener("scroll", fnOnScroll);
+      window?.removeEventListener("resize", fnOnResize);
     };
   }, [agFlag]);
 
@@ -58,7 +58,7 @@ const Mission = () => {
 
     agTimelineItems.forEach((item) => {
       const agTop = item.getBoundingClientRect().top;
-      const agPosY = window.scrollY || window.pageYOffset;
+      const agPosY = window?.scrollY || window?.pageYOffset;
 
       if (agTop + agPosY < agPosY + agHeight / 1.1) {
         item.classList.add("js-ag-active");
