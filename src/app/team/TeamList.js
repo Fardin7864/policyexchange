@@ -24,7 +24,6 @@ const TeamList = () => {
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-16 gap-8">
         {team?.map((member) => (
           <div key={member.id} className=" flex flex-col  items-center py-5">
-            {/* <img src={member.img} className=' rounded-full bg-white w-40 h-40'/> */}
             <div
               className="rounded-full bg-white w-40 h-40"
               style={{
@@ -36,16 +35,18 @@ const TeamList = () => {
             ></div>
 
             <h6 className=" font-oswald text-2xl font-bold py-3 font">
-              {member.name}
+              {member?.name}
             </h6>
             <p className=" font-semibold text-center">{member.designation}</p>
             <div className=" flex gap-2 py-1 pt-2 text-xl">
-              <FaLinkedin />
-              <MdOutlineMailOutline />
-              {/* <FaInstagram />
-                            <FaXTwitter /> */}
+              <a href={member?.social_links?.linkedin} target="__blank">
+                <FaLinkedin />
+              </a>
+              <a href={`mailto:${member?.email}`} title={member?.email}>
+                <MdOutlineMailOutline />
+              </a>
             </div>
-            <p className=" text-sm text-center pt-2">{member.details.bio}</p>
+            <p className=" text-sm text-center pt-2">{member?.details?.bio}</p>
           </div>
         ))}
       </div>
