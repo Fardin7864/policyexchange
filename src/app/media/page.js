@@ -19,8 +19,8 @@ const media = () => {
         </div>
         {/* content */}
       </div>
-      <div className=" max-w-[1440px] mx-auto mt-5">
-      <Pictures />
+      <div className=" max-w-[1440px] mx-auto py-16">
+        <Pictures />
       </div>
     </div>
   );

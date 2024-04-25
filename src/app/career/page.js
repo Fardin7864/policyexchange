@@ -42,8 +42,9 @@ const CareerPage = () => {
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{
-          backgroundImage: "url('/services/career.jpg')",
+          backgroundImage: "url('/services/career2.jpg')",
           backgroundSize: "cover",
+          backgroundPosition: "",
           width: "100%",
           height: "400px",
         }}
@@ -86,7 +87,7 @@ const CareerPage = () => {
                 {jobs.map((job) => (
                   <div
                     key={job.id}
-                    className="bg-white py-5 px-10 rounded-xl jobs-container"
+                    className="bg-white py-5 px-10 rounded-xl shadow-2xl"
                   >
                     <h2 className="font-bold text-xl">{job.title}</h2>
                     <h3 className="text-[#7393CF] font-semibold mt-1">

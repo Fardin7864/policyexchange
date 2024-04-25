@@ -16,8 +16,8 @@ const Events = () => {
         </div>
         <div className=" w-1/2 flex justify-end items-center z-10">
           <Link href={"/events"} className=" ">
-            <button className="text-white text-xl py-2 font-bold border-2 border-white rounded-full w-36 hover:bg-[#179A44] hover:border-[#179A44] transition-all duration-700">
-              View all
+            <button className="text-white text-xl py-2 font-bold border-2 border-white rounded-full w-44 hover:bg-[#179A44] hover:border-[#179A44] transition-all duration-700">
+              View All Events
             </button>
           </Link>
         </div>
