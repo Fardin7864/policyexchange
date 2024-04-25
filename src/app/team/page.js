@@ -2,6 +2,7 @@ import React from "react";
 import HorizontalScrollCarousel from "./HorizontalCarousel";
 import TeamList from "./TeamList";
 import { Typography } from "@mui/material";
+import TeamCarousel from "@/components/TeamCarousel";
 
 const page = () => {
   return (
@@ -36,7 +37,8 @@ const page = () => {
             viable
           </Typography>
         </div>
-        <HorizontalScrollCarousel />
+        {/* <HorizontalScrollCarousel /> */}
+        <TeamCarousel />
 
         <TeamList />
       </div>
