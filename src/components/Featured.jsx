@@ -17,11 +17,11 @@ const NewsCard = ({ image, title, details, bottomBorder, classes, id }) => {
           className={``}
         />
         <Container className=" py-5 bg-none">
-          <div className="border-l border-blue-500 pt-16 relative -top-14">
+          <div className="border-l border-[#0282B7] pt-16 relative -top-14">
             <h3 className="text-[#0E1514] p-6  h-full text-3xl">{title}</h3>
             <Link
               href={`/news/${id}`}
-              className="text-blue-600 pl-6 font-semibold underline-from-left "
+              className="text-[#0282B7] pl-6 font-semibold underline-from-left "
             >
               READ MORE
             </Link>
@@ -56,7 +56,7 @@ const Featured = () => {
       </Container>
       <Container className=" px-0">
         <Link href={"/news"}>
-          <button class="relative overflow-hidden  border border-[#74D194]  text-white hover:border-transparent bg-[#74D194] hover:bg-[#179A44] transition duration-200 ease-in-out button-blue p-3 px-5 text-xl ">
+          <button class="relative overflow-hidden  border border-[#74D194]  text-white hover:border-transparent bg-[#74D194] hover:bg-[#179A44] transition duration-200 ease-in-out button-blue p-3 px-5 text-xl rounded-full">
             All News
           </button>
         </Link>

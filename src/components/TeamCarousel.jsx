@@ -2,7 +2,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { PiBookOpenText } from "react-icons/pi";
 
 // Import Swiper styles
 import "swiper/css";
@@ -22,30 +21,28 @@ const TeamCarousel = () => {
       .then((data) => setTeams(data?.team_members));
   }, []);
 
+  //
+
   return (
     <>
       {/* Testimonial slider */}
       <Swiper
         loop={true}
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation]}
         spaceBetween={30}
         slidesPerView={3}
-        speed={3000}
-        disableOnInteraction={false}
-        autoplay={{ delay: 0, disableOnInteraction: false }}
+        autoplay={{ delay: 1000, disableOnInteraction: false }}
+        // speed={1000}
         className="mySwiper w-[95%] overflow-visible"
       >
-        {/* <div className=" relative -top-[270px] z-20 ">
+        <div className=" relative -top-[270px] z-20 ">
           <TestimonialBanner />
-        </div> */}
+        </div>
 
         {/* content */}
         {teams.map((team, index) => (
-          <SwiperSlide key={index}>
-            <div
-              key={team.id}
-              className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200 rounded-md"
-            >
+          <SwiperSlide key={index} className="w-[85%]  ">
+            <div className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200 rounded-md">
               <div
                 style={{
                   backgroundImage: `url(${team.img})`,

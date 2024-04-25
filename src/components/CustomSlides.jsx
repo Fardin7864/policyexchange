@@ -34,7 +34,7 @@ const Carousel = () => {
         noSwiping={true}
         className="mySwiper"
         autoplay={{
-          delay: 4000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
       >
@@ -42,15 +42,15 @@ const Carousel = () => {
           <div
             className="background-div bg-cover with-overlay "
             style={{
-              backgroundImage: "url('/logos/banner.png')",
+              backgroundImage: "url('/carousel/2.png')",
               width: "full",
               height: "650px",
               backgroundPosition: "center",
-              backgroundSize: "cover",
+              backgroundSize: "contain",
             }}
             //
           >
-            <div className="w-[100%] h-[100%] bg-gray-500 opacity-30"></div>
+            <div className="w-[100%] h-[100%] bg-black opacity-0"></div>
             {/* content */}
           </div>
         </SwiperSlide>

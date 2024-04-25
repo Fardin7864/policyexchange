@@ -60,7 +60,7 @@ const Mission = () => {
       const agTop = item.getBoundingClientRect().top;
       const agPosY = window.scrollY || window.pageYOffset;
 
-      if (agTop + agPosY < agPosY + agHeight / 1.3) {
+      if (agTop + agPosY < agPosY + agHeight / 1.1) {
         item.classList.add("js-ag-active");
       } else {
         item.classList.remove("js-ag-active");
@@ -109,7 +109,7 @@ const Mission = () => {
                 <div className="ag-timeline-card_item item-2">
                   <div className="ag-timeline-card_inner">
                     <div className="ag-timeline-card_info">
-                      <div className="ag-timeline-card_desc">
+                      <div className="ag-timeline-card_desc text-start">
                         Be the trusted partner and advisor for businesses,
                         policymakers, investors, and stakeholders.
                       </div>
@@ -146,7 +146,7 @@ const Mission = () => {
                 <div className="ag-timeline-card_item item-2">
                   <div className="ag-timeline-card_inner">
                     <div className="ag-timeline-card_info">
-                      <div className="ag-timeline-card_desc">
+                      <div className="ag-timeline-card_desc text-start">
                         Navigate the complexities of Bangladesh&apos;s economy.
                       </div>
                     </div>
@@ -185,7 +185,7 @@ const Mission = () => {
                 <div className="ag-timeline-card_item item-2">
                   <div className="ag-timeline-card_inner">
                     <div className="ag-timeline-card_info">
-                      <div className="ag-timeline-card_desc">
+                      <div className="ag-timeline-card_desc text-start">
                         Seize its vast potential for sustainable development.
                       </div>
                     </div>

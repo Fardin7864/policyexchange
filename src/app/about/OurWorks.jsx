@@ -35,8 +35,8 @@ const OurWorks = () => {
                 <p className="pl-6 leading-5 pt-2 text-justify">
                   Work together with recognized scholars, leading policymakers,
                   and industry leaders for producing research, advocacy, and
-                  dialogue outcomes reflecting innovation and influential policy{" "}
-                  {""}
+                  dialogue outcomes reflecting innovation and influential
+                  policy.
                 </p>
               </div>
             </div>

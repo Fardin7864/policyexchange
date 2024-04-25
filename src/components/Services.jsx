@@ -2,6 +2,7 @@
 import { Container, Typography } from "@mui/material";
 import Image from "next/image";
 import BrandMarquee from "./BrandMarquee";
+import BrandCarousel from "./BrandCarousel";
 
 const Services = () => {
   return (
@@ -17,7 +18,8 @@ const Services = () => {
       </Typography>
 
       {/* brand section */}
-      <BrandMarquee />
+      {/* <BrandMarquee /> */}
+      <BrandCarousel />
 
       {/* section title */}
       <h1 className=" text-center text-5xl font-bold text-[#0E1514]">
