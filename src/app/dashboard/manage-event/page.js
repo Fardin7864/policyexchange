@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import * as React from "react";
+
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -15,6 +15,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import HomeIcon from "@mui/icons-material/Home";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { FaEdit } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 //
 const columns = [
@@ -27,21 +28,18 @@ const columns = [
 ];
 
 export default function ManageEvents() {
-  const [events, setEvents] = React.useState([]);
+  const [events, setEvents] = useState([]);
 
-  React.useState(() => {
-    try {
-      fetch("/events.json")
-        .then((res) => res.json())
-        .then((data) => setEvents(data));
-    } catch (error) {
-      console.log(error);
-    }
+  useEffect(() => {
+    // Fetch all events
+    fetch("/events.json")
+      .then((res) => res.json())
+      .then((data) => setEvents(data));
   }, []);
 
   // pagination
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);

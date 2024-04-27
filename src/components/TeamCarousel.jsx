@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
 import TestimonialBanner from "./TestimonialBanner";
@@ -28,7 +29,7 @@ const TeamCarousel = () => {
       {/* Testimonial slider */}
       <Swiper
         loop={true}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         spaceBetween={30}
         slidesPerView={3}
         autoplay={{ delay: 1000, disableOnInteraction: false }}

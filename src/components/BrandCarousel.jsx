@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
-import TestimonialBanner from "./TestimonialBanner";
 import BrandCarouselArrow from "./BrandCarouselArrow";
 
 //

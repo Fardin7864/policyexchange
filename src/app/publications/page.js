@@ -22,13 +22,16 @@ const PublicationsPage = () => {
   const [page, setPage] = useState(1);
   const publicationsPerPage = 8;
 
+  // Fetch all publications
   useEffect(() => {
-    // Fetch all publications
     fetch("/publications.json")
       .then((res) => res.json())
       .then((data) => setPublicationData(data));
   }, []);
 
+  //
+
+  // pagination
   const indexOfLastPublication = page * publicationsPerPage;
   const indexOfFirstPublication = indexOfLastPublication - publicationsPerPage;
   const currentPublication = publicationData.slice(
@@ -50,7 +53,8 @@ const PublicationsPage = () => {
     setOpen(false);
   };
 
-  const handleViewPublication = () => {
+  const handleViewPublication = (e) => {
+    e.preventDefault();
     if (selectedPublication && selectedPublication.driveLink) {
       window?.open(selectedPublication.driveLink, "_blank");
     }

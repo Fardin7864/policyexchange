@@ -1,10 +1,9 @@
 import React from "react";
-import HorizontalScrollCarousel from "./HorizontalCarousel";
 import TeamList from "./TeamList";
 import { Typography } from "@mui/material";
 import TeamCarousel from "@/components/TeamCarousel";
 
-const page = () => {
+const TeamPage = () => {
   return (
     <div className="bg-custom">
       <div
@@ -46,4 +45,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default TeamPage;
