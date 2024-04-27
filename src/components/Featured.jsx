@@ -56,7 +56,7 @@ const Featured = () => {
       </Container>
       <Container className=" px-0">
         <Link href={"/news"}>
-          <button class="relative overflow-hidden  border border-[#74D194]  text-white hover:border-transparent bg-[#74D194] hover:bg-[#179A44] transition duration-200 ease-in-out button-blue p-3 px-5 text-xl rounded-full">
+          <button class="relative overflow-hidden  border border-[#74D194]  text-[#179A44] hover:border-transparent  hover:bg-[#179A44] transition duration-200 ease-in-out button-blue p-3 px-5 text-xl ">
             All News
           </button>
         </Link>
