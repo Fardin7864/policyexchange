@@ -18,18 +18,18 @@ const BrandCarouselArrow = () => {
     <div className="w-full flex justify-between">
       <div
         onClick={handlePrevClick}
-        className={` rounded-full  flex justify-center items-center hover:border-[#7393CF]`}
+        className={`rounded-full flex justify-center items-center`}
       >
-        <button className={` bg-white rounded-full p-1 border-2 `}>
-          <FaAngleLeft className=" text-2xl text-[#74D194] font-bold" />
+        <button className={` bg-[#0282B7] rounded-full p-1  `}>
+          <FaAngleLeft className=" text-2xl text-black font-bold" />
         </button>
       </div>
       <div
         onClick={handleNextClick}
-        className={` rounded-full  flex justify-center items-center hover:border-[#7393CF] `}
+        className={` rounded-full  flex justify-center items-center  `}
       >
-        <button className={` bg-white rounded-full p-1 border-2 `}>
-          <FaAngleRight className=" text-2xl text-[#74D194] font-bold" />
+        <button className={` bg-[#0282B7] rounded-full p-1 `}>
+          <FaAngleRight className=" text-2xl text-black font-bold" />
         </button>
       </div>
     </div>

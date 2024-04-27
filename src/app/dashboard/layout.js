@@ -8,31 +8,28 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
+import { FaBookReader } from "react-icons/fa";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import MailIcon from "@mui/icons-material/Mail";
+import { RiTeamFill } from "react-icons/ri";
+import { BsCalendarEventFill } from "react-icons/bs";
+import { FaNewspaper } from "react-icons/fa6";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const drawerWidth = 240;
 
-const CustomListItemButton = ({ href, text, icon }) => {
-  // const router = useRouter();
-
-  // const handleClick = () => {
-  //   router.push(href);
-  // };
-
+const CustomListItemButton = ({ href, text, icon, handleClick }) => {
   return (
     <ListItemButton
-      // onClick={handleClick}
+      onClick={() => handleClick(href)}
       disablePadding
+      className=""
     >
       <ListItemIcon>{icon}</ListItemIcon>
       <ListItemText primary={text} />
@@ -44,12 +41,18 @@ CustomListItemButton.propTypes = {
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   icon: PropTypes.element.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
-function DashboardLayout({ children }, props) {
-  const { window } = props;
+function DashboardLayout({ children }) {
+  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+
+  //
+  const handleNavigation = (href) => {
+    router.push(href);
+  };
 
   const handleDrawerClose = () => {
     setIsClosing(true);
@@ -67,33 +70,44 @@ function DashboardLayout({ children }, props) {
   };
 
   const drawer = (
-    <div>
+    <div className="z-50 ">
       <Toolbar />
 
       <Divider />
       <List>
         {[
-          { text: "Manage Team", route: "/dashboard/manage-team" },
+          {
+            text: "Manage Team",
+            route: "/dashboard/manage-team",
+            icon: <RiTeamFill />,
+          },
           {
             text: "Manage Publications",
             route: "/dashboard/manage-publications",
+            icon: <FaBookReader />,
           },
-          { text: "Manage Event", route: "/dashboard/manage-event" },
-          { text: "Manage News", route: "/dashboard/manage-news" },
+          {
+            text: "Manage Event",
+            route: "/dashboard/manage-event",
+            icon: <BsCalendarEventFill />,
+          },
+          {
+            text: "Manage News",
+            route: "/dashboard/manage-news",
+            icon: <FaNewspaper />,
+          },
         ].map((item, index) => (
           <CustomListItemButton
             key={index}
             href={item.route}
             text={item.text}
-            icon={index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+            icon={item.icon}
+            handleClick={handleNavigation}
           />
         ))}
       </List>
     </div>
   );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -104,8 +118,9 @@ function DashboardLayout({ children }, props) {
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}
+        className="z-50"
       >
-        <Toolbar style={{ backgroundColor: "#00263a" }} className="z-50">
+        <Toolbar style={{ backgroundColor: "#00263a" }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -130,9 +145,10 @@ function DashboardLayout({ children }, props) {
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
+        className="z-50"
       >
         <Drawer
-          container={container}
+          // container={container}
           variant="temporary"
           open={mobileOpen}
           onTransitionEnd={handleDrawerTransitionEnd}
@@ -166,6 +182,7 @@ function DashboardLayout({ children }, props) {
       </Box>
       <Box
         component="main"
+        className="z-40"
         sx={{
           flexGrow: 1,
           p: 3,
@@ -180,7 +197,7 @@ function DashboardLayout({ children }, props) {
 }
 
 DashboardLayout.propTypes = {
-  window: PropTypes.func,
+  children: PropTypes.node.isRequired,
 };
 
 export default DashboardLayout;
