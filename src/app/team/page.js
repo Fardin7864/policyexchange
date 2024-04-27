@@ -9,7 +9,7 @@ const TeamPage = () => {
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{
-          backgroundImage: "url('/images/career.jpg')",
+          backgroundImage: "url('/images/career.JPG')",
           width: "full",
           height: "400px",
         }}
