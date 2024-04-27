@@ -23,14 +23,17 @@ import { useRouter } from "next/router";
 const drawerWidth = 240;
 
 const CustomListItemButton = ({ href, text, icon }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const handleClick = () => {
-    router.push(href);
-  };
+  // const handleClick = () => {
+  //   router.push(href);
+  // };
 
   return (
-    <ListItemButton onClick={handleClick} disablePadding>
+    <ListItemButton
+      // onClick={handleClick}
+      disablePadding
+    >
       <ListItemIcon>{icon}</ListItemIcon>
       <ListItemText primary={text} />
     </ListItemButton>
