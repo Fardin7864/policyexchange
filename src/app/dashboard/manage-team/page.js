@@ -1,5 +1,5 @@
 "use client";
-import * as React from "react";
+import { useEffect, useState } from "react";
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -30,22 +30,18 @@ const columns = [
 ];
 
 export default function ManageTeam() {
-  const [team, setTeam] = React.useState([]);
-  const [open, setOpen] = React.useState(false);
+  const [team, setTeam] = useState([]);
+  const [open, setOpen] = useState(false);
 
-  React.useState(() => {
-    try {
-      fetch("/team.json")
-        .then((res) => res.json())
-        .then((data) => setTeam(data?.team_members));
-    } catch (error) {
-      console.log(error);
-    }
+  useEffect(() => {
+    fetch("/team.json")
+      .then((res) => res.json())
+      .then((data) => setTeam(data?.team_members));
   }, []);
 
   // pagination
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);

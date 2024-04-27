@@ -10,7 +10,6 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
@@ -19,8 +18,33 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const drawerWidth = 240;
+
+const CustomListItemButton = ({ href, text, icon }) => {
+  // const router = useRouter();
+
+  // const handleClick = () => {
+  //   router.push(href);
+  // };
+
+  return (
+    <ListItemButton
+      // onClick={handleClick}
+      disablePadding
+    >
+      <ListItemIcon>{icon}</ListItemIcon>
+      <ListItemText primary={text} />
+    </ListItemButton>
+  );
+};
+
+CustomListItemButton.propTypes = {
+  href: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  icon: PropTypes.element.isRequired,
+};
 
 function DashboardLayout({ children }, props) {
   const { window } = props;
@@ -49,19 +73,20 @@ function DashboardLayout({ children }, props) {
       <Divider />
       <List>
         {[
-          "Manage Team",
-          "Manage Publications",
-          "Manage Event",
-          "Manage News",
-        ].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
+          { text: "Manage Team", route: "/dashboard/manage-team" },
+          {
+            text: "Manage Publications",
+            route: "/dashboard/manage-publications",
+          },
+          { text: "Manage Event", route: "/dashboard/manage-event" },
+          { text: "Manage News", route: "/dashboard/manage-news" },
+        ].map((item, index) => (
+          <CustomListItemButton
+            key={index}
+            href={item.route}
+            text={item.text}
+            icon={index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+          />
         ))}
       </List>
     </div>

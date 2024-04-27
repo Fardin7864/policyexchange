@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import * as React from "react";
+import { useEffect, useState } from "react";
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -26,21 +26,17 @@ const columns = [
 ];
 
 export default function ManagePublications() {
-  const [publications, setPublications] = React.useState([]);
+  const [publications, setPublications] = useState([]);
 
-  React.useState(() => {
-    try {
-      fetch("/publications.json")
-        .then((res) => res.json())
-        .then((data) => setPublications(data));
-    } catch (error) {
-      console.log(error);
-    }
+  useEffect(() => {
+    fetch("/publications.json")
+      .then((res) => res.json())
+      .then((data) => setPublications(data));
   }, []);
 
   // pagination
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
