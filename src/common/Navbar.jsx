@@ -47,7 +47,7 @@ function Navbar() {
   return (
     <div
       className={` h-[80px] z-[100]
-    lg:absolute lg:left-[0] lg:right-[0] lg:top-4 max-w-[1440px] lg:w-[1020px] xl:w-[1280px]
+    lg:absolute lg:left-[0] lg:right-[0] lg:top-4 max-w-[1440px] lg:w-[900px] xl:w-[1220px]
         rounded-md mx-auto 
       ${isDashboard ? `hidden` : `block`}
       `}
