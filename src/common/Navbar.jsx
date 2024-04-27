@@ -1,5 +1,5 @@
 "use client";
-import * as React from "react";
+
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,14 +11,15 @@ import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const pages = ["About", "News", "Publications", "Events", "Media", "Contact"];
 
 function Navbar() {
   const pathname = usePathname();
-  const [isDashboard, setDashboard] = React.useState(false);
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [isDashboard, setDashboard] = useState(false);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -37,7 +38,7 @@ function Navbar() {
 
   //
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (pathname.split("/")[1] === "dashboard") setDashboard(true);
     else {
       setDashboard(false);
@@ -45,7 +46,9 @@ function Navbar() {
   }, [pathname]);
   return (
     <div
-      className={` h-[80px] z-[100] lg:absolute lg:left-[10%] lg:right-[10%] lg:top-4 max-w-[1440px] lg:w-[1280px] rounded-md mx-auto 
+      className={` h-[80px] z-[100]
+    lg:absolute lg:left-[0] lg:right-[0] lg:top-4 max-w-[1440px] lg:w-[1280px]
+        rounded-md mx-auto 
       ${isDashboard ? `hidden` : `block`}
       `}
     >
