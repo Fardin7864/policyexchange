@@ -27,7 +27,7 @@ const MeetTeam = () => {
           <Link href={"/team"}>
             <button className="bg-[#74D194] hover:bg-[#179A44] active:opacity-60 py-3 px-5 rounded-full text-white font-bold">
               {" "}
-              Vew Team{" "}
+              View Team{" "}
             </button>
           </Link>
         </div>
