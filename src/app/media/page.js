@@ -2,7 +2,7 @@ import Pictures from "./Pictures";
 
 const media = () => {
   return (
-    <div className=" ">
+    <div className="bg-custom ">
       <div
         className="background-div bg-no-repeat bg-cover with-overlay"
         style={{

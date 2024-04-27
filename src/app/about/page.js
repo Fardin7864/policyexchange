@@ -14,7 +14,7 @@ const about = () => {
       <Container className="px-0">
         <div className=" py-10">
           {/* Our story */}
-          <FadeFromSide direction="left" duration={1}>
+          <FadeFromSide direction="left" duration={1} className="w-full">
             <div className=" flex flex-col lg:flex-row justify-between items-center bg-[#79C4E4] gap-5 rounded-3xl shadow-2xl">
               <div
                 className="rounded-l-3xl w-1/2"
@@ -48,7 +48,7 @@ const about = () => {
           </FadeFromSide>
 
           {/* Evaluation  */}
-          <FadeFromSide direction="right" duration={1}>
+          <FadeFromSide direction="right" duration={1} className="w-full">
             <div className=" flex flex-col mt-16 lg:flex-row justify-between items-center bg-[#79C4E4] gap-5 rounded-3xl shadow-2xl">
               <div className="pl-16 pr-10 w-1/2 mt-5">
                 <h2 className="text-[#0E1514] text-4xl font-bold ">

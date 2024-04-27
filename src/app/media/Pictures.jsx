@@ -65,8 +65,8 @@ const Pictures = () => {
                     className="background-div bg-no-repeat bg-cover with-overlay hover:opacity-75"
                     style={{
                       backgroundImage: `url(${picture.img})`,
-                      width: "195px",
-                      height: "195px",
+                      width: "100%",
+                      height: "100%",
                       position: "relative",
                     }}
                   >
@@ -99,8 +99,8 @@ const Pictures = () => {
                   className="background-div bg-no-repeat bg-cover with-overlay "
                   style={{
                     // backgroundImage: `url(${picture.img})`,
-                    width: "195px",
-                    height: "195px",
+                    width: "100%",
+                    height: "100%",
                     position: "relative", // Ensure proper overlay positioning
                   }}
                 >
@@ -109,8 +109,8 @@ const Pictures = () => {
                     width={195}
                     height={195}
                     style={{
-                      width: "195px",
-                      height: "195px",
+                      width: "100%",
+                      height: "100%",
                       objectFit: "cover",
                     }}
                     alt="img"
